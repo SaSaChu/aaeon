@@ -1,0 +1,201 @@
+@charset "UTF-8";
+/**
+ * @author      OA Wu <comdan66@gmail.com>
+ * @copyright   Copyright (c) 2016 OA Wu Design
+ */
+/**
+ * @author      OA Wu <comdan66@gmail.com>
+ * @copyright   Copyright (c) 2016 OA Wu Design
+ */
+/**
+ * @author      OA Wu <comdan66@gmail.com>
+ * @copyright   Copyright (c) 2016 OA Wu Design
+ */
+/**
+ * @author      OA Wu <comdan66@gmail.com>
+ * @copyright   Copyright (c) 2016 OA Wu Design
+ */
+/**
+ * @author      OA Wu <comdan66@gmail.com>
+ * @copyright   Copyright (c) 2016 OA Wu Design
+ */
+/**
+ * @author      OA Wu <comdan66@gmail.com>
+ * @copyright   Copyright (c) 2016 OA Wu Design
+ */
+/**
+ * @author      OA Wu <comdan66@gmail.com>
+ * @copyright   Copyright (c) 2016 OA Wu Design
+ */
+/**
+ * @author      OA Wu <comdan66@gmail.com>
+ * @copyright   Copyright (c) 2016 OA Wu Design
+ */
+/**
+ * @author      OA Wu <comdan66@gmail.com>
+ * @copyright   Copyright (c) 2016 OA Wu Design
+ */
+/**
+ * @author      OA Wu <comdan66@gmail.com>
+ * @copyright   Copyright (c) 2016 OA Wu Design
+ */
+/**
+ * @author      OA Wu <comdan66@gmail.com>
+ * @copyright   Copyright (c) 2016 OA Wu Design
+ */
+*, *:after, *:before {
+  vertical-align: top;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -moz-osx-font-smoothing: antialiased;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  -ms-font-smoothing: antialiased;
+  -o-font-smoothing: antialiased;
+}
+*::-moz-selection, *:after::-moz-selection, *:before::-moz-selection {
+  color: white;
+  background-color: #96c8ff;
+}
+*::selection, *:after::selection, *:before::selection {
+  color: white;
+  background-color: #96c8ff;
+}
+
+html {
+  height: 100%;
+}
+html body {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  font-size: medium;
+  font-family: Monaco, "微軟正黑體", "Microsoft JhengHei";
+  color: gray;
+  position: relative;
+  padding: 0;
+  background: #000 url(../img/bg.png) center center fixed no-repeat;
+  -moz-background-size: cover;
+  background-size: cover;
+  -moz-osx-font-smoothing: antialiased;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  -ms-font-smoothing: antialiased;
+  -o-font-smoothing: antialiased;
+}
+html header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 210px;
+  background: url(../img/topbg.png) repeat-x;
+  z-index: 999;
+}
+html #container {
+  width: 100%;
+  height: 100%;
+  padding-top: 210px;
+}
+html #container > div {
+  margin: 0 auto;
+  width: 1000px;
+  height: 100%;
+  position: relative;
+  z-index: 1;
+}
+html #container > div #strings {
+  position: absolute;
+  bottom: 90px;
+  right: 0;
+}
+html #container > div #strings span {
+  display: block;
+  text-align: right;
+  text-shadow: 2px 2px 3px #434a54;
+  font-size: 3em;
+  color: #fff;
+}
+html footer {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  width: 100%;
+  height: 70px;
+  background: #383e45;
+  z-index: 2;
+}
+html footer > div {
+  margin: 0 auto;
+  width: 1000px;
+  *zoom: 1;
+}
+html footer > div:after {
+  display: table;
+  content: "";
+  line-height: 0;
+  clear: both;
+}
+html footer > div #fb, html footer > div #bb {
+  float: left;
+  position: relative;
+  display: inline-block;
+}
+html footer > div #bb {
+  float: right;
+}
+html footer > div #fb {
+  width: 80%;
+}
+html footer > div #bb {
+  width: calc(100% - 80%);
+}
+html footer > div #fb {
+  height: 70px;
+  float: left;
+  border: 1px solid rgba(255, 0, 0, 0.3);
+  *zoom: 1;
+  font-size: .8em;
+  color: #fff;
+  line-height: 70px;
+}
+html footer > div #fb:after {
+  display: table;
+  content: "";
+  line-height: 0;
+  clear: both;
+}
+html footer > div #fb #cobetype, html footer > div #fb #cobemenu {
+  float: left;
+  position: relative;
+  display: inline-block;
+}
+html footer > div #fb #cobemenu {
+  float: right;
+}
+html footer > div #fb #cobetype {
+  width: 60%;
+}
+html footer > div #fb #cobemenu {
+  width: calc(100% - 60%);
+}
+html footer > div #fb #cobetype {
+  float: left;
+}
+html footer > div #fb #cobemenu {
+  float: left;
+}
+html footer > div #fb #cobemenu > a {
+  color: #fff;
+  text-decoration: none;
+}
+html footer > div #fb #cobemenu > a:hover {
+  color: #1b98f5;
+  text-decoration: underline;
+}
+html footer > div #bb {
+  height: 70px;
+  float: left;
+  border: 1px solid rgba(255, 0, 0, 0.3);
+}

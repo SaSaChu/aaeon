@@ -1,0 +1,136 @@
+@import "_oa";
+
+* {
+  &, &:after, &:before {
+    vertical-align: top;
+    @include box-sizing(border-box);
+    @include selection(rgba(150, 200, 255, 1), rgba(255, 255, 255, 1));
+    @include font-smoothing(antialiased);
+  }
+}
+
+$bigwidth:1000px;
+$footerheight:70px;
+
+html {
+  height: 100%;
+
+  body {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    font-size: medium;
+    font-family: Monaco, "微軟正黑體", "Microsoft JhengHei";
+    color: rgba(128, 128, 128, 1.00);
+
+    position:relative;
+    padding:0;
+    background: #000 url(../img/bg.png) center center fixed no-repeat;
+    -moz-background-size: cover;
+    background-size: cover;
+
+    @include font-smoothing(antialiased);
+  }
+
+  header {
+    position: fixed;
+    top:0;
+    left: 0;
+
+    width: 100%;
+    height: 210px;
+    background: url(../img/topbg.png) repeat-x;
+
+    z-index: 999;
+  }
+
+
+  #container{
+    width: 100%;
+    height: 100%;
+    padding-top: 210px;
+
+    > div {
+      margin: 0 auto;
+      width: $bigwidth;
+      height: 100%;
+      position: relative;
+
+      z-index: 1;
+
+      #strings{
+        position: absolute;
+        bottom: 90px;
+        right: 0;
+
+        span{
+          display: block;
+          text-align: right;
+
+          text-shadow: 2px 2px 3px #434a54;
+          font-size: 3em;
+          color: #fff;
+        }
+
+      }
+    }
+  }
+
+
+  footer{
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+
+    width: 100%;
+    height: $footerheight;
+    background: rgba(56, 62, 69, 1.00);
+
+    z-index: 2;
+
+    > div {
+      margin: 0 auto;
+      width: $bigwidth;
+
+      @include split-left(80%, '#fb', '#bb');
+
+      #fb{
+        height: $footerheight;
+        float: left;
+        border: 1px solid rgba(255, 0, 0, .3);
+
+        @include split-left(60%, '#cobetype', '#cobemenu');
+
+        font-size: .8em;
+        color: #fff;
+        line-height:$footerheight;
+
+        #cobetype{
+          float: left;
+        }
+
+        #cobemenu{
+          float: left;
+
+          > a {
+            color: #fff;
+            text-decoration: none;
+
+            &:hover {
+              color: rgba(27, 152, 245, 1.00);
+              text-decoration: underline;
+            }
+          }
+
+        }
+      }
+
+      #bb{
+        height: $footerheight;
+        float: left;
+        border: 1px solid rgba(255, 0, 0, .3);
+      }
+    }
+  }
+
+}
