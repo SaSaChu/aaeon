@@ -369,5 +369,19 @@ html {
       }
     }
   }
+}
 
+body {
+  &.layout2 {
+    header {
+      position: relative;
+    }
+    #container {
+      height: auto;
+      padding-top: 0;
+    }
+    footer {
+      position: relative;
+    }
+  }
 }
