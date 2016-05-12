@@ -134,7 +134,7 @@ $minhight: 265px;
 
           &:after, &:before {
             right: 100%;
-            top: 10;
+            top: 20px;
             border: solid transparent;
             content: " ";
             height: 0;
@@ -146,13 +146,13 @@ $minhight: 265px;
             border-color: rgba(136, 183, 213, 0);
             border-right-color: rgba(255, 255, 255, 1.00);
             border-width: 8px;
-            margin-top: -65px;
+            margin-top: -8px;
           }
           &:before {
             border-color: rrgba(231, 231, 231, .5);
             border-right-color: rgba(231, 231, 231, .5);
             border-width: 9px;
-            margin-top: 18px;
+            margin-top: -9px;
           }
 
           .tb {
