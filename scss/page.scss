@@ -159,6 +159,14 @@ $minhight: 265px;
             margin-top: -9px;
           }
 
+          @for $i from 1 through 50 {
+            &.p#{$i} {
+              &:after, &:before {
+                top: ($i - 1) * 50px + 20px;
+              }
+            }
+          }
+
           .tb {
             display: inline-block;
             width: 100%;
