@@ -82,3 +82,44 @@
   text-overflow: ellipsis;
   white-space: nowrap;
 }
+
+@mixin border-radius ($px) {
+  -webkit-border-radius: $px;
+  -moz-border-radius: $px;
+  border-radius: $px;
+}
+
+// @mixin arrow_box ($arrow_top) {
+//   display: inline-block;
+//   width: 500px;
+//   height: 300px;
+//   margin: 10px;
+
+//   position: relative;
+//   background-color: rgba(255, 255, 255, 1.00);
+//   border: 1px solid rgba(39, 40, 34, .3);
+//   @include box-shadow(0 0 10px rgba(39, 40, 34, .5));
+
+//   &:after, &:before {
+//     right: 100%;
+//     top: $arrow_top;
+//     border: solid transparent;
+//     content: " ";
+//     height: 0;
+//     width: 0;
+//     position: absolute;
+//     pointer-events: none;
+//   }
+//   &:after {
+//     border-color: rgba(136, 183, 213, 0);
+//     border-right-color: rgba(255, 255, 255, 1.00);
+//     border-width: 10px;
+//     margin-top: -10px;
+//   }
+//   &:before {
+//     border-color: rgba(194, 225, 245, 0);
+//     border-right-color: rgba(39, 40, 34, .200);
+//     border-width: 11px;
+//     margin-top: -11px;
+//   }
+// }

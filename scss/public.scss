@@ -372,9 +372,13 @@ html {
 }
 
 body {
+
   &.layout2 {
+    background: rgba(247, 247, 247, 1.00);
+
     header {
       position: relative;
+      background: url(../img/ctopbg.png) repeat-x;
     }
     #container {
       height: auto;
