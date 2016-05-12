@@ -3,6 +3,10 @@
 @include font-face("icomoon", font-files("icomoon/icomoon.eot", "icomoon/icomoon.woff", "icomoon/icomoon.ttf", "icomoon/icomoon.svg"));
 [class^="icon-"], [class*=" icon-"] {font-family: 'icomoon', "Roboto", "微軟正黑體", Monaco;speak: none;font-style: normal;font-weight: normal;font-variant: normal;text-transform: none;line-height: 1;@include font-smoothing(antialiased);}
 
+.icon-move-down:before {
+    content: "\f0a8";
+    padding-right: 5px;
+}
 .icon-search:before {
     content: "\f02e";
 }
@@ -85,8 +89,8 @@ $minhight: 265px;
           border-left: 5px solid rgba(148, 148, 148, 1.00);
 
           &:hover {
-            color: rgba(32, 187, 253, 1.00);
-            border-left-color: rgba(32, 187, 253, 1.00);
+            color: rgba(26, 152, 245, 1.00);
+            border-left-color: rgba(26, 152, 245, 1.00);
           }
 
           &.ac {
@@ -180,6 +184,7 @@ $minhight: 265px;
             display: inline-block;
             width: 100%;
             height: 100%;
+            padding: 10px;
 
             @include clearfix();
 
@@ -190,32 +195,43 @@ $minhight: 265px;
               max-height: $maxhight;
               padding: 10px;
 
-              border: 1px solid rgba(255, 0, 0, .3);
-
               .imbox {
                 width: 100%;
                 height: 150px;
 
-                border: 1px solid rgba(255, 0, 0, .3);
+                line-height: 150px;
+                text-align : center;
+
+                // background: rgba(241, 242, 243, 1.00);
+                border: 1px solid rgba(241, 242, 243, 1.00);
+
+                img {
+                  padding: 5px;
+                  vertical-align : middle;
+                  height: auto;
+                  max-width: 100%;
+                }
               }
 
               > span {
                 display: inline-block;
                 width: 100%;
-                height: 20px;
 
-                font-size: 1em;
-                font-weight: bold;
-                color: rgba(34, 49, 60, 1.00);
-                background-color: rgba(0, 128, 0, 0.2);
+                padding: 5px 0;
 
                 > p {
-                  display: inline-block;
-                  width: 100%;
-                  height: 10px;
+                  margin: 0;
+                  padding: 3px 0;
+
+                  word-wrap:break-word;
                   font-size: 1em;
-                  color: rgba(34, 49, 60, 1.00);
-                  background-color: rgba(0, 0, 255, 0.2);
+                  line-height: 1.4em;
+                  color: rgba(159, 163, 164, 1.00);
+
+                  &.c {
+                    font-weight: bold;
+                    color: rgba(34, 49, 60, 1.00);
+                  }
                 }
 
               }
@@ -224,16 +240,64 @@ $minhight: 265px;
                   display: inline-block;
                   width: 100%;
                   padding: 10px;
+                  margin-top: 10px;
 
                   font-size: 1em;
+                  font-weight: bold;
                   color: #fff;
                   background:rgba(147, 160, 166, 1.00);
                   text-align: center;
+                  text-decoration: none;
+
                   @include border-radius(3px);
+
+                  &:hover {
+                    background:rgba(103, 172, 208, 1.00);
+                  }
 
                 }
             }
           }
+        }
+
+        .nb {
+          width: 100%;
+          height:55px;
+
+          .cnb {
+            display: inline-block;
+            float: right;
+
+            @include clearfix();
+
+            > a {
+                display: inline-block;
+                padding-top: 5px;
+                margin-left: 10px;
+                width: 30px;
+                height: 30px;
+
+                @include border-radius(50px);
+
+                background: rgba(202, 215, 222, 1.00);
+
+                font-size: 1em;
+                color: white;
+                text-align: center;
+                text-decoration: none;
+
+                &:hover {
+                  background: rgba(100, 173, 208, 1.00);
+                }
+
+                &.na {
+                  background: rgba(100, 173, 208, 1.00);
+                }
+
+              }
+
+          }
+
         }
       }
 

@@ -186,6 +186,11 @@ html {
             font-weight: bold;
             line-height: 53px;
             border-bottom: 10px solid rgba(26, 152, 244, 1.00);
+
+            &.bma {
+              color: rgba(32, 187, 252, 1.00);
+              border-bottom: 10px solid rgba(32, 187, 252, 1.00);
+            }
           }
 
           .list {

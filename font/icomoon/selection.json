@@ -4,6 +4,32 @@
 		{
 			"icon": {
 				"paths": [
+					"M640 320h-192v-320h-256v320h-192l320 384 320-384zM0 1024h640v-192h-640v192z"
+				],
+				"width": 640,
+				"attrs": [],
+				"isMulticolor": false,
+				"tags": [
+					"move-down"
+				],
+				"defaultCode": 61608,
+				"grid": 16
+			},
+			"attrs": [],
+			"properties": {
+				"id": 114,
+				"order": 4,
+				"prevSize": 32,
+				"code": 61608,
+				"name": "move-down"
+			},
+			"setIdx": 0,
+			"setId": 1,
+			"iconIdx": 113
+		},
+		{
+			"icon": {
+				"paths": [
 					"M960 832l-249.125-249.125c35.563-58.063 57.125-125.719 57.125-198.875 0-212.031-172-384-384-384-212.031 0-384 171.969-384 384 0 212 171.969 384 384 384 73.156 0 140.812-21.562 198.875-57l249.125 249c17.5 17.5 46.5 17.375 64 0l64-64c17.5-17.5 17.5-46.5 0-64zM384 640c-141.375 0-256-114.625-256-256s114.625-256 256-256 256 114.625 256 256-114.625 256-256 256z"
 				],
 				"width": 973,
@@ -18,7 +44,7 @@
 			"attrs": [],
 			"properties": {
 				"id": 152,
-				"order": 3,
+				"order": 6,
 				"prevSize": 32,
 				"code": 61486,
 				"name": "search"
@@ -44,7 +70,7 @@
 			"attrs": [],
 			"properties": {
 				"id": 169,
-				"order": 2,
+				"order": 5,
 				"prevSize": 32,
 				"code": 61531,
 				"name": "triangle-down"
@@ -73,7 +99,8 @@
 				"baseline": 6.25,
 				"whitespace": 50
 			},
-			"embed": false
+			"embed": false,
+			"autoHost": true
 		},
 		"imagePref": {
 			"prefix": "icon-",
@@ -85,6 +112,9 @@
 		},
 		"historySize": 100,
 		"showCodes": true,
-		"gridSize": 16
+		"gridSize": 16,
+		"quickUsageToken": {
+			"UntitledProject": "MzQ2MDE3YWMwZmMyNDVjOGU3NDFkY2M4YmFjOTBlMjkjMSMxNDYzMDMzMzMzIyMj"
+		}
 	}
 }

@@ -45,7 +45,7 @@
  */
 @font-face {
   font-family: "icomoon";
-  src: url('/aaeon/font/icomoon/icomoon.eot?1462948698') format('embedded-opentype'), url('/aaeon/font/icomoon/icomoon.woff?1462948698') format('woff'), url('/aaeon/font/icomoon/icomoon.ttf?1462948698') format('truetype'), url('/aaeon/font/icomoon/icomoon.svg?1462948698') format('svg');
+  src: url('/aaeon/font/icomoon/icomoon.eot?1463033972') format('embedded-opentype'), url('/aaeon/font/icomoon/icomoon.woff?1463033972') format('woff'), url('/aaeon/font/icomoon/icomoon.ttf?1463033972') format('truetype'), url('/aaeon/font/icomoon/icomoon.svg?1463033972') format('svg');
 }
 [class^="icon-"], [class*=" icon-"] {
   font-family: 'icomoon', "Roboto", "微軟正黑體", Monaco;
@@ -60,6 +60,11 @@
   -moz-font-smoothing: antialiased;
   -ms-font-smoothing: antialiased;
   -o-font-smoothing: antialiased;
+}
+
+.icon-move-down:before {
+  content: "\f0a8";
+  padding-right: 5px;
 }
 
 .icon-search:before {
@@ -164,8 +169,8 @@
   border-left: 5px solid #949494;
 }
 #container > div .lb a:hover {
-  color: #20bbfd;
-  border-left-color: #20bbfd;
+  color: #1a98f5;
+  border-left-color: #1a98f5;
 }
 #container > div .lb a.ac {
   color: #20bbfd;
@@ -248,6 +253,7 @@
   display: inline-block;
   width: 100%;
   height: 100%;
+  padding: 10px;
   *zoom: 1;
 }
 #container > div .rb #arrow_box .cb:after {
@@ -262,39 +268,88 @@
   min-height: 265px;
   max-height: 300px;
   padding: 10px;
-  border: 1px solid rgba(255, 0, 0, 0.3);
 }
 #container > div .rb #arrow_box .cb > div .imbox {
   width: 100%;
   height: 150px;
-  border: 1px solid rgba(255, 0, 0, 0.3);
+  line-height: 150px;
+  text-align: center;
+  border: 1px solid #f1f2f3;
+}
+#container > div .rb #arrow_box .cb > div .imbox img {
+  padding: 5px;
+  vertical-align: middle;
+  height: auto;
+  max-width: 100%;
 }
 #container > div .rb #arrow_box .cb > div > span {
   display: inline-block;
   width: 100%;
-  height: 20px;
-  font-size: 1em;
-  font-weight: bold;
-  color: #22313c;
-  background-color: rgba(0, 128, 0, 0.2);
+  padding: 5px 0;
 }
 #container > div .rb #arrow_box .cb > div > span > p {
-  display: inline-block;
-  width: 100%;
-  height: 10px;
+  margin: 0;
+  padding: 3px 0;
+  word-wrap: break-word;
   font-size: 1em;
+  line-height: 1.4em;
+  color: #9fa3a4;
+}
+#container > div .rb #arrow_box .cb > div > span > p.c {
+  font-weight: bold;
   color: #22313c;
-  background-color: rgba(0, 0, 255, 0.2);
 }
 #container > div .rb #arrow_box .cb > div a {
   display: inline-block;
   width: 100%;
   padding: 10px;
+  margin-top: 10px;
   font-size: 1em;
+  font-weight: bold;
   color: #fff;
   background: #93a0a6;
   text-align: center;
+  text-decoration: none;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   border-radius: 3px;
+}
+#container > div .rb #arrow_box .cb > div a:hover {
+  background: #67acd0;
+}
+#container > div .rb .nb {
+  width: 100%;
+  height: 55px;
+}
+#container > div .rb .nb .cnb {
+  display: inline-block;
+  float: right;
+  *zoom: 1;
+}
+#container > div .rb .nb .cnb:after {
+  display: table;
+  content: "";
+  line-height: 0;
+  clear: both;
+}
+#container > div .rb .nb .cnb > a {
+  display: inline-block;
+  padding-top: 5px;
+  margin-left: 10px;
+  width: 30px;
+  height: 30px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  border-radius: 50px;
+  background: #cad7de;
+  font-size: 1em;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+}
+#container > div .rb .nb .cnb > a:hover {
+  background: #64add0;
+}
+#container > div .rb .nb .cnb > a.na {
+  background: #64add0;
 }
