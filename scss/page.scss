@@ -1,29 +1,5 @@
 @import "_oa";
 
-@include font-face("icomoon", font-files("icomoon/icomoon.eot", "icomoon/icomoon.woff", "icomoon/icomoon.ttf", "icomoon/icomoon.svg"));
-[class^="icon-"], [class*=" icon-"] {font-family: 'icomoon', "Roboto", "微軟正黑體", Monaco;speak: none;font-style: normal;font-weight: normal;font-variant: normal;text-transform: none;line-height: 1;@include font-smoothing(antialiased);}
-
-.icon-move-down:before {
-    content: "\f0a8";
-    padding-right: 5px;
-}
-.icon-search:before {
-    content: "\f02e";
-}
-.icon-triangle-down:before {
-    content: "\f05b";
-}
-
-
-* {
-  &, &:after, &:before {
-    vertical-align: top;
-    @include box-sizing(border-box);
-    @include selection(rgba(150, 200, 255, 1), rgba(255, 255, 255, 1));
-    @include font-smoothing(antialiased);
-  }
-}
-
 $bigwidth: 1000px;
 $footerheight: 70px;
 $maxhight: 300px;
@@ -89,8 +65,8 @@ $minhight: 265px;
           border-left: 5px solid rgba(148, 148, 148, 1.00);
 
           &:hover {
-            color: rgba(26, 152, 245, 1.00);
-            border-left-color: rgba(26, 152, 245, 1.00);
+            color: rgba(32, 187, 253, 1.00);
+            border-left-color: rgba(32, 187, 253, 1.00);
           }
 
           &.ac {
@@ -171,20 +147,70 @@ $minhight: 265px;
             display: inline-block;
             width: 100%;
             height:50px;
-            margin-bottom: 15px;
+            line-height: 50px;
 
             border-bottom: 1px solid rgba(225, 229, 230, 1.00);
-
-            span {
+            // border: 1px solid rgba(255, 0, 0, .3);
+            @include clearfix();
+            $arrow_width: 30px;
+            > * {
+              float: left;
               display: inline-block;
-              padding: 15px;
-              margin-left: 15px;
+              height: 100%;
+              text-align: center;
+            }
+            > a {
+              width: $arrow_width;
+              cursor: pointer;
 
+              &:before {
+                display: inline-block;
+                line-height: 50px;
+              }
+              &:hover {
+                color: rgba(32, 186, 251, 1.00);
+              }
+            }
+            > span {
+              margin-left: 20px;
+              padding: 0 10px;
               border-bottom: 3px solid rgba(216, 3, 5, 1.00);
+            }
+            > div {
+              position: relative;
+              width: calc(100% - #{$arrow_width * 2});
+              overflow: hidden;
 
-              font-size: 1em;
-              color: rgba(59, 74, 88, 1.00);
+              > div {
+                position: absolute;
+                left: 0;
+                top: 0;
+                display: inline-block;
+                height: 100%;
+                width: 9999999px;
+                @include clearfix();
+                @include transition(all .3s);
 
+                $w: 76px;
+                @for $i from 0 through 100 {
+                  &.p#{$i} {
+                    left: -$i * $w;
+                  }
+                }
+
+                > a {
+                  display: inline-block;
+                  float: left;
+                  width: $w;
+                  text-align: center;
+                  padding: 0 20px;
+                  height: 100%;
+                  cursor: pointer;
+                  &:hover, &.a {
+                    border-bottom: 3px solid rgba(216, 3, 5, 1.00);
+                  }
+                }
+              }
             }
           }
 
@@ -196,7 +222,7 @@ $minhight: 265px;
 
             @include clearfix();
 
-            > div {
+            .sone {
               float: left;
               width: calc(100% / 4);
               min-height: $minhight;
@@ -265,6 +291,7 @@ $minhight: 265px;
 
                 }
             }
+
           }
         }
 

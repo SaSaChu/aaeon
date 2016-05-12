@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /**
  * @author      OA Wu <comdan66@gmail.com>
  * @copyright   Copyright (c) 2016 OA Wu Design
@@ -43,58 +42,6 @@
  * @author      OA Wu <comdan66@gmail.com>
  * @copyright   Copyright (c) 2016 OA Wu Design
  */
-@font-face {
-  font-family: "icomoon";
-  src: url('/aaeon/font/icomoon/icomoon.eot?1463042862') format('embedded-opentype'), url('/aaeon/font/icomoon/icomoon.woff?1463042862') format('woff'), url('/aaeon/font/icomoon/icomoon.ttf?1463042862') format('truetype'), url('/aaeon/font/icomoon/icomoon.svg?1463042862') format('svg');
-}
-[class^="icon-"], [class*=" icon-"] {
-  font-family: 'icomoon', "Roboto", "微軟正黑體", Monaco;
-  speak: none;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-  -moz-osx-font-smoothing: antialiased;
-  -webkit-font-smoothing: antialiased;
-  -moz-font-smoothing: antialiased;
-  -ms-font-smoothing: antialiased;
-  -o-font-smoothing: antialiased;
-}
-
-.icon-move-down:before {
-  content: "\f0a8";
-  padding-right: 5px;
-}
-
-.icon-search:before {
-  content: "\f02e";
-}
-
-.icon-triangle-down:before {
-  content: "\f05b";
-}
-
-*, *:after, *:before {
-  vertical-align: top;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  -moz-osx-font-smoothing: antialiased;
-  -webkit-font-smoothing: antialiased;
-  -moz-font-smoothing: antialiased;
-  -ms-font-smoothing: antialiased;
-  -o-font-smoothing: antialiased;
-}
-*::-moz-selection, *:after::-moz-selection, *:before::-moz-selection {
-  color: white;
-  background-color: #96c8ff;
-}
-*::selection, *:after::selection, *:before::selection {
-  color: white;
-  background-color: #96c8ff;
-}
-
 #container > div {
   margin: 0 auto;
   width: 1000px;
@@ -169,8 +116,8 @@
   border-left: 5px solid #949494;
 }
 #container > div .lb a:hover {
-  color: #1a98f5;
-  border-left-color: #1a98f5;
+  color: #20bbfd;
+  border-left-color: #20bbfd;
 }
 #container > div .lb a.ac {
   color: #20bbfd;
@@ -388,16 +335,376 @@
   display: inline-block;
   width: 100%;
   height: 50px;
-  margin-bottom: 15px;
+  line-height: 50px;
   border-bottom: 1px solid #e1e5e6;
+  *zoom: 1;
 }
-#container > div .rb #arrow_box .tb span {
+#container > div .rb #arrow_box .tb:after {
+  display: table;
+  content: "";
+  line-height: 0;
+  clear: both;
+}
+#container > div .rb #arrow_box .tb > * {
+  float: left;
   display: inline-block;
-  padding: 15px;
-  margin-left: 15px;
+  height: 100%;
+  text-align: center;
+}
+#container > div .rb #arrow_box .tb > a {
+  width: 30px;
+  cursor: pointer;
+}
+#container > div .rb #arrow_box .tb > a:before {
+  display: inline-block;
+  line-height: 50px;
+}
+#container > div .rb #arrow_box .tb > a:hover {
+  color: #20bafb;
+}
+#container > div .rb #arrow_box .tb > span {
+  margin-left: 20px;
+  padding: 0 10px;
   border-bottom: 3px solid #d80305;
-  font-size: 1em;
-  color: #3b4a58;
+}
+#container > div .rb #arrow_box .tb > div {
+  position: relative;
+  width: calc(100% - 60px);
+  overflow: hidden;
+}
+#container > div .rb #arrow_box .tb > div > div {
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: inline-block;
+  height: 100%;
+  width: 9999999px;
+  *zoom: 1;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+#container > div .rb #arrow_box .tb > div > div:after {
+  display: table;
+  content: "";
+  line-height: 0;
+  clear: both;
+}
+#container > div .rb #arrow_box .tb > div > div.p0 {
+  left: 0px;
+}
+#container > div .rb #arrow_box .tb > div > div.p1 {
+  left: -76px;
+}
+#container > div .rb #arrow_box .tb > div > div.p2 {
+  left: -152px;
+}
+#container > div .rb #arrow_box .tb > div > div.p3 {
+  left: -228px;
+}
+#container > div .rb #arrow_box .tb > div > div.p4 {
+  left: -304px;
+}
+#container > div .rb #arrow_box .tb > div > div.p5 {
+  left: -380px;
+}
+#container > div .rb #arrow_box .tb > div > div.p6 {
+  left: -456px;
+}
+#container > div .rb #arrow_box .tb > div > div.p7 {
+  left: -532px;
+}
+#container > div .rb #arrow_box .tb > div > div.p8 {
+  left: -608px;
+}
+#container > div .rb #arrow_box .tb > div > div.p9 {
+  left: -684px;
+}
+#container > div .rb #arrow_box .tb > div > div.p10 {
+  left: -760px;
+}
+#container > div .rb #arrow_box .tb > div > div.p11 {
+  left: -836px;
+}
+#container > div .rb #arrow_box .tb > div > div.p12 {
+  left: -912px;
+}
+#container > div .rb #arrow_box .tb > div > div.p13 {
+  left: -988px;
+}
+#container > div .rb #arrow_box .tb > div > div.p14 {
+  left: -1064px;
+}
+#container > div .rb #arrow_box .tb > div > div.p15 {
+  left: -1140px;
+}
+#container > div .rb #arrow_box .tb > div > div.p16 {
+  left: -1216px;
+}
+#container > div .rb #arrow_box .tb > div > div.p17 {
+  left: -1292px;
+}
+#container > div .rb #arrow_box .tb > div > div.p18 {
+  left: -1368px;
+}
+#container > div .rb #arrow_box .tb > div > div.p19 {
+  left: -1444px;
+}
+#container > div .rb #arrow_box .tb > div > div.p20 {
+  left: -1520px;
+}
+#container > div .rb #arrow_box .tb > div > div.p21 {
+  left: -1596px;
+}
+#container > div .rb #arrow_box .tb > div > div.p22 {
+  left: -1672px;
+}
+#container > div .rb #arrow_box .tb > div > div.p23 {
+  left: -1748px;
+}
+#container > div .rb #arrow_box .tb > div > div.p24 {
+  left: -1824px;
+}
+#container > div .rb #arrow_box .tb > div > div.p25 {
+  left: -1900px;
+}
+#container > div .rb #arrow_box .tb > div > div.p26 {
+  left: -1976px;
+}
+#container > div .rb #arrow_box .tb > div > div.p27 {
+  left: -2052px;
+}
+#container > div .rb #arrow_box .tb > div > div.p28 {
+  left: -2128px;
+}
+#container > div .rb #arrow_box .tb > div > div.p29 {
+  left: -2204px;
+}
+#container > div .rb #arrow_box .tb > div > div.p30 {
+  left: -2280px;
+}
+#container > div .rb #arrow_box .tb > div > div.p31 {
+  left: -2356px;
+}
+#container > div .rb #arrow_box .tb > div > div.p32 {
+  left: -2432px;
+}
+#container > div .rb #arrow_box .tb > div > div.p33 {
+  left: -2508px;
+}
+#container > div .rb #arrow_box .tb > div > div.p34 {
+  left: -2584px;
+}
+#container > div .rb #arrow_box .tb > div > div.p35 {
+  left: -2660px;
+}
+#container > div .rb #arrow_box .tb > div > div.p36 {
+  left: -2736px;
+}
+#container > div .rb #arrow_box .tb > div > div.p37 {
+  left: -2812px;
+}
+#container > div .rb #arrow_box .tb > div > div.p38 {
+  left: -2888px;
+}
+#container > div .rb #arrow_box .tb > div > div.p39 {
+  left: -2964px;
+}
+#container > div .rb #arrow_box .tb > div > div.p40 {
+  left: -3040px;
+}
+#container > div .rb #arrow_box .tb > div > div.p41 {
+  left: -3116px;
+}
+#container > div .rb #arrow_box .tb > div > div.p42 {
+  left: -3192px;
+}
+#container > div .rb #arrow_box .tb > div > div.p43 {
+  left: -3268px;
+}
+#container > div .rb #arrow_box .tb > div > div.p44 {
+  left: -3344px;
+}
+#container > div .rb #arrow_box .tb > div > div.p45 {
+  left: -3420px;
+}
+#container > div .rb #arrow_box .tb > div > div.p46 {
+  left: -3496px;
+}
+#container > div .rb #arrow_box .tb > div > div.p47 {
+  left: -3572px;
+}
+#container > div .rb #arrow_box .tb > div > div.p48 {
+  left: -3648px;
+}
+#container > div .rb #arrow_box .tb > div > div.p49 {
+  left: -3724px;
+}
+#container > div .rb #arrow_box .tb > div > div.p50 {
+  left: -3800px;
+}
+#container > div .rb #arrow_box .tb > div > div.p51 {
+  left: -3876px;
+}
+#container > div .rb #arrow_box .tb > div > div.p52 {
+  left: -3952px;
+}
+#container > div .rb #arrow_box .tb > div > div.p53 {
+  left: -4028px;
+}
+#container > div .rb #arrow_box .tb > div > div.p54 {
+  left: -4104px;
+}
+#container > div .rb #arrow_box .tb > div > div.p55 {
+  left: -4180px;
+}
+#container > div .rb #arrow_box .tb > div > div.p56 {
+  left: -4256px;
+}
+#container > div .rb #arrow_box .tb > div > div.p57 {
+  left: -4332px;
+}
+#container > div .rb #arrow_box .tb > div > div.p58 {
+  left: -4408px;
+}
+#container > div .rb #arrow_box .tb > div > div.p59 {
+  left: -4484px;
+}
+#container > div .rb #arrow_box .tb > div > div.p60 {
+  left: -4560px;
+}
+#container > div .rb #arrow_box .tb > div > div.p61 {
+  left: -4636px;
+}
+#container > div .rb #arrow_box .tb > div > div.p62 {
+  left: -4712px;
+}
+#container > div .rb #arrow_box .tb > div > div.p63 {
+  left: -4788px;
+}
+#container > div .rb #arrow_box .tb > div > div.p64 {
+  left: -4864px;
+}
+#container > div .rb #arrow_box .tb > div > div.p65 {
+  left: -4940px;
+}
+#container > div .rb #arrow_box .tb > div > div.p66 {
+  left: -5016px;
+}
+#container > div .rb #arrow_box .tb > div > div.p67 {
+  left: -5092px;
+}
+#container > div .rb #arrow_box .tb > div > div.p68 {
+  left: -5168px;
+}
+#container > div .rb #arrow_box .tb > div > div.p69 {
+  left: -5244px;
+}
+#container > div .rb #arrow_box .tb > div > div.p70 {
+  left: -5320px;
+}
+#container > div .rb #arrow_box .tb > div > div.p71 {
+  left: -5396px;
+}
+#container > div .rb #arrow_box .tb > div > div.p72 {
+  left: -5472px;
+}
+#container > div .rb #arrow_box .tb > div > div.p73 {
+  left: -5548px;
+}
+#container > div .rb #arrow_box .tb > div > div.p74 {
+  left: -5624px;
+}
+#container > div .rb #arrow_box .tb > div > div.p75 {
+  left: -5700px;
+}
+#container > div .rb #arrow_box .tb > div > div.p76 {
+  left: -5776px;
+}
+#container > div .rb #arrow_box .tb > div > div.p77 {
+  left: -5852px;
+}
+#container > div .rb #arrow_box .tb > div > div.p78 {
+  left: -5928px;
+}
+#container > div .rb #arrow_box .tb > div > div.p79 {
+  left: -6004px;
+}
+#container > div .rb #arrow_box .tb > div > div.p80 {
+  left: -6080px;
+}
+#container > div .rb #arrow_box .tb > div > div.p81 {
+  left: -6156px;
+}
+#container > div .rb #arrow_box .tb > div > div.p82 {
+  left: -6232px;
+}
+#container > div .rb #arrow_box .tb > div > div.p83 {
+  left: -6308px;
+}
+#container > div .rb #arrow_box .tb > div > div.p84 {
+  left: -6384px;
+}
+#container > div .rb #arrow_box .tb > div > div.p85 {
+  left: -6460px;
+}
+#container > div .rb #arrow_box .tb > div > div.p86 {
+  left: -6536px;
+}
+#container > div .rb #arrow_box .tb > div > div.p87 {
+  left: -6612px;
+}
+#container > div .rb #arrow_box .tb > div > div.p88 {
+  left: -6688px;
+}
+#container > div .rb #arrow_box .tb > div > div.p89 {
+  left: -6764px;
+}
+#container > div .rb #arrow_box .tb > div > div.p90 {
+  left: -6840px;
+}
+#container > div .rb #arrow_box .tb > div > div.p91 {
+  left: -6916px;
+}
+#container > div .rb #arrow_box .tb > div > div.p92 {
+  left: -6992px;
+}
+#container > div .rb #arrow_box .tb > div > div.p93 {
+  left: -7068px;
+}
+#container > div .rb #arrow_box .tb > div > div.p94 {
+  left: -7144px;
+}
+#container > div .rb #arrow_box .tb > div > div.p95 {
+  left: -7220px;
+}
+#container > div .rb #arrow_box .tb > div > div.p96 {
+  left: -7296px;
+}
+#container > div .rb #arrow_box .tb > div > div.p97 {
+  left: -7372px;
+}
+#container > div .rb #arrow_box .tb > div > div.p98 {
+  left: -7448px;
+}
+#container > div .rb #arrow_box .tb > div > div.p99 {
+  left: -7524px;
+}
+#container > div .rb #arrow_box .tb > div > div.p100 {
+  left: -7600px;
+}
+#container > div .rb #arrow_box .tb > div > div > a {
+  display: inline-block;
+  float: left;
+  width: 76px;
+  text-align: center;
+  padding: 0 20px;
+  height: 100%;
+  cursor: pointer;
+}
+#container > div .rb #arrow_box .tb > div > div > a:hover, #container > div .rb #arrow_box .tb > div > div > a.a {
+  border-bottom: 3px solid #d80305;
 }
 #container > div .rb #arrow_box .cb {
   display: inline-block;
@@ -412,32 +719,32 @@
   line-height: 0;
   clear: both;
 }
-#container > div .rb #arrow_box .cb > div {
+#container > div .rb #arrow_box .cb .sone {
   float: left;
   width: calc(100% / 4);
   min-height: 265px;
   max-height: 300px;
   padding: 10px;
 }
-#container > div .rb #arrow_box .cb > div .imbox {
+#container > div .rb #arrow_box .cb .sone .imbox {
   width: 100%;
   height: 150px;
   line-height: 150px;
   text-align: center;
   border: 1px solid #f1f2f3;
 }
-#container > div .rb #arrow_box .cb > div .imbox img {
+#container > div .rb #arrow_box .cb .sone .imbox img {
   padding: 5px;
   vertical-align: middle;
   height: auto;
   max-width: 100%;
 }
-#container > div .rb #arrow_box .cb > div > span {
+#container > div .rb #arrow_box .cb .sone > span {
   display: inline-block;
   width: 100%;
   padding: 5px 0;
 }
-#container > div .rb #arrow_box .cb > div > span > p {
+#container > div .rb #arrow_box .cb .sone > span > p {
   margin: 0;
   padding: 3px 0;
   word-wrap: break-word;
@@ -445,11 +752,11 @@
   line-height: 1.4em;
   color: #9fa3a4;
 }
-#container > div .rb #arrow_box .cb > div > span > p.c {
+#container > div .rb #arrow_box .cb .sone > span > p.c {
   font-weight: bold;
   color: #22313c;
 }
-#container > div .rb #arrow_box .cb > div a {
+#container > div .rb #arrow_box .cb .sone a {
   display: inline-block;
   width: 100%;
   padding: 10px;
@@ -464,7 +771,7 @@
   -moz-border-radius: 3px;
   border-radius: 3px;
 }
-#container > div .rb #arrow_box .cb > div a:hover {
+#container > div .rb #arrow_box .cb .sone a:hover {
   background: #67acd0;
 }
 #container > div .rb .nb {

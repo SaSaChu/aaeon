@@ -1,0 +1,137 @@
+/**
+ * @author      OA Wu <comdan66@gmail.com>
+ * @copyright   Copyright (c) 2016 OA Wu Design
+ */
+/**
+ * @author      OA Wu <comdan66@gmail.com>
+ * @copyright   Copyright (c) 2016 OA Wu Design
+ */
+/**
+ * @author      OA Wu <comdan66@gmail.com>
+ * @copyright   Copyright (c) 2016 OA Wu Design
+ */
+/**
+ * @author      OA Wu <comdan66@gmail.com>
+ * @copyright   Copyright (c) 2016 OA Wu Design
+ */
+/**
+ * @author      OA Wu <comdan66@gmail.com>
+ * @copyright   Copyright (c) 2016 OA Wu Design
+ */
+/**
+ * @author      OA Wu <comdan66@gmail.com>
+ * @copyright   Copyright (c) 2016 OA Wu Design
+ */
+/**
+ * @author      OA Wu <comdan66@gmail.com>
+ * @copyright   Copyright (c) 2016 OA Wu Design
+ */
+/**
+ * @author      OA Wu <comdan66@gmail.com>
+ * @copyright   Copyright (c) 2016 OA Wu Design
+ */
+/**
+ * @author      OA Wu <comdan66@gmail.com>
+ * @copyright   Copyright (c) 2016 OA Wu Design
+ */
+/**
+ * @author      OA Wu <comdan66@gmail.com>
+ * @copyright   Copyright (c) 2016 OA Wu Design
+ */
+/**
+ * @author      OA Wu <comdan66@gmail.com>
+ * @copyright   Copyright (c) 2016 OA Wu Design
+ */
+.cb .stwo {
+  width: 100%;
+  height: 100%;
+  margin-left: 10px;
+  background-color: #f7f1f2;
+  border-bottom: 5px solid white;
+  *zoom: 1;
+}
+.cb .stwo:after {
+  display: table;
+  content: "";
+  line-height: 0;
+  clear: both;
+}
+.cb .stwo .lbr, .cb .stwo .rbn {
+  float: left;
+  position: relative;
+  display: inline-block;
+}
+.cb .stwo .rbn {
+  float: right;
+}
+.cb .stwo .lbr {
+  width: 18%;
+}
+.cb .stwo .rbn {
+  width: calc(100% - 18%);
+}
+.cb .stwo .lbr > span {
+  display: inline-block;
+  padding: 20px 0 0 10px;
+  font: 1em;
+  font-weight: bold;
+}
+.cb .stwo .rbn {
+  padding-right: 10px;
+  background-color: #feffff;
+}
+.cb .stwo .rbn > div {
+  float: left;
+  width: calc(100% / 3);
+  min-height: 265px;
+  max-height: 300px;
+  padding: 10px;
+}
+.cb .stwo .rbn > div .imbox {
+  width: 100%;
+  height: 150px;
+  line-height: 150px;
+  text-align: center;
+  border: 1px solid #f1f2f3;
+}
+.cb .stwo .rbn > div .imbox img {
+  padding: 5px;
+  vertical-align: middle;
+  height: auto;
+  max-width: 100%;
+}
+.cb .stwo .rbn > div > span {
+  display: inline-block;
+  width: 100%;
+  padding: 5px 0;
+}
+.cb .stwo .rbn > div > span > p {
+  margin: 0;
+  padding: 3px 0;
+  word-wrap: break-word;
+  font-size: 1em;
+  line-height: 1.4em;
+  color: #9fa3a4;
+}
+.cb .stwo .rbn > div > span > p.c {
+  font-weight: bold;
+  color: #22313c;
+}
+.cb .stwo .rbn > div a {
+  display: inline-block;
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  font-size: 1em;
+  font-weight: bold;
+  color: #fff;
+  background: #93a0a6;
+  text-align: center;
+  text-decoration: none;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
+.cb .stwo .rbn > div a:hover {
+  background: #67acd0;
+}
