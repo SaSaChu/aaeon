@@ -45,9 +45,8 @@
 .cb .stwo {
   width: 100%;
   height: 100%;
-  margin-left: 10px;
+  margin: 0 0 10px 10px;
   background-color: #f7f1f2;
-  border-bottom: 5px solid white;
   *zoom: 1;
 }
 .cb .stwo:after {
@@ -134,4 +133,118 @@
 }
 .cb .stwo .rbn > div a:hover {
   background: #67acd0;
+}
+.cb .stwo .rbn > div a:before {
+  display: inline-block;
+  margin-right: 10px;
+}
+.cb .sthree {
+  width: calc(100% / 2);
+  float: left;
+  min-height: 265px;
+  max-height: 300px;
+  padding: 10px;
+}
+.cb .sthree .imbox {
+  width: 360px;
+  height: 100%;
+  line-height: 160px;
+  text-align: center;
+  border: 1px solid #f1f2f3;
+}
+.cb .sthree .imbox iframe {
+  height: auto;
+  max-width: 100%;
+  padding: 5px;
+  vertical-align: middle;
+}
+.cb .sthree > span {
+  display: inline-block;
+  width: 100%;
+  padding: 5px 0;
+}
+.cb .sthree > span > p {
+  margin: 0;
+  padding: 3px 0;
+  word-wrap: break-word;
+  font-size: 1em;
+  line-height: 1.4em;
+  color: #9fa3a4;
+}
+.cb .sthree > span > p.c {
+  font-weight: bold;
+  color: #22313c;
+}
+.cb .sthree a {
+  display: inline-block;
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  font-size: 1em;
+  font-weight: bold;
+  color: #fff;
+  background: #93a0a6;
+  text-align: center;
+  text-decoration: none;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
+.cb .sthree a:hover {
+  background: #67acd0;
+}
+.cb .sthree a:before {
+  display: inline-block;
+  margin-right: 10px;
+}
+.cb .sfour {
+  float: left;
+  width: calc(100% / 2);
+  height: 100%;
+  padding: 10px;
+}
+.cb .sfour span {
+  display: inline-block;
+  width: 100%;
+  padding: 5px 20px;
+  font-size: 1em;
+  font-weight: bold;
+  color: white;
+  background: #4e5862;
+  border-left: 5px solid #22baf7;
+}
+.cb .sfour > div {
+  display: inline-block;
+  width: calc(100% - 5px);
+  margin: 5px 0 0 5px;
+  padding: 5px 20px;
+  font-size: 1em;
+  font-weight: bold;
+  color: #898f95;
+  background: #eff0f1;
+}
+.cb .sfour > div:before {
+  display: inline-block;
+  margin-right: 10px;
+}
+.cb .sfour > div a {
+  font-size: 1em;
+  font-weight: bold;
+  color: #898f95;
+  text-decoration: none;
+}
+.cb .sfour > div a:hover {
+  color: #22baf7;
+}
+.cb .sfive {
+  float: left;
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  border: 1px solid rgba(255, 0, 0, 0.3);
+}
+.cb .sfive table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid black;
 }

@@ -115,11 +115,7 @@
   color: #949494;
   border-left: 5px solid #949494;
 }
-#container > div .lb a:hover {
-  color: #20bbfd;
-  border-left-color: #20bbfd;
-}
-#container > div .lb a.ac {
+#container > div .lb a:hover, #container > div .lb a.ac {
   color: #20bbfd;
   border-left-color: #20bbfd;
 }
@@ -774,6 +770,10 @@
 #container > div .rb #arrow_box .cb .sone a:hover {
   background: #67acd0;
 }
+#container > div .rb #arrow_box .cb .sone a:before {
+  display: inline-block;
+  margin-right: 10px;
+}
 #container > div .rb .nb {
   width: 100%;
   height: 55px;
@@ -804,9 +804,6 @@
   text-align: center;
   text-decoration: none;
 }
-#container > div .rb .nb .cnb > a:hover {
-  background: #64add0;
-}
-#container > div .rb .nb .cnb > a.na {
+#container > div .rb .nb .cnb > a:hover, #container > div .rb .nb .cnb > a.na {
   background: #64add0;
 }

@@ -1,10 +1,10 @@
 @font-face {
     font-family: 'icomoon';
-    src:    url('fonts/icomoon.eot?big7x3');
-    src:    url('fonts/icomoon.eot?big7x3#iefix') format('embedded-opentype'),
-        url('fonts/icomoon.ttf?big7x3') format('truetype'),
-        url('fonts/icomoon.woff?big7x3') format('woff'),
-        url('fonts/icomoon.svg?big7x3#icomoon') format('svg');
+    src:    url('fonts/icomoon.eot?7fq9k7');
+    src:    url('fonts/icomoon.eot?7fq9k7#iefix') format('embedded-opentype'),
+        url('fonts/icomoon.ttf?7fq9k7') format('truetype'),
+        url('fonts/icomoon.woff?7fq9k7') format('woff'),
+        url('fonts/icomoon.svg?7fq9k7#icomoon') format('svg');
     font-weight: normal;
     font-style: normal;
 }
@@ -36,6 +36,9 @@
 .icon-chevron-thin-up:before {
     content: "\e903";
 }
+.icon-mail:before {
+    content: "\e904";
+}
 .icon-move-down:before {
     content: "\f0a8";
 }
@@ -44,5 +47,11 @@
 }
 .icon-triangle-down:before {
     content: "\f05b";
+}
+.icon-phone:before {
+    content: "\e0cd";
+}
+.icon-phone_android:before {
+    content: "\e324";
 }
 
