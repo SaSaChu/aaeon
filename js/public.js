@@ -4,7 +4,7 @@
  */
 
 $(function () {
-  $('#year_tab').each (function () {
+  $('.year_tab').each (function () {
 
     var $a = $(this).find ('> a');
     var $c = $(this).find ('> div > div');
@@ -22,5 +22,19 @@ $(function () {
         $(this).data ('i', $(this).data ('i') - 1);
       $c.attr ('class', 'p' + $(this).data ('i'));
     }.bind ($(this)));
+  });
+
+  $('.select').each (function () {
+    $(this).find ('> span').append (
+        $('<a />').text ($(this).find ('> div a.a').text ())
+      );
+    $(this).click (function () {
+      $(this).toggleClass ('s');
+    });
+    // var $that = $(this);
+    // $(this).find ('> div a').click (function () {
+
+    //     $that.find ('> span a').text ($(this).text ())
+    // })
   });
 });

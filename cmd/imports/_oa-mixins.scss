@@ -12,6 +12,11 @@
 
 @import "functions/_oa-material";
 
+@mixin icomoon-font ($ff) {
+  @content;
+  font-family: $ff, "Roboto", "微軟正黑體", 'Monaco';
+}
+
 @mixin font-smoothing ($val: antialiased) {
   -moz-osx-font-smoothing: $val;
    -webkit-font-smoothing: $val;

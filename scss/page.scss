@@ -109,7 +109,7 @@ $minhight: 265px;
 
           &:after, &:before {
             right: 100%;
-            top: 20px;
+            // top: 20px;
             border: solid transparent;
             content: " ";
             height: 0;
@@ -128,14 +128,6 @@ $minhight: 265px;
             border-right-color: rgba(231, 231, 231, .5);
             border-width: 9px;
             margin-top: -9px;
-          }
-
-          @for $i from 1 through 50 {
-            &.p#{$i} {
-              &:after, &:before {
-                top: ($i - 1) * 50px + 20px;
-              }
-            }
           }
 
           .tb {
@@ -209,11 +201,100 @@ $minhight: 265px;
             }
           }
 
+          .sb {
+            $h: 50px;
+            height: $h;
+            border-bottom: 1px solid rgba(225, 229, 230, 1.00);
+            position: relative;
+
+            &.s {
+              span {
+
+              &:before {
+                @include icomoon-font('icomoon') {
+                  content: "\e903";
+                };
+              }
+              }
+              @for $i from 1 through 50 {
+                &.n#{$i} {
+                  div {
+                    height: $i * $h;
+                    border-bottom: 1px solid rgba(225, 229, 230, 1.00);
+                  }
+                }
+              }
+            }
+
+            span {
+              position: relative;
+              display: inline-block;
+              width: 100%;
+              height: $h;
+              line-height: $h - 2px;
+              z-index: 4;
+              padding: 0 30px;
+
+              &:before {
+                position: absolute;
+                right: 10px;
+                top: 0;
+
+                display: inline-block;
+
+                @include icomoon-font('icomoon') {
+                  content: "\e900";
+                };
+              }
+              a {
+                display: inline-block;
+                border-bottom: 3px solid rgba(16, 185, 252, 1.00);
+                color: rgba(16, 185, 252, 1.00);
+                padding: 0 10px;
+              }
+            }
+            div {
+              position: absolute;
+              left: 0;
+              top: $h;
+
+              display: inline-block;
+              width: 100%;
+              height: 0;
+
+
+              overflow: hidden;
+              z-index: 3;
+              background-color: white;
+              @include transition(height .3s);
+              border: 1px solid rgba(225, 229, 230, 1.00);
+              border-top: 0;
+              border-bottom: 0;
+              a {
+                height: $h;
+                line-height: $h - 2px;
+
+                display: inline-block;
+                width: 100%;
+                padding: 0 35px;
+
+                cursor: pointer;
+                &.a, &:hover {
+                  color: rgba(16, 185, 252, 1.00);
+                }
+                + a {
+                  border-top: 1px solid rgba(225, 229, 230, 1.00);
+                }
+              }
+            }
+          }
+
           .cb {
             display: inline-block;
             width: 100%;
             height: 100%;
             padding: 10px;
+            z-index: 2;
 
             @include clearfix();
 
@@ -333,3 +414,12 @@ $minhight: 265px;
 
     }
   }
+
+
+@for $i from 1 through 200 {
+  #arrow_box.p#{$i} {
+    &:after, &:before {
+      top: $i * 5px;
+    }
+  }
+}
