@@ -4,6 +4,21 @@
  */
 
 $(function () {
+
+  if ($(window).width () < 960) {
+    $('.lb').click (function () {
+      if (!$(this).hasClass ('s')) {
+        $(this).addClass ('s');
+        return false;
+      }
+    });
+
+    $('.stwo').click (function () {
+      $(this).toggleClass ('s').siblings ().removeClass ('s');
+    });
+  }
+
+
   $('.year_tab').each (function () {
 
     var $a = $(this).find ('> a');

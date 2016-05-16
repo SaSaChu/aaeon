@@ -45,7 +45,7 @@
  */
 @font-face {
   font-family: "icomoon";
-  src: url('/aaeon/font/icomoon/icomoon.eot?1463131396') format('embedded-opentype'), url('/aaeon/font/icomoon/icomoon.woff?1463131396') format('woff'), url('/aaeon/font/icomoon/icomoon.ttf?1463131396') format('truetype'), url('/aaeon/font/icomoon/icomoon.svg?1463131396') format('svg');
+  src: url('/aaeon/font/icomoon/icomoon.eot?1463323298') format('embedded-opentype'), url('/aaeon/font/icomoon/icomoon.woff?1463323298') format('woff'), url('/aaeon/font/icomoon/icomoon.ttf?1463323298') format('truetype'), url('/aaeon/font/icomoon/icomoon.svg?1463323298') format('svg');
 }
 [class^="icon-"], [class*=" icon-"] {
   font-family: 'icomoon', "Roboto", "微軟正黑體", 'Monaco';
@@ -98,6 +98,10 @@
   content: "\e0cd";
 }
 
+.icon-list:before {
+  content: "\e896";
+}
+
 .icon-phone_android:before {
   content: "\e324";
 }
@@ -122,383 +126,771 @@
   background-color: #96c8ff;
 }
 
-html {
-  height: 100%;
-}
-html body {
-  margin: 0;
-  width: 100%;
-  height: 100%;
-  font-size: medium;
-  font-family: "Roboto", "微軟正黑體", Monaco;
-  color: gray;
-  position: relative;
-  padding: 0;
-  background: #000 url(../img/bg.png) center center fixed no-repeat;
-  -moz-background-size: cover;
-  background-size: cover;
-  -moz-osx-font-smoothing: antialiased;
-  -webkit-font-smoothing: antialiased;
-  -moz-font-smoothing: antialiased;
-  -ms-font-smoothing: antialiased;
-  -o-font-smoothing: antialiased;
-}
-html header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 210px;
-  background: url(../img/topbg.png) repeat-x;
-  z-index: 999;
-}
-html header > div {
-  margin: 0 auto;
-  width: 1000px;
-  height: 100%;
-}
-html header > div #top {
-  height: 35px;
-  background-color: #40474e;
-  *zoom: 1;
-}
-html header > div #top:after {
-  display: table;
-  content: "";
-  line-height: 0;
-  clear: both;
-}
-html header > div #top > div {
-  float: right;
-  display: inline-block;
-  height: 100%;
-}
-html header > div #top .search {
-  padding-top: 5px;
-  *zoom: 1;
-}
-html header > div #top .search:after {
-  display: table;
-  content: "";
-  line-height: 0;
-  clear: both;
-}
-html header > div #top .search input, html header > div #top .search label {
-  float: left;
-  position: relative;
-  display: inline-block;
-}
-html header > div #top .search label {
-  float: right;
-}
-html header > div #top .search input {
-  width: calc(100% - 25px);
-}
-html header > div #top .search label {
-  width: 25px;
-}
-html header > div #top .search input {
-  background-color: #40474e;
-  border-width: 0;
-  height: 80%;
-  font-size: 16px;
-  color: #20bbfc;
-}
-html header > div #top .search input:focus {
-  outline: 0;
-}
-html header > div #top .search label {
-  margin-top: 4px;
-  text-align: center;
-  border-left: 1px solid rgba(128, 128, 128, 0.7);
-  cursor: pointer;
-}
-html header > div #top .search label:before {
-  display: inline-block;
-}
-html header > div #top .lang {
-  position: relative;
-  width: 100px;
-  text-align: center;
-}
-html header > div #top .lang span {
-  color: white;
-  display: inline-block;
-  width: 100%;
-  height: 100%;
-  padding-top: 7px;
-  color: #20bbfc;
-}
-html header > div #top .lang > div {
-  display: none;
-}
-html header > div #top .lang:hover > div {
-  position: absolute;
-  top: 35px;
-  left: 0;
-  display: inline-block;
-  width: 100%;
-  z-index: 3;
-  background-color: #545c64;
-}
-html header > div #top .lang:hover > div a {
-  display: inline-block;
-  width: 100%;
-  padding: 10px;
-  color: white;
-  cursor: pointer;
-}
-html header > div #top .lang:hover > div a:hover {
-  background-color: #20bbfc;
-}
-html header > div #middle {
-  height: calc(100% - 35px - 63px);
-  *zoom: 1;
-}
-html header > div #middle:after {
-  display: table;
-  content: "";
-  line-height: 0;
-  clear: both;
-}
-html header > div #middle .l, html header > div #middle .r {
-  float: left;
-  position: relative;
-  display: inline-block;
-}
-html header > div #middle .r {
-  float: right;
-}
-html header > div #middle .l {
-  width: 217px;
-}
-html header > div #middle .r {
-  width: calc(100% - 217px);
-}
-html header > div #middle .r, html header > div #middle .l {
-  height: 100%;
-}
-html header > div #middle .l {
-  padding-top: 25px;
-}
-html header > div #middle .l img {
-  height: auto;
-  max-width: 100%;
-}
-html header > div nav {
-  height: 63px;
-  background-color: #40474e;
-  *zoom: 1;
-}
-html header > div nav:after {
-  display: table;
-  content: "";
-  line-height: 0;
-  clear: both;
-}
-html header > div nav > div {
-  float: left;
-  position: relative;
-  display: inline-block;
-  width: calc(100% / 4);
-  height: 100%;
-  text-align: center;
-}
-html header > div nav > div span {
-  display: inline-block;
-  width: 100%;
-  height: 100%;
-  color: #fff;
-  font-size: 1.2em;
-  font-weight: bold;
-  line-height: 53px;
-  border-bottom: 10px solid #1a98f4;
-}
-html header > div nav > div span.bma {
-  color: #20bbfc;
-  border-bottom: 10px solid #20bbfc;
-}
-html header > div nav > div .list {
-  display: none;
-}
-html header > div nav > div:hover span {
-  color: #1a98f4;
-  border-bottom: 10px solid #1fbbfc;
-}
-html header > div nav > div:hover .list {
-  display: inline-block;
-  width: 100%;
-  position: absolute;
-  left: 0;
-  top: 63px;
-}
-html header > div nav > div:hover .list > a {
-  display: inline-block;
-  width: 100%;
-  padding: 15px;
-  background-color: #fff;
-  border-bottom: 1px solid lightgray;
-  font-size: .9em;
-  font-weight: bold;
-  color: gray;
-  text-decoration: none;
-}
-html header > div nav > div:hover .list > a:hover {
-  color: #20bbfc;
-}
-html header > div nav > div + div span {
-  position: relative;
-}
-html header > div nav > div + div span:before {
-  content: '';
-  position: absolute;
-  left: 0;
-  top: 0;
-  display: inline-block;
-  width: 1px;
-  height: 100%;
-  background-color: #596471;
-}
-html #container {
-  width: 100%;
-  height: 100%;
-  padding-top: 210px;
-}
-html #container > div {
-  margin: 0 auto;
-  width: 1000px;
-  height: 100%;
-  position: relative;
-  z-index: 1;
-}
-html #container > div #strings {
-  position: absolute;
-  bottom: 90px;
-  right: 0;
-}
-html #container > div #strings span {
-  display: block;
-  text-align: right;
-  text-shadow: 2px 2px 3px #434a54;
-  font-size: 3em;
-  color: #fff;
-}
-html footer {
-  position: absolute;
-  bottom: 0px;
-  right: 0px;
-  width: 100%;
-  height: 70px;
-  background: #383e45;
-  z-index: 2;
-}
-html footer > div {
-  margin: 0 auto;
-  width: 1000px;
-  line-height: 70px;
-  font-size: .9em;
-  color: #fff;
-  *zoom: 1;
-}
-html footer > div:after {
-  display: table;
-  content: "";
-  line-height: 0;
-  clear: both;
-}
-html footer > div #fb, html footer > div #bb {
-  float: left;
-  position: relative;
-  display: inline-block;
-}
-html footer > div #bb {
-  float: right;
-}
-html footer > div #fb {
-  width: 80%;
-}
-html footer > div #bb {
-  width: calc(100% - 80%);
-}
-html footer > div #fb {
-  height: 70px;
-  float: left;
-  *zoom: 1;
-}
-html footer > div #fb:after {
-  display: table;
-  content: "";
-  line-height: 0;
-  clear: both;
-}
-html footer > div #fb #cobetype, html footer > div #fb #cobemenu {
-  float: left;
-  position: relative;
-  display: inline-block;
-}
-html footer > div #fb #cobemenu {
-  float: right;
-}
-html footer > div #fb #cobetype {
-  width: 62%;
-}
-html footer > div #fb #cobemenu {
-  width: calc(100% - 62%);
-}
-html footer > div #fb #cobetype {
-  float: left;
-}
-html footer > div #fb #cobemenu {
-  float: left;
-}
-html footer > div #fb #cobemenu > a {
-  color: #fff;
-  text-decoration: none;
-}
-html footer > div #fb #cobemenu > a:hover {
-  color: #1b98f5;
-  text-decoration: underline;
-}
-html footer > div #bb {
-  height: 70px;
-  float: left;
-}
-html footer > div #bb > a {
-  display: block;
-  width: 100%;
-  height: 100%;
-  color: #fff;
-  text-align: center;
-  font-weight: bold;
-  text-decoration: none;
-  text-shadow: 1px 1px 2px #434a54;
-  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzE3ODljNiIvPjxzdG9wIG9mZnNldD0iNTAlIiBzdG9wLWNvbG9yPSIjMTc4OWM2Ii8+PHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjMjNhNGU3Ii8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNncmFkKSIgLz48L3N2Zz4g');
-  background-size: 100%;
-  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #1789c6), color-stop(50%, #1789c6), color-stop(100%, #23a4e7));
-  background-image: -moz-linear-gradient(#1789c6 0%, #1789c6 50%, #23a4e7 100%);
-  background-image: -webkit-linear-gradient(#1789c6 0%, #1789c6 50%, #23a4e7 100%);
-  background-image: linear-gradient(#1789c6 0%, #1789c6 50%, #23a4e7 100%);
-}
-html footer > div #bb > a:hover {
-  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzIzYTRlNyIvPjxzdG9wIG9mZnNldD0iNTAlIiBzdG9wLWNvbG9yPSIjMjNhNGU3Ii8+PHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjMTc4OWM2Ii8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNncmFkKSIgLz48L3N2Zz4g');
-  background-size: 100%;
-  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #23a4e7), color-stop(50%, #23a4e7), color-stop(100%, #1789c6));
-  background-image: -moz-linear-gradient(#23a4e7 0%, #23a4e7 50%, #1789c6 100%);
-  background-image: -webkit-linear-gradient(#23a4e7 0%, #23a4e7 50%, #1789c6 100%);
-  background-image: linear-gradient(#23a4e7 0%, #23a4e7 50%, #1789c6 100%);
-}
+@media screen and (min-width: 0px) and (max-width: 960px) {
+  html {
+    height: 100%;
+  }
+  html body {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    font-size: medium;
+    font-family: "Roboto", "微軟正黑體", Monaco;
+    color: gray;
+    position: relative;
+    padding: 0;
+    background: #000 url(../img/bg.png) center center fixed no-repeat;
+    -moz-background-size: cover;
+    background-size: cover;
+    -moz-osx-font-smoothing: antialiased;
+    -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;
+    -ms-font-smoothing: antialiased;
+    -o-font-smoothing: antialiased;
+  }
+  html header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 210px;
+    background: url(../img/topbg.png) repeat-x;
+    z-index: 999;
+  }
+  html header > div {
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+  }
+  html header > div #top {
+    height: 35px;
+    background-color: #40474e;
+    *zoom: 1;
+  }
+  html header > div #top:after {
+    display: table;
+    content: "";
+    line-height: 0;
+    clear: both;
+  }
+  html header > div #top > div {
+    float: right;
+    display: inline-block;
+    height: 100%;
+  }
+  html header > div #top .search {
+    padding-top: 5px;
+    *zoom: 1;
+  }
+  html header > div #top .search:after {
+    display: table;
+    content: "";
+    line-height: 0;
+    clear: both;
+  }
+  html header > div #top .search input, html header > div #top .search label {
+    float: left;
+    position: relative;
+    display: inline-block;
+  }
+  html header > div #top .search label {
+    float: right;
+  }
+  html header > div #top .search input {
+    width: calc(100% - 25px);
+  }
+  html header > div #top .search label {
+    width: 25px;
+  }
+  html header > div #top .search input {
+    background-color: #40474e;
+    border-width: 0;
+    height: 80%;
+    font-size: 16px;
+    color: #20bbfc;
+  }
+  html header > div #top .search input:focus {
+    outline: 0;
+  }
+  html header > div #top .search label {
+    margin-top: 4px;
+    text-align: center;
+    border-left: 1px solid rgba(128, 128, 128, 0.7);
+    cursor: pointer;
+  }
+  html header > div #top .search label:before {
+    display: inline-block;
+  }
+  html header > div #top .lang {
+    position: relative;
+    width: 100px;
+    text-align: center;
+  }
+  html header > div #top .lang span {
+    color: white;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    padding-top: 7px;
+    color: #20bbfc;
+  }
+  html header > div #top .lang > div {
+    display: none;
+  }
+  html header > div #top .lang:hover > div {
+    position: absolute;
+    top: 35px;
+    left: 0;
+    display: inline-block;
+    width: 100%;
+    z-index: 3;
+    background-color: #545c64;
+  }
+  html header > div #top .lang:hover > div a {
+    display: inline-block;
+    width: 100%;
+    padding: 10px;
+    color: white;
+    cursor: pointer;
+  }
+  html header > div #top .lang:hover > div a:hover {
+    background-color: #20bbfc;
+  }
+  html header > div #middle {
+    height: calc(100% - 35px - 63px);
+    *zoom: 1;
+  }
+  html header > div #middle:after {
+    display: table;
+    content: "";
+    line-height: 0;
+    clear: both;
+  }
+  html header > div #middle .l, html header > div #middle .r {
+    float: left;
+    position: relative;
+    display: inline-block;
+  }
+  html header > div #middle .r {
+    float: right;
+  }
+  html header > div #middle .l {
+    width: 217px;
+  }
+  html header > div #middle .r {
+    width: calc(100% - 217px);
+  }
+  html header > div #middle .r, html header > div #middle .l {
+    height: 100%;
+  }
+  html header > div #middle .l {
+    padding-top: 25px;
+  }
+  html header > div #middle .l img {
+    height: auto;
+    max-width: 100%;
+  }
+  html header > div nav {
+    height: 63px;
+    background-color: #40474e;
+    *zoom: 1;
+  }
+  html header > div nav:after {
+    display: table;
+    content: "";
+    line-height: 0;
+    clear: both;
+  }
+  html header > div nav > div {
+    float: left;
+    position: relative;
+    display: inline-block;
+    width: calc(100% / 4);
+    height: 100%;
+    text-align: center;
+  }
+  html header > div nav > div span {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    font-size: 1.2em;
+    font-weight: bold;
+    line-height: 53px;
+    border-bottom: 10px solid #1a98f4;
+  }
+  html header > div nav > div span.bma {
+    color: #20bbfc;
+    border-bottom: 10px solid #20bbfc;
+  }
+  html header > div nav > div .list {
+    display: none;
+  }
+  html header > div nav > div:hover span {
+    color: #1a98f4;
+    border-bottom: 10px solid #1fbbfc;
+  }
+  html header > div nav > div:hover .list {
+    display: inline-block;
+    width: 200%;
+    position: absolute;
+    left: 0;
+    top: 63px;
+  }
+  html header > div nav > div:hover .list > a {
+    display: inline-block;
+    width: 100%;
+    padding: 15px;
+    background-color: #fff;
+    border-bottom: 1px solid lightgray;
+    font-size: .9em;
+    font-weight: bold;
+    color: gray;
+    text-decoration: none;
+  }
+  html header > div nav > div:hover .list > a:hover {
+    color: #20bbfc;
+  }
+  html header > div nav > div:nth-child(2):hover .list, html header > div nav > div:nth-child(4):hover .list {
+    left: auto;
+    right: 0;
+  }
+  html header > div nav > div + div span {
+    position: relative;
+  }
+  html header > div nav > div + div span:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: inline-block;
+    width: 1px;
+    height: 100%;
+    background-color: #596471;
+  }
+  html #container {
+    width: 100%;
+    height: 100%;
+    padding-top: 210px;
+  }
+  html #container > div {
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 1;
+  }
+  html #container > div #strings {
+    position: absolute;
+    bottom: 90px;
+    right: 0;
+  }
+  html #container > div #strings span {
+    display: block;
+    text-align: right;
+    text-shadow: 2px 2px 3px #434a54;
+    font-size: 3em;
+    color: #fff;
+  }
+  html footer {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    width: 100%;
+    height: 70px;
+    background: #383e45;
+    z-index: 2;
+  }
+  html footer > div {
+    margin: 0 auto;
+    width: 100%;
+    line-height: 70px;
+    font-size: .9em;
+    color: #fff;
+    *zoom: 1;
+  }
+  html footer > div:after {
+    display: table;
+    content: "";
+    line-height: 0;
+    clear: both;
+  }
+  html footer > div #fb, html footer > div #bb {
+    float: left;
+    position: relative;
+    display: inline-block;
+  }
+  html footer > div #bb {
+    float: right;
+  }
+  html footer > div #fb {
+    width: 80%;
+  }
+  html footer > div #bb {
+    width: calc(100% - 80%);
+  }
+  html footer > div #fb {
+    height: 70px;
+    float: left;
+    *zoom: 1;
+  }
+  html footer > div #fb:after {
+    display: table;
+    content: "";
+    line-height: 0;
+    clear: both;
+  }
+  html footer > div #fb #cobetype, html footer > div #fb #cobemenu {
+    float: left;
+    position: relative;
+    display: inline-block;
+  }
+  html footer > div #fb #cobemenu {
+    float: right;
+  }
+  html footer > div #fb #cobetype {
+    width: 62%;
+  }
+  html footer > div #fb #cobemenu {
+    width: calc(100% - 62%);
+  }
+  html footer > div #fb #cobetype {
+    float: left;
+  }
+  html footer > div #fb #cobemenu {
+    float: left;
+  }
+  html footer > div #fb #cobemenu > a {
+    color: #fff;
+    text-decoration: none;
+  }
+  html footer > div #fb #cobemenu > a:hover {
+    color: #1b98f5;
+    text-decoration: underline;
+  }
+  html footer > div #bb {
+    height: 70px;
+    float: left;
+  }
+  html footer > div #bb > a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+    text-decoration: none;
+    text-shadow: 1px 1px 2px #434a54;
+    background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzE3ODljNiIvPjxzdG9wIG9mZnNldD0iNTAlIiBzdG9wLWNvbG9yPSIjMTc4OWM2Ii8+PHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjMjNhNGU3Ii8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNncmFkKSIgLz48L3N2Zz4g');
+    background-size: 100%;
+    background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #1789c6), color-stop(50%, #1789c6), color-stop(100%, #23a4e7));
+    background-image: -moz-linear-gradient(#1789c6 0%, #1789c6 50%, #23a4e7 100%);
+    background-image: -webkit-linear-gradient(#1789c6 0%, #1789c6 50%, #23a4e7 100%);
+    background-image: linear-gradient(#1789c6 0%, #1789c6 50%, #23a4e7 100%);
+  }
+  html footer > div #bb > a:hover {
+    background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzIzYTRlNyIvPjxzdG9wIG9mZnNldD0iNTAlIiBzdG9wLWNvbG9yPSIjMjNhNGU3Ii8+PHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjMTc4OWM2Ii8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNncmFkKSIgLz48L3N2Zz4g');
+    background-size: 100%;
+    background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #23a4e7), color-stop(50%, #23a4e7), color-stop(100%, #1789c6));
+    background-image: -moz-linear-gradient(#23a4e7 0%, #23a4e7 50%, #1789c6 100%);
+    background-image: -webkit-linear-gradient(#23a4e7 0%, #23a4e7 50%, #1789c6 100%);
+    background-image: linear-gradient(#23a4e7 0%, #23a4e7 50%, #1789c6 100%);
+  }
 
-body.layout2 {
-  background: #f7f7f7;
+  body.layout2 {
+    background: #f7f7f7;
+  }
+  body.layout2 header {
+    position: relative;
+    background: url(../img/ctopbg.png) repeat-x;
+  }
+  body.layout2 #container {
+    height: auto;
+    padding-top: 0;
+  }
+  body.layout2 footer {
+    position: relative;
+  }
 }
-body.layout2 header {
-  position: relative;
-  background: url(../img/ctopbg.png) repeat-x;
-}
-body.layout2 #container {
-  height: auto;
-  padding-top: 0;
-}
-body.layout2 footer {
-  position: relative;
+@media screen and (min-width: 961px) {
+  html {
+    height: 100%;
+  }
+  html body {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    font-size: medium;
+    font-family: "Roboto", "微軟正黑體", Monaco;
+    color: gray;
+    position: relative;
+    padding: 0;
+    background: #000 url(../img/bg.png) center center fixed no-repeat;
+    -moz-background-size: cover;
+    background-size: cover;
+    -moz-osx-font-smoothing: antialiased;
+    -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;
+    -ms-font-smoothing: antialiased;
+    -o-font-smoothing: antialiased;
+  }
+  html header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 210px;
+    background: url(../img/topbg.png) repeat-x;
+    z-index: 999;
+  }
+  html header > div {
+    margin: 0 auto;
+    width: 1000px;
+    height: 100%;
+  }
+  html header > div #top {
+    height: 35px;
+    background-color: #40474e;
+    *zoom: 1;
+  }
+  html header > div #top:after {
+    display: table;
+    content: "";
+    line-height: 0;
+    clear: both;
+  }
+  html header > div #top > div {
+    float: right;
+    display: inline-block;
+    height: 100%;
+  }
+  html header > div #top .search {
+    padding-top: 5px;
+    *zoom: 1;
+  }
+  html header > div #top .search:after {
+    display: table;
+    content: "";
+    line-height: 0;
+    clear: both;
+  }
+  html header > div #top .search input, html header > div #top .search label {
+    float: left;
+    position: relative;
+    display: inline-block;
+  }
+  html header > div #top .search label {
+    float: right;
+  }
+  html header > div #top .search input {
+    width: calc(100% - 25px);
+  }
+  html header > div #top .search label {
+    width: 25px;
+  }
+  html header > div #top .search input {
+    background-color: #40474e;
+    border-width: 0;
+    height: 80%;
+    font-size: 16px;
+    color: #20bbfc;
+  }
+  html header > div #top .search input:focus {
+    outline: 0;
+  }
+  html header > div #top .search label {
+    margin-top: 4px;
+    text-align: center;
+    border-left: 1px solid rgba(128, 128, 128, 0.7);
+    cursor: pointer;
+  }
+  html header > div #top .search label:before {
+    display: inline-block;
+  }
+  html header > div #top .lang {
+    position: relative;
+    width: 100px;
+    text-align: center;
+  }
+  html header > div #top .lang span {
+    color: white;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    padding-top: 7px;
+    color: #20bbfc;
+  }
+  html header > div #top .lang > div {
+    display: none;
+  }
+  html header > div #top .lang:hover > div {
+    position: absolute;
+    top: 35px;
+    left: 0;
+    display: inline-block;
+    width: 100%;
+    z-index: 3;
+    background-color: #545c64;
+  }
+  html header > div #top .lang:hover > div a {
+    display: inline-block;
+    width: 100%;
+    padding: 10px;
+    color: white;
+    cursor: pointer;
+  }
+  html header > div #top .lang:hover > div a:hover {
+    background-color: #20bbfc;
+  }
+  html header > div #middle {
+    height: calc(100% - 35px - 63px);
+    *zoom: 1;
+  }
+  html header > div #middle:after {
+    display: table;
+    content: "";
+    line-height: 0;
+    clear: both;
+  }
+  html header > div #middle .l, html header > div #middle .r {
+    float: left;
+    position: relative;
+    display: inline-block;
+  }
+  html header > div #middle .r {
+    float: right;
+  }
+  html header > div #middle .l {
+    width: 217px;
+  }
+  html header > div #middle .r {
+    width: calc(100% - 217px);
+  }
+  html header > div #middle .r, html header > div #middle .l {
+    height: 100%;
+  }
+  html header > div #middle .l {
+    padding-top: 25px;
+  }
+  html header > div #middle .l img {
+    height: auto;
+    max-width: 100%;
+  }
+  html header > div nav {
+    height: 63px;
+    background-color: #40474e;
+    *zoom: 1;
+  }
+  html header > div nav:after {
+    display: table;
+    content: "";
+    line-height: 0;
+    clear: both;
+  }
+  html header > div nav > div {
+    float: left;
+    position: relative;
+    display: inline-block;
+    width: calc(100% / 4);
+    height: 100%;
+    text-align: center;
+  }
+  html header > div nav > div span {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    font-size: 1.2em;
+    font-weight: bold;
+    line-height: 53px;
+    border-bottom: 10px solid #1a98f4;
+  }
+  html header > div nav > div span.bma {
+    color: #20bbfc;
+    border-bottom: 10px solid #20bbfc;
+  }
+  html header > div nav > div .list {
+    display: none;
+  }
+  html header > div nav > div:hover span {
+    color: #1a98f4;
+    border-bottom: 10px solid #1fbbfc;
+  }
+  html header > div nav > div:hover .list {
+    display: inline-block;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 63px;
+  }
+  html header > div nav > div:hover .list > a {
+    display: inline-block;
+    width: 100%;
+    padding: 15px;
+    background-color: #fff;
+    border-bottom: 1px solid lightgray;
+    font-size: .9em;
+    font-weight: bold;
+    color: gray;
+    text-decoration: none;
+  }
+  html header > div nav > div:hover .list > a:hover {
+    color: #20bbfc;
+  }
+  html header > div nav > div + div span {
+    position: relative;
+  }
+  html header > div nav > div + div span:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: inline-block;
+    width: 1px;
+    height: 100%;
+    background-color: #596471;
+  }
+  html #container {
+    width: 100%;
+    height: 100%;
+    padding-top: 210px;
+  }
+  html #container > div {
+    margin: 0 auto;
+    width: 1000px;
+    height: 100%;
+    position: relative;
+    z-index: 1;
+  }
+  html #container > div #strings {
+    position: absolute;
+    bottom: 90px;
+    right: 0;
+  }
+  html #container > div #strings span {
+    display: block;
+    text-align: right;
+    text-shadow: 2px 2px 3px #434a54;
+    font-size: 3em;
+    color: #fff;
+  }
+  html footer {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    width: 100%;
+    height: 70px;
+    background: #383e45;
+    z-index: 2;
+  }
+  html footer > div {
+    margin: 0 auto;
+    width: 1000px;
+    line-height: 70px;
+    font-size: .9em;
+    color: #fff;
+    *zoom: 1;
+  }
+  html footer > div:after {
+    display: table;
+    content: "";
+    line-height: 0;
+    clear: both;
+  }
+  html footer > div #fb, html footer > div #bb {
+    float: left;
+    position: relative;
+    display: inline-block;
+  }
+  html footer > div #bb {
+    float: right;
+  }
+  html footer > div #fb {
+    width: 80%;
+  }
+  html footer > div #bb {
+    width: calc(100% - 80%);
+  }
+  html footer > div #fb {
+    height: 70px;
+    float: left;
+    *zoom: 1;
+  }
+  html footer > div #fb:after {
+    display: table;
+    content: "";
+    line-height: 0;
+    clear: both;
+  }
+  html footer > div #fb #cobetype, html footer > div #fb #cobemenu {
+    float: left;
+    position: relative;
+    display: inline-block;
+  }
+  html footer > div #fb #cobemenu {
+    float: right;
+  }
+  html footer > div #fb #cobetype {
+    width: 62%;
+  }
+  html footer > div #fb #cobemenu {
+    width: calc(100% - 62%);
+  }
+  html footer > div #fb #cobetype {
+    float: left;
+  }
+  html footer > div #fb #cobemenu {
+    float: left;
+  }
+  html footer > div #fb #cobemenu > a {
+    color: #fff;
+    text-decoration: none;
+  }
+  html footer > div #fb #cobemenu > a:hover {
+    color: #1b98f5;
+    text-decoration: underline;
+  }
+  html footer > div #bb {
+    height: 70px;
+    float: left;
+  }
+  html footer > div #bb > a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+    text-decoration: none;
+    text-shadow: 1px 1px 2px #434a54;
+    background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzE3ODljNiIvPjxzdG9wIG9mZnNldD0iNTAlIiBzdG9wLWNvbG9yPSIjMTc4OWM2Ii8+PHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjMjNhNGU3Ii8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNncmFkKSIgLz48L3N2Zz4g');
+    background-size: 100%;
+    background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #1789c6), color-stop(50%, #1789c6), color-stop(100%, #23a4e7));
+    background-image: -moz-linear-gradient(#1789c6 0%, #1789c6 50%, #23a4e7 100%);
+    background-image: -webkit-linear-gradient(#1789c6 0%, #1789c6 50%, #23a4e7 100%);
+    background-image: linear-gradient(#1789c6 0%, #1789c6 50%, #23a4e7 100%);
+  }
+  html footer > div #bb > a:hover {
+    background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzIzYTRlNyIvPjxzdG9wIG9mZnNldD0iNTAlIiBzdG9wLWNvbG9yPSIjMjNhNGU3Ii8+PHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjMTc4OWM2Ii8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNncmFkKSIgLz48L3N2Zz4g');
+    background-size: 100%;
+    background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #23a4e7), color-stop(50%, #23a4e7), color-stop(100%, #1789c6));
+    background-image: -moz-linear-gradient(#23a4e7 0%, #23a4e7 50%, #1789c6 100%);
+    background-image: -webkit-linear-gradient(#23a4e7 0%, #23a4e7 50%, #1789c6 100%);
+    background-image: linear-gradient(#23a4e7 0%, #23a4e7 50%, #1789c6 100%);
+  }
+
+  body.layout2 {
+    background: #f7f7f7;
+  }
+  body.layout2 header {
+    position: relative;
+    background: url(../img/ctopbg.png) repeat-x;
+  }
+  body.layout2 #container {
+    height: auto;
+    padding-top: 0;
+  }
+  body.layout2 footer {
+    position: relative;
+  }
 }
