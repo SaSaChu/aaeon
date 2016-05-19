@@ -315,7 +315,7 @@
         #strings {
           position: absolute;
           bottom: 90px;
-          right: 0;
+          right: 30px;
 
           span {
             display: block;
@@ -349,7 +349,7 @@
         font-size: .9em;
         color: #fff;
 
-        @include split-left(80%, '#fb', '#bb');
+        @include split-left(60%, '#fb', '#bb');
 
         #fb {
           height: $footerheight;
@@ -692,7 +692,7 @@
         #strings {
           position: absolute;
           bottom: 90px;
-          right: 0;
+          right: 0px;
 
           span {
             display: block;
