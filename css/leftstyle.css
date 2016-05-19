@@ -145,14 +145,13 @@
     margin-right: 10px;
   }
   .cb .sthree {
-    width: calc(100% / 2);
+    width: calc(100% / 1);
     float: left;
     min-height: 265px;
     max-height: 300px;
     padding: 10px;
   }
   .cb .sthree .imbox {
-    width: 360px;
     height: 100%;
     line-height: 160px;
     text-align: center;
@@ -205,7 +204,7 @@
   }
   .cb .sfour {
     float: left;
-    width: calc(100% / 2);
+    width: calc(100% / 1);
     height: 100%;
     padding: 10px;
   }

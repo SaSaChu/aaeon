@@ -4,6 +4,18 @@
  */
 
 $(function () {
+  $('.login, .lbox-login .cover, .lbox-login .close').click (function () {
+    $('.lbox-login').toggleClass ('s');
+  });
+  $('.lbox-forget .cover, .lbox-forget .close').click (function () {
+    $('.lbox-forget').toggleClass ('s');
+  });
+
+  $('.forget').click (function () {
+    $('.lbox-login').toggleClass ('s');
+    $('.lbox-forget').toggleClass ('s');
+  });
+
 
   if ($(window).width () < 960) {
     $('.lb').click (function () {

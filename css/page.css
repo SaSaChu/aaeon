@@ -797,9 +797,8 @@
   }
   #container > div .rb #arrow_box .cb .sone {
     float: left;
-    width: calc(100% / 4);
+    width: calc(100% / 2);
     min-height: 265px;
-    max-height: 300px;
     padding: 10px;
   }
   #container > div .rb #arrow_box .cb .sone .imbox {
@@ -856,11 +855,10 @@
   }
   #container > div .rb .nb {
     width: 100%;
-    height: 55px;
+    text-align: center;
   }
   #container > div .rb .nb .cnb {
     display: inline-block;
-    float: right;
     *zoom: 1;
   }
   #container > div .rb .nb .cnb:after {

@@ -294,9 +294,9 @@
 
               .sone {
                 float: left;
-                width: calc(100% / 4);
+                width: calc(100% / 2);
                 min-height: $minhight;
-                max-height: $maxhight;
+                // max-height: $maxhight;
                 padding: 10px;
 
                 .imbox {
@@ -371,11 +371,11 @@
 
           .nb {
             width: 100%;
-            height:55px;
+            text-align: center;
 
             .cnb {
               display: inline-block;
-              float: right;
+
 
               @include clearfix();
 
