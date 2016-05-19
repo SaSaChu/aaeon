@@ -434,6 +434,8 @@
     }
   }
 }
+
+
 @media screen and (min-width: $mediaTabletWidth + 1) {
 
   $bigwidth: 1000px;
@@ -627,6 +629,7 @@
                 top: 63px;
 
                 > a  {
+                  float: left;
                   display: inline-block;
                   width: 100%;
                   padding: 15px;
