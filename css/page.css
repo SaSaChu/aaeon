@@ -869,10 +869,12 @@
   }
   #container > div .rb .nb .cnb > a {
     display: inline-block;
-    padding-top: 5px;
-    margin-left: 10px;
-    width: 30px;
-    height: 30px;
+    padding-top: 3px;
+    margin-left: 5px;
+    width: 25px;
+    height: 25px;
+    float: left;
+    font-size: 14px;
     -webkit-border-radius: 50px;
     -moz-border-radius: 50px;
     border-radius: 50px;
@@ -884,6 +886,11 @@
   }
   #container > div .rb .nb .cnb > a:hover, #container > div .rb .nb .cnb > a.na {
     background: #64add0;
+  }
+  #container > div .rb .nb .cnb > a.nb {
+    width: auto;
+    padding-left: 10px;
+    padding-right: 10px;
   }
 }
 @media screen and (min-width: 961px) {
