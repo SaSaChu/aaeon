@@ -376,15 +376,16 @@
             .cnb {
               display: inline-block;
 
-
               @include clearfix();
 
               > a {
                   display: inline-block;
-                  padding-top: 5px;
-                  margin-left: 10px;
-                  width: 30px;
-                  height: 30px;
+                  padding-top: 3px;
+                  margin-left: 5px;
+                  width: 25px;
+                  height: 25px;
+                  float: left;
+                  font-size: 14px;
 
                   @include border-radius(50px);
 
@@ -397,6 +398,11 @@
 
                   &:hover, &.na {
                     background: rgba(100, 173, 208, 1.00);
+                  }
+                  &.nb {
+                    width: auto;
+                    padding-left: 10px;
+                    padding-right: 10px;
                   }
 
                 }
