@@ -1773,6 +1773,11 @@
   #container > div .rb .nb .cnb > a:hover, #container > div .rb .nb .cnb > a.na {
     background: #64add0;
   }
+  #container > div .rb .nb .cnb > a.nb {
+    width: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
 
   #arrow_box.p1:after, #arrow_box.p1:before {
     top: 5px;

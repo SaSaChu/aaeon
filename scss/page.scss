@@ -825,6 +825,12 @@
                     background: rgba(100, 173, 208, 1.00);
                   }
 
+                  &.nb {
+                   width: auto;
+                   padding-left: 10px;
+                   padding-right: 10px;
+                  }
+
                 }
 
             }
