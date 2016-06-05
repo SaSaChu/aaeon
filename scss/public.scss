@@ -481,6 +481,21 @@
         position: relative;
       }
     }
+    &.layout3 {
+      background: rgba(247, 247, 247, 1.00);
+
+      header {
+        position: relative;
+        background: url(../img/blue_ctopbg.png) repeat-x;
+      }
+      #container {
+        height: auto;
+        padding-top: 0;
+      }
+      footer {
+        position: relative;
+      }
+    }
   }
 }
 
@@ -884,6 +899,21 @@
       header {
         position: relative;
         background: url(../img/ctopbg.png) repeat-x;
+      }
+      #container {
+        height: auto;
+        padding-top: 0;
+      }
+      footer {
+        position: relative;
+      }
+    }
+    &.layout3 {
+      background: rgba(247, 247, 247, 1.00);
+
+      header {
+        position: relative;
+        background: url(../img/blue_ctopbg.png) repeat-x;
       }
       #container {
         height: auto;
