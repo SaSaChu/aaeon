@@ -46,6 +46,14 @@ $minhight: 265px;
       background-color: white;
       overflow: hidden;
       padding: 40px 100px;
+      @media screen and (min-width: 0px) and (max-width: $mediaTabletWidth) {
+        padding: 40px;
+        margin: 10px;
+      }
+      @media screen and (min-width: 0px) and (max-width: #{500px - 1px}) {
+        padding: 20px 15px;
+      }
+
       @include border-radius(2px);
       @include box-shadow(0 0 10px rgba(39, 40, 34, .100));
 
@@ -73,6 +81,9 @@ $minhight: 265px;
       }
       > span {
         line-height: 23px;
+        @media screen and (min-width: 0px) and (max-width: #{500px - 1px}) {
+          font-size: 14px;
+        }
         b {
           color: red;
         }
@@ -102,6 +113,11 @@ $minhight: 265px;
             top: 0;
             display: inline-block;
             padding: 15px;
+            @media screen and (min-width: 0px) and (max-width: #{500px - 1px}) {
+              padding: 15px;
+              padding-left: 0;
+              padding-right: 10px;
+            }
             background-color: rgba(255, 255, 255, 1.00);
             z-index: 2;
           }
@@ -112,16 +128,25 @@ $minhight: 265px;
           }
 
           &.n2 {
-            @include clearfix();
-            > * {
-              width: calc(50% - 5px);
-              display: inline-block;
-
-              &:first-child {
-                float: left;
+            @media screen and (min-width: 0px) and (max-width: $mediaTabletWidth) {
+              > * {
+                &:last-child {
+                  margin-top: 15px;
+                }
               }
-              &:last-child {
-                float: right;
+            }
+            @media screen and (min-width: #{$mediaTabletWidth + 1px}) {
+              @include clearfix();
+              > * {
+                width: calc(50% - 5px);
+                display: inline-block;
+
+                &:first-child {
+                  float: left;
+                }
+                &:last-child {
+                  float: right;
+                }
               }
             }
           }
@@ -132,6 +157,7 @@ $minhight: 265px;
             width: 150px;
             font-size: 14px;
             padding-right: 10px;
+
             &.required {
               &:before {
                 content: "*";
@@ -141,6 +167,11 @@ $minhight: 265px;
                 padding-top: 2px;
                 display: inline-block;
               }
+            }
+            @media screen and (min-width: 0px) and (max-width: #{500px - 1px}) {
+              width: 100%;
+              text-align: left;
+              padding-left: 5px;
             }
           }
 
@@ -161,6 +192,17 @@ $minhight: 265px;
             padding-left: 150px;
             color: rgba(248, 146, 167, 1.00);
             font-size: 13px;
+            @media screen and (min-width: 0px) and (max-width: #{500px - 1px}) {
+              padding-left: 5px;
+              width: 100%;
+            }
+          }
+          input[type='text'], select {
+            @media screen and (min-width: 0px) and (max-width: #{500px - 1px}) {
+              width: calc(100% - 5px) !important;
+              margin-left: 5px;
+              margin-top: 5px;
+            }
           }
           &.nc {
             @include clearfix();
@@ -200,16 +242,66 @@ $minhight: 265px;
                 }
               }
             }
+            @media screen and (min-width: 0px) and (max-width: $mediaTabletWidth) {
+              span {
+                width: 100%;
+                text-align: left;
+                padding-left: 30px;
+                font-size: 16px;
+                br {
+                  display: none;
+                }
+              }
+              div {
+                width: 100%;
+                padding-left: 30px;
+                margin-top: 10px;
+                label {
+                  width: calc(50% - 10px) !important;
+                  margin: 5px !important;
+                  min-width: 250px;
+                }
+              }
+            }
+            @media screen and (min-width: 0px) and (max-width: #{500px - 1px}) {
+              span {
+                padding-left: 5px;
+              }
+              div {
+                padding-left: 5px;
+                label {
+                  width: 100% !important;
+                }
+              }
+            }
           }
           &.nl {
             span {
               width: 250px;
             }
-            input[type='text'] {
-              width: calc(100% - 250px);
-            }
             select {
               width: calc(100% - 250px);
+            }
+            @media screen and (min-width: 0px) and (max-width: $mediaTabletWidth) {
+              span {
+                width: 100%;
+                text-align: left;
+                padding-left: 30px;
+              }
+              select {
+                width: calc(100% - 40px);
+                margin-left: 40px;
+                margin-top: 10px;
+              }
+            }
+            @media screen and (min-width: 0px) and (max-width: #{500px - 1px}) {
+              span {
+                padding-left: 5px;
+              }
+              select {
+                width: calc(100% - 10px);
+                margin-left: 10px;
+              }
             }
           }
         }
