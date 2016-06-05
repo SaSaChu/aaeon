@@ -1,0 +1,237 @@
+/**
+ * @author      OA Wu <comdan66@gmail.com>
+ * @copyright   Copyright (c) 2016 OA Wu Design
+ */
+/**
+ * @author      OA Wu <comdan66@gmail.com>
+ * @copyright   Copyright (c) 2016 OA Wu Design
+ */
+/**
+ * @author      OA Wu <comdan66@gmail.com>
+ * @copyright   Copyright (c) 2016 OA Wu Design
+ */
+/**
+ * @author      OA Wu <comdan66@gmail.com>
+ * @copyright   Copyright (c) 2016 OA Wu Design
+ */
+/**
+ * @author      OA Wu <comdan66@gmail.com>
+ * @copyright   Copyright (c) 2016 OA Wu Design
+ */
+/**
+ * @author      OA Wu <comdan66@gmail.com>
+ * @copyright   Copyright (c) 2016 OA Wu Design
+ */
+/**
+ * @author      OA Wu <comdan66@gmail.com>
+ * @copyright   Copyright (c) 2016 OA Wu Design
+ */
+/**
+ * @author      OA Wu <comdan66@gmail.com>
+ * @copyright   Copyright (c) 2016 OA Wu Design
+ */
+/**
+ * @author      OA Wu <comdan66@gmail.com>
+ * @copyright   Copyright (c) 2016 OA Wu Design
+ */
+/**
+ * @author      OA Wu <comdan66@gmail.com>
+ * @copyright   Copyright (c) 2016 OA Wu Design
+ */
+/**
+ * @author      OA Wu <comdan66@gmail.com>
+ * @copyright   Copyright (c) 2016 OA Wu Design
+ */
+#container > div {
+  margin: 0 auto;
+  width: 1000px;
+  height: 100%;
+  position: relative;
+}
+#container > div .tag {
+  display: block;
+  width: 100%;
+  height: 40px;
+  font-size: .8em;
+  font-weight: bold;
+  line-height: 40px;
+  color: #7b8084;
+  padding-left: 15px;
+}
+#container > div .tag a {
+  color: #7b8084;
+  text-decoration: none;
+}
+#container > div .tag a:hover {
+  color: #1a98f5;
+}
+#container > div .tag .ative {
+  color: #1a98f5;
+}
+#container > div .rb {
+  background-color: white;
+  border: 1px solid #e1e5e6;
+  margin-bottom: 20px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  -moz-box-shadow: 0 0 5px rgba(39, 40, 34, 0.05);
+  -webkit-box-shadow: 0 0 5px rgba(39, 40, 34, 0.05);
+  box-shadow: 0 0 5px rgba(39, 40, 34, 0.05);
+}
+#container > div .rb .top {
+  height: 50px;
+  line-height: 50px;
+  border-bottom: 1px solid #e1e5e6;
+}
+#container > div .rb .top > span {
+  display: inline-block;
+  height: 100%;
+  width: 150px;
+  margin-left: 50px;
+  font-weight: bold;
+  padding-left: 4px;
+  border-bottom: 3px solid #d80305;
+}
+#container > div .rb .center {
+  padding-left: 50px;
+  padding-right: 40px;
+  padding-bottom: 30px;
+}
+#container > div .rb .center .area {
+  display: inline-block;
+  width: 100%;
+  background-color: #f7f1f2;
+  *zoom: 1;
+}
+#container > div .rb .center .area:after {
+  display: table;
+  content: "";
+  line-height: 0;
+  clear: both;
+}
+#container > div .rb .center .area + .area {
+  margin-top: 10px;
+}
+#container > div .rb .center .area .l {
+  float: left;
+  display: inline-block;
+  width: 150px;
+  text-align: center;
+  padding: 10px;
+  padding-top: 20px;
+  color: #1094f5;
+}
+#container > div .rb .center .area .r {
+  float: right;
+  background-color: white;
+  display: inline-block;
+  width: calc(100% - 150px);
+  padding: 10px;
+  *zoom: 1;
+}
+#container > div .rb .center .area .r:after {
+  display: table;
+  content: "";
+  line-height: 0;
+  clear: both;
+}
+#container > div .rb .center .area .r .box {
+  float: left;
+  width: calc(100% / 4 - 10px * 2);
+  overflow: hidden;
+  margin: 10px;
+}
+#container > div .rb .center .area .r .box:nth-child(n + 5) {
+  margin-top: 30px;
+}
+#container > div .rb .center .area .r .box .title {
+  color: #71acc9;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+#container > div .rb .center .area .r .box .img {
+  margin-top: 10px;
+  margin-bottom: 0;
+  display: inline-block;
+  width: 100%;
+  height: 140px;
+  overflow: hidden;
+}
+#container > div .rb .center .area .r .box .img img {
+  width: 100%;
+}
+#container > div .rb .center .area .r .box .name {
+  display: inline-block;
+  width: 100%;
+  margin-top: 10px;
+  font-weight: bold;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+#container > div .rb .center .area .r .box .info {
+  margin-top: 5px;
+  font-size: 14px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+#container > div .rb .center .area .r .box .download {
+  background-color: #67add1;
+  display: inline-block;
+  width: 100%;
+  padding: 7px 10px;
+  margin-top: 5px;
+  color: #feffff;
+  text-align: center;
+  cursor: pointer;
+  -webkit-border-radius: 1px;
+  -moz-border-radius: 1px;
+  border-radius: 1px;
+}
+#container > div .rb .center .area .r .box .download:hover {
+  background-color: #93a0a6;
+}
+#container > div .rb .center .area .r .box .download:before {
+  margin-right: 10px;
+}
+#container > div .nb {
+  width: 100%;
+  height: 55px;
+}
+#container > div .nb .cnb {
+  display: inline-block;
+  float: right;
+  *zoom: 1;
+}
+#container > div .nb .cnb:after {
+  display: table;
+  content: "";
+  line-height: 0;
+  clear: both;
+}
+#container > div .nb .cnb > a {
+  display: inline-block;
+  padding-top: 5px;
+  margin-left: 10px;
+  width: 30px;
+  height: 30px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  border-radius: 50px;
+  background: #cad7de;
+  font-size: 1em;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+}
+#container > div .nb .cnb > a:hover, #container > div .nb .cnb > a.na {
+  background: #64add0;
+}
+#container > div .nb .cnb > a.nb {
+  width: auto;
+  padding-left: 10px;
+  padding-right: 10px;
+}

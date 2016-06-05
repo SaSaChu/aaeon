@@ -1,0 +1,195 @@
+@import "_oa";
+
+
+$bigwidth: 1000px;
+$footerheight: 70px;
+$maxhight: 300px;
+$minhight: 265px;
+
+#container {
+  > div {
+    margin: 0 auto;
+    width: $bigwidth;
+    height: 100%;
+    position: relative;
+
+    .tag {
+      display: block;
+      width: 100%;
+      height: 40px;
+
+      font-size: .8em;
+      font-weight: bold;
+      line-height: 40px;
+      color: rgba(123, 128, 132, 1.00);
+
+      padding-left: 15px;
+
+      a {
+        color: rgba(123, 128, 132, 1.00);
+        text-decoration: none;
+
+        &:hover {
+          color: rgba(26, 152, 245, 1.00);
+        }
+      }
+      .ative {
+        color: rgba(26, 152, 245, 1.00);
+      }
+    }
+
+    .rb{
+      background-color: rgba(255, 255, 255, 1.00);
+      border: 1px solid rgba(225, 229, 230, 1.00);
+      margin-bottom: 20px;
+      @include border-radius(4px);
+      @include box-shadow(0 0 5px rgba(39, 40, 34, .0500));
+      
+      .top {
+        height:50px;
+        line-height: 50px;
+        border-bottom: 1px solid rgba(225, 229, 230, 1.00);
+
+        > span {
+          display: inline-block;
+          height: 100%;
+          width: 150px;
+          margin-left: 50px;
+          font-weight: bold;
+          padding-left: 4px;
+          border-bottom: 3px solid rgba(216, 3, 5, 1.00);
+        }
+      }
+
+      .center {
+        padding-left: 50px;
+        padding-right: 40px;
+        padding-bottom: 30px;
+
+        .area {
+
+          display: inline-block;
+          width: 100%;
+          background-color: rgba(247, 241, 242, 1.00);
+          @include clearfix();
+
+          + .area {
+            margin-top: 10px;
+          }
+          .l {
+            float: left;
+            display: inline-block;
+            width: 150px;
+            text-align: center;
+            padding: 10px;
+            padding-top: 20px;
+            color: rgba(16, 148, 245, 1.00);
+          }
+          .r {
+            float: right;
+            background-color: rgba(255, 255, 255, 1.00);
+            display: inline-block;
+            width: calc(100% - 150px);
+            padding: 10px;
+            @include clearfix();
+
+            .box {
+              float: left;
+              width: calc(100% / 4 - 10px * 2);
+              overflow: hidden;
+              margin: 10px;
+              &:nth-child(n + 5) {
+                margin-top: 30px;
+              }
+
+              .title {
+                color: rgba(113, 172, 201, 1.00);
+                @include overflow-docx3();
+              }
+              .img {
+                margin-top: 10px;
+                margin-bottom: 0;
+                display: inline-block;
+                width: 100%;
+                height: 140px;
+                overflow: hidden;
+                img {
+                  width: 100%;
+                }
+              }
+              .name {
+                display: inline-block;
+                width: 100%;
+                margin-top: 10px;
+                font-weight: bold;
+                @include overflow-docx3();
+              }
+              .info {
+                margin-top: 5px;
+                font-size: 14px;
+                @include overflow-docx3();
+              }
+              .download {
+                background-color: rgba(103, 173, 209, 1.00);
+                display: inline-block;
+                width: 100%;
+                padding: 7px 10px;
+                margin-top: 5px;
+                color: rgba(254, 255, 255, 1.00);
+                text-align: center;
+                cursor: pointer;
+                @include border-radius(1px);
+                &:hover {
+                  background-color: rgba(147, 160, 166, 1.00);
+                }
+                &:before {
+                  margin-right: 10px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .nb {
+      width: 100%;
+      height:55px;
+
+      .cnb {
+        display: inline-block;
+        float: right;
+
+        @include clearfix();
+
+        > a {
+          display: inline-block;
+          padding-top: 5px;
+          margin-left: 10px;
+          width: 30px;
+          height: 30px;
+
+          @include border-radius(50px);
+
+          background: rgba(202, 215, 222, 1.00);
+
+          font-size: 1em;
+          color: white;
+          text-align: center;
+          text-decoration: none;
+
+          &:hover, &.na {
+            background: rgba(100, 173, 208, 1.00);
+          }
+
+          &.nb {
+           width: auto;
+           padding-left: 10px;
+           padding-right: 10px;
+          }
+        }
+      }
+    }
+  }
+}
+
