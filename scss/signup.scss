@@ -1,0 +1,219 @@
+@import "_oa";
+
+$bigwidth: 1000px;
+$footerheight: 70px;
+$maxhight: 300px;
+$minhight: 265px;
+
+#container {
+
+  > div {
+    margin: 0 auto;
+    width: $bigwidth;
+    height: 100%;
+    position: relative;
+
+    z-index: 1;
+
+    .tag {
+      display: block;
+      width: 100%;
+      height: 40px;
+
+      font-size: .8em;
+      font-weight: bold;
+      line-height: 40px;
+      color: rgba(123, 128, 132, 1.00);
+
+      padding-left: 15px;
+
+      a {
+        color: rgba(123, 128, 132, 1.00);
+        text-decoration: none;
+
+        &:hover {
+          color: rgba(26, 152, 245, 1.00);
+        }
+      }
+
+      .ative {
+        color: rgba(26, 152, 245, 1.00);
+      }
+    }
+    form {
+      margin-bottom: 30px;
+      border: 1px solid rgba(39, 40, 34, .1500);
+      background-color: white;
+      overflow: hidden;
+      padding: 40px 100px;
+      @include border-radius(2px);
+      @include box-shadow(0 0 10px rgba(39, 40, 34, .100));
+
+      .btns {
+        margin-top: 40px;
+        text-align: center;
+
+        > div {
+          display: inline-block;
+          margin: 0 auto;
+          @include clearfix();
+
+          button {
+            float: left;
+            &:first-child {
+              @include button('c1');
+            }
+            &:last-child {
+              @include button('c2');
+              margin-left: 10px;
+            }
+            padding: 10px 50px !important;
+          }
+        }
+      }
+      > span {
+        line-height: 23px;
+        b {
+          color: red;
+        }
+      }
+      .area {
+        margin-top: 25px;
+        .title {
+          color: rgba(65, 159, 240, 1.00);
+          position: relative;
+          height: 50px;
+
+          &:before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 50%;
+            display: inline-block;
+            width: 100%;
+            height: 1px;
+            background-color: rgba(65, 159, 240, .700);
+            z-index: 1;
+          }
+          &:after {
+            content: attr(title);
+            position: absolute;
+            left: 0;
+            top: 0;
+            display: inline-block;
+            padding: 15px;
+            background-color: rgba(255, 255, 255, 1.00);
+            z-index: 2;
+          }
+        }
+        .row {
+          + .row {
+            margin-top: 15px;
+          }
+
+          &.n2 {
+            @include clearfix();
+            > * {
+              width: calc(50% - 5px);
+              display: inline-block;
+
+              &:first-child {
+                float: left;
+              }
+              &:last-child {
+                float: right;
+              }
+            }
+          }
+
+          span {
+            display: inline-block;
+            text-align: right;
+            width: 150px;
+            font-size: 14px;
+            padding-right: 10px;
+            &.required {
+              &:before {
+                content: "*";
+                color: rgba(247, 53, 100, 1.00);
+                margin-right: 2px;
+                font-weight: bold;
+                padding-top: 2px;
+                display: inline-block;
+              }
+            }
+          }
+
+          input[type='text'] {
+            @include input;
+            width: calc(100% - 150px);
+          }
+          select {
+            width: calc(100% - 150px);
+            border: 1px solid rgba(39, 40, 34, .25);
+            padding: 5px;
+            font-size: 16px;
+            height: 28px;
+            @include border-radius (2px);
+          }
+          .tip {
+            margin-top: 10px;
+            padding-left: 150px;
+            color: rgba(248, 146, 167, 1.00);
+            font-size: 13px;
+          }
+          &.nc {
+            @include clearfix();
+            
+            span {
+              float: left;
+              width: 250px;
+            }
+            div {
+              float: right;
+              display: inline-block;
+              width: calc(100% - 250px);
+              @include clearfix();
+
+              label {
+                float: left;
+                display: inline-block;
+                width: 50%;
+                @include clearfix();
+                
+                + label {
+                  margin-top: 10px;
+                }
+                input {
+                  float: left;
+                  width: 25px;
+                  padding: 0;
+                  margin: 0;
+                  margin-top: 3px;
+                }
+                p {
+                  float: right;
+                  width: calc(100% - 25px);
+                  margin: 0;
+                  padding: 0;
+                  display: inline-block;
+                }
+              }
+            }
+          }
+          &.nl {
+            span {
+              width: 250px;
+            }
+            input[type='text'] {
+              width: calc(100% - 250px);
+            }
+            select {
+              width: calc(100% - 250px);
+            }
+          }
+        }
+      }
+    }
+  }
+}
