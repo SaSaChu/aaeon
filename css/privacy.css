@@ -1,0 +1,119 @@
+@charset "UTF-8";
+/**
+ * @author      OA Wu <comdan66@gmail.com>
+ * @copyright   Copyright (c) 2016 OA Wu Design
+ */
+/**
+ * @author      OA Wu <comdan66@gmail.com>
+ * @copyright   Copyright (c) 2016 OA Wu Design
+ */
+/**
+ * @author      OA Wu <comdan66@gmail.com>
+ * @copyright   Copyright (c) 2016 OA Wu Design
+ */
+/**
+ * @author      OA Wu <comdan66@gmail.com>
+ * @copyright   Copyright (c) 2016 OA Wu Design
+ */
+/**
+ * @author      OA Wu <comdan66@gmail.com>
+ * @copyright   Copyright (c) 2016 OA Wu Design
+ */
+/**
+ * @author      OA Wu <comdan66@gmail.com>
+ * @copyright   Copyright (c) 2016 OA Wu Design
+ */
+/**
+ * @author      OA Wu <comdan66@gmail.com>
+ * @copyright   Copyright (c) 2016 OA Wu Design
+ */
+/**
+ * @author      OA Wu <comdan66@gmail.com>
+ * @copyright   Copyright (c) 2016 OA Wu Design
+ */
+/**
+ * @author      OA Wu <comdan66@gmail.com>
+ * @copyright   Copyright (c) 2016 OA Wu Design
+ */
+/**
+ * @author      OA Wu <comdan66@gmail.com>
+ * @copyright   Copyright (c) 2016 OA Wu Design
+ */
+/**
+ * @author      OA Wu <comdan66@gmail.com>
+ * @copyright   Copyright (c) 2016 OA Wu Design
+ */
+#container > div {
+  margin: 0 auto;
+  width: 1000px;
+  height: 100%;
+  position: relative;
+  z-index: 1;
+}
+#container > div .tag {
+  display: block;
+  width: 100%;
+  height: 40px;
+  font-size: .8em;
+  font-weight: bold;
+  line-height: 40px;
+  color: #7b8084;
+  padding-left: 15px;
+}
+#container > div .tag a {
+  color: #7b8084;
+  text-decoration: none;
+}
+#container > div .tag a:hover {
+  color: #1a98f5;
+}
+#container > div .tag .ative {
+  color: #1a98f5;
+}
+#container > div article {
+  margin-bottom: 30px;
+  border: 1px solid rgba(39, 40, 34, 0.15);
+  background-color: white;
+  overflow: hidden;
+  padding: 20px 60px;
+  padding-top: 10px;
+  color: #2f363d;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  -moz-box-shadow: 0 0 10px rgba(39, 40, 34, 0.1);
+  -webkit-box-shadow: 0 0 10px rgba(39, 40, 34, 0.1);
+  box-shadow: 0 0 10px rgba(39, 40, 34, 0.1);
+}
+@media screen and (min-width: 0px) and (max-width: 960px) {
+  #container > div article {
+    padding: 40px;
+    margin: 10px;
+  }
+}
+@media screen and (min-width: 0px) and (max-width: 499px) {
+  #container > div article {
+    padding: 20px;
+  }
+}
+#container > div article p {
+  color: rgba(53, 57, 60, 0.8);
+}
+#container > div article p a {
+  color: #3ebed7;
+}
+#container > div article h2 {
+  margin-top: 40px;
+}
+#container > div article h3 {
+  color: #20afd0;
+  font-size: 17px;
+}
+#container > div article h4:before {
+  content: '•';
+  color: #1eb9d9;
+  margin-right: 4px;
+}
+#container > div article h4 + p, #container > div article h4 + p + p {
+  padding-left: 10px;
+}

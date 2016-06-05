@@ -1,0 +1,89 @@
+@import "_oa";
+
+$bigwidth: 1000px;
+$footerheight: 70px;
+$maxhight: 300px;
+$minhight: 265px;
+
+#container {
+
+  > div {
+    margin: 0 auto;
+    width: $bigwidth;
+    height: 100%;
+    position: relative;
+
+    z-index: 1;
+
+    .tag {
+      display: block;
+      width: 100%;
+      height: 40px;
+
+      font-size: .8em;
+      font-weight: bold;
+      line-height: 40px;
+      color: rgba(123, 128, 132, 1.00);
+
+      padding-left: 15px;
+
+      a {
+        color: rgba(123, 128, 132, 1.00);
+        text-decoration: none;
+
+        &:hover {
+          color: rgba(26, 152, 245, 1.00);
+        }
+      }
+
+      .ative {
+        color: rgba(26, 152, 245, 1.00);
+      }
+    }
+    article {
+      margin-bottom: 30px;
+      border: 1px solid rgba(39, 40, 34, .1500);
+      background-color: white;
+      overflow: hidden;
+      padding: 20px 60px;
+      padding-top: 10px;
+      color: rgba(47, 54, 61, 1.00);
+      @media screen and (min-width: 0px) and (max-width: $mediaTabletWidth) {
+        padding: 40px;
+        margin: 10px;
+      }
+      @media screen and (min-width: 0px) and (max-width: #{500px - 1px}) {
+        padding: 20px;
+      }
+
+      @include border-radius(2px);
+      @include box-shadow(0 0 10px rgba(39, 40, 34, .100));
+
+      p {
+        color: rgba(53, 57, 60, .800);
+        a {
+          color: rgba(62, 190, 215, 1.00);
+        }
+      }
+      h2 {
+        margin-top:  40px;
+      }
+      h3 {
+        color: rgba(32, 175, 208, 1.00);
+        font-size: 17px;
+      }
+      h4 {
+        &:before {
+          content: '•';
+          color: rgba(30, 185, 217, 1.00);
+          margin-right: 4px;
+        }
+        + p {
+          &, + p {
+            padding-left: 10px;
+          }
+        }
+      }
+    }
+  }
+}
