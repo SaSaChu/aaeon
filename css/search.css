@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /**
  * @author      OA Wu <comdan66@gmail.com>
  * @copyright   Copyright (c) 2016 OA Wu Design
@@ -79,6 +80,11 @@
   -webkit-box-shadow: 0 0 5px rgba(39, 40, 34, 0.05);
   box-shadow: 0 0 5px rgba(39, 40, 34, 0.05);
 }
+@media screen and (min-width: 0px) and (max-width: 960px) {
+  #container > div .rb {
+    margin: 10px;
+  }
+}
 #container > div .rb .top {
   height: 50px;
   line-height: 50px;
@@ -93,10 +99,23 @@
   padding-left: 4px;
   border-bottom: 3px solid #d80305;
 }
+@media screen and (min-width: 0px) and (max-width: 700px) {
+  #container > div .rb .top > span {
+    margin-left: 0;
+  }
+}
 #container > div .rb .center {
   padding-left: 50px;
   padding-right: 40px;
   padding-bottom: 30px;
+}
+@media screen and (min-width: 0px) and (max-width: 700px) {
+  #container > div .rb .center {
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+    padding: 10px;
+  }
 }
 #container > div .rb .center .area {
   display: inline-block;
@@ -122,6 +141,31 @@
   padding-top: 20px;
   color: #1094f5;
 }
+@media screen and (min-width: 0px) and (max-width: 700px) {
+  #container > div .rb .center .area .l {
+    padding: 15px;
+    float: none;
+    width: 100%;
+    color: gray;
+    text-align: left;
+    position: relative;
+  }
+  #container > div .rb .center .area .l:before {
+    position: absolute;
+    right: 10px;
+    top: 15px;
+    display: inline-block;
+    content: "\e903";
+    font-family: "icomoon", "Roboto", "微軟正黑體", "Monaco";
+  }
+  #container > div .rb .center .area .l.show:before {
+    content: "\e900";
+    font-family: "icomoon", "Roboto", "微軟正黑體", "Monaco";
+  }
+  #container > div .rb .center .area .l.show ~ .r {
+    display: inline-block;
+  }
+}
 #container > div .rb .center .area .r {
   float: right;
   background-color: white;
@@ -136,6 +180,14 @@
   line-height: 0;
   clear: both;
 }
+@media screen and (min-width: 0px) and (max-width: 700px) {
+  #container > div .rb .center .area .r {
+    float: none;
+    width: 100%;
+    display: none;
+    padding: 0;
+  }
+}
 #container > div .rb .center .area .r .box {
   float: left;
   width: calc(100% / 4 - 10px * 2);
@@ -144,6 +196,22 @@
 }
 #container > div .rb .center .area .r .box:nth-child(n + 5) {
   margin-top: 30px;
+}
+@media screen and (min-width: 0px) and (max-width: 960px) {
+  #container > div .rb .center .area .r .box {
+    width: calc(100% / 2 - 10px * 2);
+  }
+  #container > div .rb .center .area .r .box:nth-child(n + 3) {
+    margin-top: 20px;
+  }
+}
+@media screen and (min-width: 0px) and (max-width: 400px) {
+  #container > div .rb .center .area .r .box {
+    width: calc(100% / 1 - 10px * 2);
+  }
+  #container > div .rb .center .area .r .box + .box {
+    margin-top: 20px;
+  }
 }
 #container > div .rb .center .area .r .box .title {
   color: #71acc9;
@@ -200,6 +268,7 @@
 #container > div .nb {
   width: 100%;
   height: 55px;
+  padding-right: 10px;
 }
 #container > div .nb .cnb {
   display: inline-block;
@@ -234,4 +303,49 @@
   width: auto;
   padding-left: 10px;
   padding-right: 10px;
+}
+@media screen and (min-width: 0px) and (max-width: 960px) {
+  #container > div .nb {
+    display: inline-block;
+    padding-top: 10px;
+    width: 100%;
+    text-align: center;
+  }
+  #container > div .nb .cnb {
+    display: inline-block;
+    margin: 0 auto;
+    float: none;
+    *zoom: 1;
+  }
+  #container > div .nb .cnb:after {
+    display: table;
+    content: "";
+    line-height: 0;
+    clear: both;
+  }
+  #container > div .nb .cnb > a {
+    display: inline-block;
+    padding-top: 3px;
+    margin-left: 5px;
+    width: 25px;
+    height: 25px;
+    float: left;
+    font-size: 14px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    border-radius: 50px;
+    background: #cad7de;
+    font-size: 1em;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+  }
+  #container > div .nb .cnb > a:hover, #container > div .nb .cnb > a.na {
+    background: #64add0;
+  }
+  #container > div .nb .cnb > a.nb {
+    width: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
 }

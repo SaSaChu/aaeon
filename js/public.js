@@ -52,5 +52,13 @@ $(function () {
     //     $that.find ('> span a').text ($(this).text ())
     // })
   });
+  $('.search .l').click (function () {
+    if ($(this).hasClass ('show')) {
+      $(this).removeClass ('show');
+      return false;
+    }
+    $('.search .l').removeClass ('show');
+    $(this).addClass ('show');
+  });
   $('._i').imgLiquid ({verticalAlign: 'center'});
 });
