@@ -1,6 +1,6 @@
 @import "_oa";
 
-.login-box {
+.box {
   position: fixed;
   left: 0;
   top: 0;
@@ -69,11 +69,13 @@
       .tip {
         margin-top: 10px;
         font-size: 14px;
-        color: rgba(253, 94, 106, 1.00);
         text-align: left;
         display: none;
         &.show {
           display: inline-block;
+        }
+        &.error {
+          color: rgba(253, 94, 106, 1.00);
         }
       }
       > input {
@@ -125,9 +127,10 @@
         width: 100%;
         margin-bottom: 10px;
       }
-      button {
+      a {
         @include button('c3');
-        width: 100%;
+        display: inline-block;
+        width: 100% !important;
       }
     }
   }

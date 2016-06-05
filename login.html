@@ -151,8 +151,7 @@
     </footer>
 
 <!-- Login Module Start -->
-
-  <div class='login-box' id='login-box'>
+  <div class='box' id='login-box'>
     <div class='cover'></div>
     <div class='panel'>
       <div class='content'>
@@ -160,7 +159,7 @@
           <span>Log In</span>
         </div>
 
-        <div class='tip show'>✖ Your User ID or Password is not vaild！</div>
+        <div class='tip error'>✖ Your User ID or Password is not vaild！</div>
 
         <input type='text' name='account' placeholder='User ID' />
         <input type='password' name='password' placeholder='Password' />
@@ -171,18 +170,61 @@
         </label>
 
         <div class='btns'>
-          <button type='button'>OK</button>
-          <button type='button'>Forget ID or Password</button>
+          <button type='button' class='submit'>OK</button>
+          <button type='button' class='forget'>Forget ID or Password</button>
         </div>
       </div>
       <div class='bottom'>
         <span>Join AAEON Partner Zone today！</span>
-        <button type='button'> Sign Up</button>
+        <a href='signup.html'> Sign Up</a>
       </div>
     </div>
     <div class='close'></div>
   </div>
 <!-- Login Module End -->
+
+<!-- Forget Module Start -->
+  <div class='box' id='forget-box'>
+    <div class='cover'></div>
+    <div class='panel'>
+      <form class='content'>
+        <div class='header'>
+          <span>Forgot Password</span>
+        </div>
+
+        <div class='tip show'>Please input your ID or E-mail</div>
+
+        <input type='email' name='email' placeholder='ID or E-Mail' />
+
+        <div class='btns'>
+          <button type='button' class='submit'>Submit</button>
+          <button type='reset'>Reset</button>
+        </div>
+      </form>
+      <div class='bottom'>
+        <a href='signup.html'> Sign Up</a>
+      </div>
+    </div>
+    <div class='close'></div>
+  </div>
+<!-- Forget Module End -->
+
+<!-- Forget Submit Module Start -->
+  <div class='box' id='forget-submit-box'>
+    <div class='cover'></div>
+    <div class='panel'>
+      <div class='content'>
+        <div class='header'>
+          <span>Forgot Password</span>
+        </div>
+
+        <div class='tip show'>Your password has been sent to your registered E-Mail address.</div>
+
+      </div>
+    </div>
+    <div class='close'></div>
+  </div>
+<!-- Forget Submit Module End -->
 
 
 
