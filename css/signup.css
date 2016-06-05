@@ -431,6 +431,11 @@
 #container > div form .area .row + .row {
   margin-top: 15px;
 }
+#container > div form .area .row p {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+}
 @media screen and (min-width: 0px) and (max-width: 960px) {
   #container > div form .area .row.n2 > *:last-child {
     margin-top: 15px;
@@ -537,7 +542,7 @@
   }
 }
 @media screen and (min-width: 0px) and (max-width: 499px) {
-  #container > div form .area .row input[type='text'], #container > div form .area .row select {
+  #container > div form .area .row input[type='text'], #container > div form .area .row select, #container > div form .area .row p {
     width: calc(100% - 5px) !important;
     margin-left: 5px;
     margin-top: 5px;
@@ -590,9 +595,9 @@
   margin: 0;
   margin-top: 3px;
 }
-#container > div form .area .row.nc div label p {
+#container > div form .area .row.nc div label > p {
   float: right;
-  width: calc(100% - 25px);
+  width: calc(100% - 25px) !important;
   margin: 0;
   padding: 0;
   display: inline-block;
