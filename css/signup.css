@@ -82,6 +82,17 @@
   -webkit-box-shadow: 0 0 10px rgba(39, 40, 34, 0.1);
   box-shadow: 0 0 10px rgba(39, 40, 34, 0.1);
 }
+@media screen and (min-width: 0px) and (max-width: 960px) {
+  #container > div form {
+    padding: 40px;
+    margin: 10px;
+  }
+}
+@media screen and (min-width: 0px) and (max-width: 499px) {
+  #container > div form {
+    padding: 20px 15px;
+  }
+}
 #container > div form .btns {
   margin-top: 40px;
   text-align: center;
@@ -373,6 +384,11 @@
 #container > div form > span {
   line-height: 23px;
 }
+@media screen and (min-width: 0px) and (max-width: 499px) {
+  #container > div form > span {
+    font-size: 14px;
+  }
+}
 #container > div form > span b {
   color: red;
 }
@@ -405,27 +421,41 @@
   background-color: white;
   z-index: 2;
 }
+@media screen and (min-width: 0px) and (max-width: 499px) {
+  #container > div form .area .title:after {
+    padding: 15px;
+    padding-left: 0;
+    padding-right: 10px;
+  }
+}
 #container > div form .area .row + .row {
   margin-top: 15px;
 }
-#container > div form .area .row.n2 {
-  *zoom: 1;
+@media screen and (min-width: 0px) and (max-width: 960px) {
+  #container > div form .area .row.n2 > *:last-child {
+    margin-top: 15px;
+  }
 }
-#container > div form .area .row.n2:after {
-  display: table;
-  content: "";
-  line-height: 0;
-  clear: both;
-}
-#container > div form .area .row.n2 > * {
-  width: calc(50% - 5px);
-  display: inline-block;
-}
-#container > div form .area .row.n2 > *:first-child {
-  float: left;
-}
-#container > div form .area .row.n2 > *:last-child {
-  float: right;
+@media screen and (min-width: 961px) {
+  #container > div form .area .row.n2 {
+    *zoom: 1;
+  }
+  #container > div form .area .row.n2:after {
+    display: table;
+    content: "";
+    line-height: 0;
+    clear: both;
+  }
+  #container > div form .area .row.n2 > * {
+    width: calc(50% - 5px);
+    display: inline-block;
+  }
+  #container > div form .area .row.n2 > *:first-child {
+    float: left;
+  }
+  #container > div form .area .row.n2 > *:last-child {
+    float: right;
+  }
 }
 #container > div form .area .row span {
   display: inline-block;
@@ -441,6 +471,13 @@
   font-weight: bold;
   padding-top: 2px;
   display: inline-block;
+}
+@media screen and (min-width: 0px) and (max-width: 499px) {
+  #container > div form .area .row span {
+    width: 100%;
+    text-align: left;
+    padding-left: 5px;
+  }
 }
 #container > div form .area .row input[type='text'] {
   width: 250px;
@@ -492,6 +529,19 @@
   padding-left: 150px;
   color: #f892a7;
   font-size: 13px;
+}
+@media screen and (min-width: 0px) and (max-width: 499px) {
+  #container > div form .area .row .tip {
+    padding-left: 5px;
+    width: 100%;
+  }
+}
+@media screen and (min-width: 0px) and (max-width: 499px) {
+  #container > div form .area .row input[type='text'], #container > div form .area .row select {
+    width: calc(100% - 5px) !important;
+    margin-left: 5px;
+    margin-top: 5px;
+  }
 }
 #container > div form .area .row.nc {
   *zoom: 1;
@@ -547,12 +597,62 @@
   padding: 0;
   display: inline-block;
 }
+@media screen and (min-width: 0px) and (max-width: 960px) {
+  #container > div form .area .row.nc span {
+    width: 100%;
+    text-align: left;
+    padding-left: 30px;
+    font-size: 16px;
+  }
+  #container > div form .area .row.nc span br {
+    display: none;
+  }
+  #container > div form .area .row.nc div {
+    width: 100%;
+    padding-left: 30px;
+    margin-top: 10px;
+  }
+  #container > div form .area .row.nc div label {
+    width: calc(50% - 10px) !important;
+    margin: 5px !important;
+    min-width: 250px;
+  }
+}
+@media screen and (min-width: 0px) and (max-width: 499px) {
+  #container > div form .area .row.nc span {
+    padding-left: 5px;
+  }
+  #container > div form .area .row.nc div {
+    padding-left: 5px;
+  }
+  #container > div form .area .row.nc div label {
+    width: 100% !important;
+  }
+}
 #container > div form .area .row.nl span {
   width: 250px;
 }
-#container > div form .area .row.nl input[type='text'] {
-  width: calc(100% - 250px);
-}
 #container > div form .area .row.nl select {
   width: calc(100% - 250px);
+}
+@media screen and (min-width: 0px) and (max-width: 960px) {
+  #container > div form .area .row.nl span {
+    width: 100%;
+    text-align: left;
+    padding-left: 30px;
+  }
+  #container > div form .area .row.nl select {
+    width: calc(100% - 40px);
+    margin-left: 40px;
+    margin-top: 10px;
+  }
+}
+@media screen and (min-width: 0px) and (max-width: 499px) {
+  #container > div form .area .row.nl span {
+    padding-left: 5px;
+  }
+  #container > div form .area .row.nl select {
+    width: calc(100% - 10px);
+    margin-left: 10px;
+  }
 }

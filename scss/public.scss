@@ -500,7 +500,7 @@
 }
 
 
-@media screen and (min-width: $mediaTabletWidth + 1) {
+@media screen and (min-width: $mediaTabletWidth + 1px) {
 
   $bigwidth: 1000px;
   $footerheight: 70px;
