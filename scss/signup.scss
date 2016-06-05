@@ -126,6 +126,11 @@ $minhight: 265px;
           + .row {
             margin-top: 15px;
           }
+          p {
+            display: inline-block;
+            margin: 0;
+            padding: 0;
+          }
 
           &.n2 {
             @media screen and (min-width: 0px) and (max-width: $mediaTabletWidth) {
@@ -197,7 +202,7 @@ $minhight: 265px;
               width: 100%;
             }
           }
-          input[type='text'], select {
+          input[type='text'], select, p {
             @media screen and (min-width: 0px) and (max-width: #{500px - 1px}) {
               width: calc(100% - 5px) !important;
               margin-left: 5px;
@@ -233,9 +238,9 @@ $minhight: 265px;
                   margin: 0;
                   margin-top: 3px;
                 }
-                p {
+                > p {
                   float: right;
-                  width: calc(100% - 25px);
+                  width: calc(100% - 25px) !important;
                   margin: 0;
                   padding: 0;
                   display: inline-block;
