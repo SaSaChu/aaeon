@@ -16,9 +16,11 @@
 
     <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
     <link href="css/public.css" rel="stylesheet" type="text/css" />
+    <link href="css/login.css" rel="stylesheet" type="text/css" />
 
     <script src="js/jquery_v1.10.2/jquery-1.10.2.min.js" language="javascript" type="text/javascript" ></script>
     <script src="js/public.js" language="javascript" type="text/javascript" ></script>
+    <script src="js/login.js" language="javascript" type="text/javascript" ></script>
 
   </head>
   <body lang="zh-tw">
@@ -45,7 +47,7 @@
           <div class='l'><img src='img/logo.png'></div>
           <div class='r'>
             <div>
-              <a class='login'>Log In</a>
+              <a class='login' id='login'>Log In</a>
               <a class='icon-login login'></a>
             </div>
           </div>
@@ -147,6 +149,87 @@
         </div>
       </div>
     </footer>
+
+<!-- Login Module Start -->
+  <div class='box' id='login-box'>
+    <div class='cover'></div>
+    <div class='panel'>
+      <div class='content'>
+        <div class='header'>
+          <span>Log In</span>
+        </div>
+
+        <div class='tip error'>✖ Your User ID or Password is not vaild！</div>
+
+        <input type='text' name='account' placeholder='User ID' />
+        <input type='password' name='password' placeholder='Password' />
+
+        <label>
+          <input type='checkbox' name='remember' />
+          Remember Me
+        </label>
+
+        <div class='btns'>
+          <button type='button' class='submit'>OK</button>
+          <button type='button' class='forget'>Forget ID or Password</button>
+        </div>
+      </div>
+      <div class='bottom'>
+        <span>Join AAEON Partner Zone today！</span>
+        <a href='signup.html'> Sign Up</a>
+      </div>
+    </div>
+    <div class='close'></div>
+  </div>
+<!-- Login Module End -->
+
+<!-- Forget Module Start -->
+  <div class='box' id='forget-box'>
+    <div class='cover'></div>
+    <div class='panel'>
+      <form class='content'>
+        <div class='header'>
+          <span>Forgot Password</span>
+        </div>
+
+        <div class='tip show'>Please input your ID or E-mail</div>
+
+        <input type='email' name='email' placeholder='ID or E-Mail' />
+
+        <div class='btns'>
+          <button type='button' class='submit'>Submit</button>
+          <button type='reset'>Reset</button>
+        </div>
+      </form>
+      <div class='bottom'>
+        <a href='signup.html'> Sign Up</a>
+      </div>
+    </div>
+    <div class='close'></div>
+  </div>
+<!-- Forget Module End -->
+
+<!-- Forget Submit Module Start -->
+  <div class='box' id='forget-submit-box'>
+    <div class='cover'></div>
+    <div class='panel'>
+      <div class='content'>
+        <div class='header'>
+          <span>Forgot Password</span>
+        </div>
+
+        <div class='tip show'>Your password has been sent to your registered E-Mail address.</div>
+
+      </div>
+    </div>
+    <div class='close'></div>
+  </div>
+<!-- Forget Submit Module End -->
+
+
+
+
+
 
   </body>
 </html>
