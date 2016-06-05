@@ -16,9 +16,11 @@
 
     <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
     <link href="css/public.css" rel="stylesheet" type="text/css" />
+    <link href="css/login.css" rel="stylesheet" type="text/css" />
 
     <script src="js/jquery_v1.10.2/jquery-1.10.2.min.js" language="javascript" type="text/javascript" ></script>
     <script src="js/public.js" language="javascript" type="text/javascript" ></script>
+    <script src="js/login.js" language="javascript" type="text/javascript" ></script>
 
   </head>
   <body lang="zh-tw">
@@ -45,7 +47,7 @@
           <div class='l'><img src='img/logo.png'></div>
           <div class='r'>
             <div>
-              <a class='login'>Log In</a>
+              <a class='login' id='login'>Log In</a>
               <a class='icon-login login'></a>
             </div>
           </div>
@@ -198,6 +200,47 @@
       </div>
 
     </div>
+
+
+
+<!-- Login Module Start -->
+
+  <div class='login-box' id='login-box'>
+    <div class='cover'></div>
+    <div class='panel'>
+      <div class='content'>
+        <div class='header'>
+          <span>Log In</span>
+        </div>
+
+        <div class='tip show'>✖ Your User ID or Password is not vaild！</div>
+
+        <input type='text' name='account' placeholder='User ID' />
+        <input type='password' name='password' placeholder='Password' />
+
+        <label>
+          <input type='checkbox' name='remember' />
+          Remember Me
+        </label>
+
+        <div class='btns'>
+          <button type='button'>OK</button>
+          <button type='button'>Forget ID or Password</button>
+        </div>
+      </div>
+      <div class='bottom'>
+        <span>Join AAEON Partner Zone today！</span>
+        <button type='button'> Sign Up</button>
+      </div>
+    </div>
+    <div class='close'></div>
+  </div>
+<!-- Login Module End -->
+
+
+
+
+
 
   </body>
 </html>

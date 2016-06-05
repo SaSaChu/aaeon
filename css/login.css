@@ -1,0 +1,617 @@
+/**
+ * @author      OA Wu <comdan66@gmail.com>
+ * @copyright   Copyright (c) 2016 OA Wu Design
+ */
+/**
+ * @author      OA Wu <comdan66@gmail.com>
+ * @copyright   Copyright (c) 2016 OA Wu Design
+ */
+/**
+ * @author      OA Wu <comdan66@gmail.com>
+ * @copyright   Copyright (c) 2016 OA Wu Design
+ */
+/**
+ * @author      OA Wu <comdan66@gmail.com>
+ * @copyright   Copyright (c) 2016 OA Wu Design
+ */
+/**
+ * @author      OA Wu <comdan66@gmail.com>
+ * @copyright   Copyright (c) 2016 OA Wu Design
+ */
+/**
+ * @author      OA Wu <comdan66@gmail.com>
+ * @copyright   Copyright (c) 2016 OA Wu Design
+ */
+/**
+ * @author      OA Wu <comdan66@gmail.com>
+ * @copyright   Copyright (c) 2016 OA Wu Design
+ */
+/**
+ * @author      OA Wu <comdan66@gmail.com>
+ * @copyright   Copyright (c) 2016 OA Wu Design
+ */
+/**
+ * @author      OA Wu <comdan66@gmail.com>
+ * @copyright   Copyright (c) 2016 OA Wu Design
+ */
+/**
+ * @author      OA Wu <comdan66@gmail.com>
+ * @copyright   Copyright (c) 2016 OA Wu Design
+ */
+/**
+ * @author      OA Wu <comdan66@gmail.com>
+ * @copyright   Copyright (c) 2016 OA Wu Design
+ */
+.login-box {
+  position: fixed;
+  left: 0;
+  top: 0;
+  display: none;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  text-align: center;
+}
+.login-box.show {
+  display: inline-block;
+}
+.login-box .cover {
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(39, 40, 34, 0.6);
+  cursor: pointer;
+}
+.login-box .panel {
+  margin: 0 auto;
+  position: relative;
+  display: inline-block;
+  width: 350px;
+  margin-top: 100px;
+  background-color: white;
+  overflow: hidden;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  -moz-box-shadow: 0 0 10px rgba(39, 40, 34, 0.5);
+  -webkit-box-shadow: 0 0 10px rgba(39, 40, 34, 0.5);
+  box-shadow: 0 0 10px rgba(39, 40, 34, 0.5);
+}
+.login-box .panel .content {
+  padding: 15px 20px;
+  background-color: #eeeff0;
+}
+.login-box .panel .content .header {
+  position: relative;
+  padding: 5px 0;
+}
+.login-box .panel .content .header span {
+  position: relative;
+  display: inline-block;
+  margin: 0 auto;
+  background-color: #eeeff0;
+  z-index: 2;
+  padding: 0 10px;
+  font-weight: bold;
+}
+.login-box .panel .content .header:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  display: inline-block;
+  width: 100%;
+  height: 1px;
+  background-color: #c1c7c8;
+  z-index: 1;
+}
+.login-box .panel .content .tip {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #fd5e6a;
+  text-align: left;
+  display: none;
+}
+.login-box .panel .content .tip.show {
+  display: inline-block;
+}
+.login-box .panel .content > input {
+  width: 250px;
+  padding: 5px;
+  border: 1px solid rgba(39, 40, 34, 0.25);
+  font-size: 16px;
+  color: rgba(50, 50, 50, 0.7);
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  margin-top: 20px;
+  width: 100%;
+  font-size: 14px;
+}
+.login-box .panel .content > input[readonly] {
+  background-color: #f0f0f0;
+}
+.login-box .panel .content > input[readonly]:focus {
+  outline: 0;
+  border: 1px solid rgba(39, 40, 34, 0.25);
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+.login-box .panel .content > input:focus {
+  outline: 0;
+  border: 1px solid #66afe9;
+  -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6);
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6);
+}
+.login-box .panel .content > input[type="file"] {
+  font-size: 14px;
+}
+.login-box .panel .content > input + input {
+  margin-top: 10px;
+}
+.login-box .panel .content label {
+  display: inline-block;
+  width: 100%;
+  margin: 0;
+  margin-top: 10px;
+  text-align: left;
+  *zoom: 1;
+}
+.login-box .panel .content label:after {
+  display: table;
+  content: "";
+  line-height: 0;
+  clear: both;
+}
+.login-box .panel .content label input {
+  float: left;
+}
+.login-box .panel .content .btns {
+  margin-top: 10px;
+  *zoom: 1;
+}
+.login-box .panel .content .btns:after {
+  display: table;
+  content: "";
+  line-height: 0;
+  clear: both;
+}
+.login-box .panel .content .btns button {
+  padding: 10px 5px !important;
+  width: calc(50% - 5px);
+  font-size: 10px !important;
+}
+.login-box .panel .content .btns button:first-child {
+  float: left;
+  border: 0 solid transparent;
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 15px;
+  cursor: pointer;
+  text-decoration: none;
+  margin: 0;
+  padding: 7px 15px;
+  font-weight: bolder;
+  -moz-transform: scale(1, 1);
+  -ms-transform: scale(1, 1);
+  -webkit-transform: scale(1, 1);
+  transform: scale(1, 1);
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: inset -1px -1px 2px rgba(0, 0, 0, 0.1), inset 1px 1px 2px rgba(255, 255, 255, 0.1), 0 3px 10px rgba(0, 0, 0, 0.16);
+  -webkit-box-shadow: inset -1px -1px 2px rgba(0, 0, 0, 0.1), inset 1px 1px 2px rgba(255, 255, 255, 0.1), 0 3px 10px rgba(0, 0, 0, 0.16);
+  box-shadow: inset -1px -1px 2px rgba(0, 0, 0, 0.1), inset 1px 1px 2px rgba(255, 255, 255, 0.1), 0 3px 10px rgba(0, 0, 0, 0.16);
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  background-color: #67acd0;
+}
+.login-box .panel .content .btns button:first-child.jelly-effect {
+  -moz-animation: oa-material-button-jelly-effect 0.2s ease-out;
+  -webkit-animation: oa-material-button-jelly-effect 0.2s ease-out;
+  animation: oa-material-button-jelly-effect 0.2s ease-out;
+}
+.login-box .panel .content .btns button:first-child[disabled] {
+  color: rgba(255, 255, 255, 0.75);
+  cursor: not-allowed;
+  text-shadow: none;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+.login-box .panel .content .btns button:first-child[disabled]:hover {
+  color: rgba(255, 255, 255, 0.75);
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  text-shadow: none;
+}
+.login-box .panel .content .btns button:first-child:hover {
+  color: white;
+  -moz-box-shadow: inset -1px -1px 2px rgba(0, 0, 0, 0.2), inset 1px 1px 2px rgba(255, 255, 255, 0.2), 0 3px 10px 2px rgba(0, 0, 0, 0.19);
+  -webkit-box-shadow: inset -1px -1px 2px rgba(0, 0, 0, 0.2), inset 1px 1px 2px rgba(255, 255, 255, 0.2), 0 3px 10px 2px rgba(0, 0, 0, 0.19);
+  box-shadow: inset -1px -1px 2px rgba(0, 0, 0, 0.2), inset 1px 1px 2px rgba(255, 255, 255, 0.2), 0 3px 10px 2px rgba(0, 0, 0, 0.19);
+}
+.login-box .panel .content .btns button:first-child:active {
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: inset 2px 2px 10px rgba(0, 0, 0, 0.225);
+  -webkit-box-shadow: inset 2px 2px 10px rgba(0, 0, 0, 0.225);
+  box-shadow: inset 2px 2px 10px rgba(0, 0, 0, 0.225);
+  -moz-transition: none;
+  -o-transition: none;
+  -webkit-transition: none;
+  transition: none;
+}
+.login-box .panel .content .btns button:first-child:focus {
+  outline: 0;
+}
+.login-box .panel .content .btns button:first-child:hover {
+  background-color: #5da2c6;
+}
+.login-box .panel .content .btns button:first-child[disabled] {
+  background-color: rgba(173, 242, 255, 0.85);
+  color: white;
+}
+@-moz-keyframes oa-material-button-jelly-effect {
+  0% {
+    -moz-transform: scale(1, 1);
+    transform: scale(1, 1);
+  }
+  30% {
+    -moz-transform: scale(1.1, 1.1);
+    transform: scale(1.1, 1.1);
+  }
+  80% {
+    -moz-transform: scale(0.9, 0.9);
+    transform: scale(0.9, 0.9);
+  }
+  100% {
+    -moz-transform: scale(1, 1);
+    transform: scale(1, 1);
+  }
+}
+@-webkit-keyframes oa-material-button-jelly-effect {
+  0% {
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
+  }
+  30% {
+    -webkit-transform: scale(1.1, 1.1);
+    transform: scale(1.1, 1.1);
+  }
+  80% {
+    -webkit-transform: scale(0.9, 0.9);
+    transform: scale(0.9, 0.9);
+  }
+  100% {
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
+  }
+}
+@keyframes oa-material-button-jelly-effect {
+  0% {
+    -moz-transform: scale(1, 1);
+    -ms-transform: scale(1, 1);
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
+  }
+  30% {
+    -moz-transform: scale(1.1, 1.1);
+    -ms-transform: scale(1.1, 1.1);
+    -webkit-transform: scale(1.1, 1.1);
+    transform: scale(1.1, 1.1);
+  }
+  80% {
+    -moz-transform: scale(0.9, 0.9);
+    -ms-transform: scale(0.9, 0.9);
+    -webkit-transform: scale(0.9, 0.9);
+    transform: scale(0.9, 0.9);
+  }
+  100% {
+    -moz-transform: scale(1, 1);
+    -ms-transform: scale(1, 1);
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
+  }
+}
+.login-box .panel .content .btns button:last-child {
+  float: right;
+  border: 0 solid transparent;
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 15px;
+  cursor: pointer;
+  text-decoration: none;
+  margin: 0;
+  padding: 7px 15px;
+  font-weight: bolder;
+  -moz-transform: scale(1, 1);
+  -ms-transform: scale(1, 1);
+  -webkit-transform: scale(1, 1);
+  transform: scale(1, 1);
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: inset -1px -1px 2px rgba(0, 0, 0, 0.1), inset 1px 1px 2px rgba(255, 255, 255, 0.1), 0 3px 10px rgba(0, 0, 0, 0.16);
+  -webkit-box-shadow: inset -1px -1px 2px rgba(0, 0, 0, 0.1), inset 1px 1px 2px rgba(255, 255, 255, 0.1), 0 3px 10px rgba(0, 0, 0, 0.16);
+  box-shadow: inset -1px -1px 2px rgba(0, 0, 0, 0.1), inset 1px 1px 2px rgba(255, 255, 255, 0.1), 0 3px 10px rgba(0, 0, 0, 0.16);
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  background-color: #94a0a6;
+}
+.login-box .panel .content .btns button:last-child.jelly-effect {
+  -moz-animation: oa-material-button-jelly-effect 0.2s ease-out;
+  -webkit-animation: oa-material-button-jelly-effect 0.2s ease-out;
+  animation: oa-material-button-jelly-effect 0.2s ease-out;
+}
+.login-box .panel .content .btns button:last-child[disabled] {
+  color: rgba(255, 255, 255, 0.75);
+  cursor: not-allowed;
+  text-shadow: none;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+.login-box .panel .content .btns button:last-child[disabled]:hover {
+  color: rgba(255, 255, 255, 0.75);
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  text-shadow: none;
+}
+.login-box .panel .content .btns button:last-child:hover {
+  color: white;
+  -moz-box-shadow: inset -1px -1px 2px rgba(0, 0, 0, 0.2), inset 1px 1px 2px rgba(255, 255, 255, 0.2), 0 3px 10px 2px rgba(0, 0, 0, 0.19);
+  -webkit-box-shadow: inset -1px -1px 2px rgba(0, 0, 0, 0.2), inset 1px 1px 2px rgba(255, 255, 255, 0.2), 0 3px 10px 2px rgba(0, 0, 0, 0.19);
+  box-shadow: inset -1px -1px 2px rgba(0, 0, 0, 0.2), inset 1px 1px 2px rgba(255, 255, 255, 0.2), 0 3px 10px 2px rgba(0, 0, 0, 0.19);
+}
+.login-box .panel .content .btns button:last-child:active {
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: inset 2px 2px 10px rgba(0, 0, 0, 0.225);
+  -webkit-box-shadow: inset 2px 2px 10px rgba(0, 0, 0, 0.225);
+  box-shadow: inset 2px 2px 10px rgba(0, 0, 0, 0.225);
+  -moz-transition: none;
+  -o-transition: none;
+  -webkit-transition: none;
+  transition: none;
+}
+.login-box .panel .content .btns button:last-child:focus {
+  outline: 0;
+}
+.login-box .panel .content .btns button:last-child:hover {
+  background-color: #8a969c;
+}
+.login-box .panel .content .btns button:last-child[disabled] {
+  background-color: rgba(218, 230, 236, 0.85);
+  color: white;
+}
+@-moz-keyframes oa-material-button-jelly-effect {
+  0% {
+    -moz-transform: scale(1, 1);
+    transform: scale(1, 1);
+  }
+  30% {
+    -moz-transform: scale(1.1, 1.1);
+    transform: scale(1.1, 1.1);
+  }
+  80% {
+    -moz-transform: scale(0.9, 0.9);
+    transform: scale(0.9, 0.9);
+  }
+  100% {
+    -moz-transform: scale(1, 1);
+    transform: scale(1, 1);
+  }
+}
+@-webkit-keyframes oa-material-button-jelly-effect {
+  0% {
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
+  }
+  30% {
+    -webkit-transform: scale(1.1, 1.1);
+    transform: scale(1.1, 1.1);
+  }
+  80% {
+    -webkit-transform: scale(0.9, 0.9);
+    transform: scale(0.9, 0.9);
+  }
+  100% {
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
+  }
+}
+@keyframes oa-material-button-jelly-effect {
+  0% {
+    -moz-transform: scale(1, 1);
+    -ms-transform: scale(1, 1);
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
+  }
+  30% {
+    -moz-transform: scale(1.1, 1.1);
+    -ms-transform: scale(1.1, 1.1);
+    -webkit-transform: scale(1.1, 1.1);
+    transform: scale(1.1, 1.1);
+  }
+  80% {
+    -moz-transform: scale(0.9, 0.9);
+    -ms-transform: scale(0.9, 0.9);
+    -webkit-transform: scale(0.9, 0.9);
+    transform: scale(0.9, 0.9);
+  }
+  100% {
+    -moz-transform: scale(1, 1);
+    -ms-transform: scale(1, 1);
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
+  }
+}
+.login-box .panel .bottom {
+  border-top: 1px solid #cccdce;
+  padding: 10px 20px;
+}
+.login-box .panel .bottom span {
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 10px;
+}
+.login-box .panel .bottom button {
+  border: 0 solid transparent;
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 15px;
+  cursor: pointer;
+  text-decoration: none;
+  margin: 0;
+  padding: 7px 15px;
+  font-weight: bolder;
+  -moz-transform: scale(1, 1);
+  -ms-transform: scale(1, 1);
+  -webkit-transform: scale(1, 1);
+  transform: scale(1, 1);
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: inset -1px -1px 2px rgba(0, 0, 0, 0.1), inset 1px 1px 2px rgba(255, 255, 255, 0.1), 0 3px 10px rgba(0, 0, 0, 0.16);
+  -webkit-box-shadow: inset -1px -1px 2px rgba(0, 0, 0, 0.1), inset 1px 1px 2px rgba(255, 255, 255, 0.1), 0 3px 10px rgba(0, 0, 0, 0.16);
+  box-shadow: inset -1px -1px 2px rgba(0, 0, 0, 0.1), inset 1px 1px 2px rgba(255, 255, 255, 0.1), 0 3px 10px rgba(0, 0, 0, 0.16);
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  background-color: #5aa6ab;
+  width: 100%;
+}
+.login-box .panel .bottom button.jelly-effect {
+  -moz-animation: oa-material-button-jelly-effect 0.2s ease-out;
+  -webkit-animation: oa-material-button-jelly-effect 0.2s ease-out;
+  animation: oa-material-button-jelly-effect 0.2s ease-out;
+}
+.login-box .panel .bottom button[disabled] {
+  color: rgba(255, 255, 255, 0.75);
+  cursor: not-allowed;
+  text-shadow: none;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+.login-box .panel .bottom button[disabled]:hover {
+  color: rgba(255, 255, 255, 0.75);
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  text-shadow: none;
+}
+.login-box .panel .bottom button:hover {
+  color: white;
+  -moz-box-shadow: inset -1px -1px 2px rgba(0, 0, 0, 0.2), inset 1px 1px 2px rgba(255, 255, 255, 0.2), 0 3px 10px 2px rgba(0, 0, 0, 0.19);
+  -webkit-box-shadow: inset -1px -1px 2px rgba(0, 0, 0, 0.2), inset 1px 1px 2px rgba(255, 255, 255, 0.2), 0 3px 10px 2px rgba(0, 0, 0, 0.19);
+  box-shadow: inset -1px -1px 2px rgba(0, 0, 0, 0.2), inset 1px 1px 2px rgba(255, 255, 255, 0.2), 0 3px 10px 2px rgba(0, 0, 0, 0.19);
+}
+.login-box .panel .bottom button:active {
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: inset 2px 2px 10px rgba(0, 0, 0, 0.225);
+  -webkit-box-shadow: inset 2px 2px 10px rgba(0, 0, 0, 0.225);
+  box-shadow: inset 2px 2px 10px rgba(0, 0, 0, 0.225);
+  -moz-transition: none;
+  -o-transition: none;
+  -webkit-transition: none;
+  transition: none;
+}
+.login-box .panel .bottom button:focus {
+  outline: 0;
+}
+.login-box .panel .bottom button:hover {
+  background-color: #509ca1;
+}
+.login-box .panel .bottom button[disabled] {
+  background-color: rgba(160, 236, 241, 0.85);
+  color: white;
+}
+@-moz-keyframes oa-material-button-jelly-effect {
+  0% {
+    -moz-transform: scale(1, 1);
+    transform: scale(1, 1);
+  }
+  30% {
+    -moz-transform: scale(1.1, 1.1);
+    transform: scale(1.1, 1.1);
+  }
+  80% {
+    -moz-transform: scale(0.9, 0.9);
+    transform: scale(0.9, 0.9);
+  }
+  100% {
+    -moz-transform: scale(1, 1);
+    transform: scale(1, 1);
+  }
+}
+@-webkit-keyframes oa-material-button-jelly-effect {
+  0% {
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
+  }
+  30% {
+    -webkit-transform: scale(1.1, 1.1);
+    transform: scale(1.1, 1.1);
+  }
+  80% {
+    -webkit-transform: scale(0.9, 0.9);
+    transform: scale(0.9, 0.9);
+  }
+  100% {
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
+  }
+}
+@keyframes oa-material-button-jelly-effect {
+  0% {
+    -moz-transform: scale(1, 1);
+    -ms-transform: scale(1, 1);
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
+  }
+  30% {
+    -moz-transform: scale(1.1, 1.1);
+    -ms-transform: scale(1.1, 1.1);
+    -webkit-transform: scale(1.1, 1.1);
+    transform: scale(1.1, 1.1);
+  }
+  80% {
+    -moz-transform: scale(0.9, 0.9);
+    -ms-transform: scale(0.9, 0.9);
+    -webkit-transform: scale(0.9, 0.9);
+    transform: scale(0.9, 0.9);
+  }
+  100% {
+    -moz-transform: scale(1, 1);
+    -ms-transform: scale(1, 1);
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
+  }
+}
+.login-box .close {
+  position: absolute;
+  top: 81px;
+  left: calc(50% + 350px / 2 - 38px / 2);
+  display: inline-block;
+  width: 38px;
+  height: 38px;
+  background: url('/aaeon/img/Xbtn.png');
+  background-position: center;
+  cursor: pointer;
+}
