@@ -513,6 +513,20 @@
   body.layout2 footer {
     position: relative;
   }
+  body.layout3 {
+    background: #f7f7f7;
+  }
+  body.layout3 header {
+    position: relative;
+    background: url(../img/blue_ctopbg.png) repeat-x;
+  }
+  body.layout3 #container {
+    height: auto;
+    padding-top: 0;
+  }
+  body.layout3 footer {
+    position: relative;
+  }
 }
 @media screen and (min-width: 961px) {
   html {
@@ -924,6 +938,20 @@
     padding-top: 0;
   }
   body.layout2 footer {
+    position: relative;
+  }
+  body.layout3 {
+    background: #f7f7f7;
+  }
+  body.layout3 header {
+    position: relative;
+    background: url(../img/blue_ctopbg.png) repeat-x;
+  }
+  body.layout3 #container {
+    height: auto;
+    padding-top: 0;
+  }
+  body.layout3 footer {
     position: relative;
   }
 }
