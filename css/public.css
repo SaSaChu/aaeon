@@ -260,6 +260,7 @@
     padding: 10px;
     color: white;
     cursor: pointer;
+    text-decoration: none;
   }
   html header > div #top .lang:hover > div a:hover {
     background-color: #20bbfc;
@@ -655,6 +656,7 @@
     padding: 10px;
     color: white;
     cursor: pointer;
+    text-decoration: none;
   }
   html header > div #top .lang:hover > div a:hover {
     background-color: #20bbfc;
