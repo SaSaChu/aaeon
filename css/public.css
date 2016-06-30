@@ -45,7 +45,7 @@
  */
 @font-face {
   font-family: "icomoon";
-  src: url('/aaeon/font/icomoon/icomoon.eot?1467290657') format('embedded-opentype'), url('/aaeon/font/icomoon/icomoon.woff?1467290657') format('woff'), url('/aaeon/font/icomoon/icomoon.ttf?1467290657') format('truetype'), url('/aaeon/font/icomoon/icomoon.svg?1467290657') format('svg');
+  src: url('/aaeon/font/icomoon/icomoon.eot?1463655920') format('embedded-opentype'), url('/aaeon/font/icomoon/icomoon.woff?1463655920') format('woff'), url('/aaeon/font/icomoon/icomoon.ttf?1463655920') format('truetype'), url('/aaeon/font/icomoon/icomoon.svg?1463655920') format('svg');
 }
 [class^="icon-"], [class*=" icon-"] {
   font-family: 'icomoon', "Roboto", "微軟正黑體", 'Monaco';
@@ -708,7 +708,7 @@
   html header > div #middle .r > div > * {
     display: inline-block;
     float: right;
-    font-size: 25px;
+    font-size: 20px;
     margin: 5px;
   }
   html header > div #middle .r > div > a {
@@ -746,7 +746,7 @@
     width: 100%;
     height: 100%;
     color: #fff;
-    font-size: 1.2em;
+    font-size: 1em;
     font-weight: bold;
     line-height: 53px;
     border-bottom: 10px solid #1a98f4;
@@ -826,14 +826,14 @@
     bottom: 0px;
     right: 0px;
     width: 100%;
-    height: 70px;
+    height: 50px;
     background: #383e45;
     z-index: 2;
   }
   html footer > div {
     margin: 0 auto;
     width: 1000px;
-    line-height: 70px;
+    line-height: 50px;
     font-size: .9em;
     color: #fff;
     *zoom: 1;
@@ -859,7 +859,7 @@
     width: calc(100% - 80%);
   }
   html footer > div #fb {
-    height: 70px;
+    height: 50px;
     float: left;
     *zoom: 1;
   }
@@ -898,7 +898,7 @@
     text-decoration: underline;
   }
   html footer > div #bb {
-    height: 70px;
+    height: 50px;
     float: left;
   }
   html footer > div #bb > a {
