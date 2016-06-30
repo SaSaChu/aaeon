@@ -925,3 +925,89 @@
     }
   }
 }
+
+#banner {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  @for $i from 0 through 100 {
+    &.n#{$i} {
+      > div:nth-child(2) {
+        > div {
+          a {
+            &:nth-child(#{$i + 1}) {
+              background-color: rgba(32, 187, 252, 1.00);
+            }
+          }
+        }
+      }
+      > div:nth-child(1) {
+        > div {
+      
+          @for $j from 1 through 100 {
+            &:nth-child(#{$j}) {
+              left: calc(100% * #{$j - 1 - $i});
+            }
+          }
+        }
+      }
+    }
+  }
+
+  > div:nth-child(2) {
+    position: absolute;
+    left: 0;
+    bottom: 80px;
+    @media screen and (min-width: 0px) and (max-width: $mediaTabletWidth) {
+      bottom: 100px;
+    }
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    
+    > div {
+      display: inline-block;
+      @include clearfix();
+      > a {
+        float: left;
+        margin: 5px;
+        display: inline-block;
+        width: 12px;
+        height: 12px;
+        background-color: rgba(167, 177, 180, 1.00);
+        cursor: pointer;
+        border: 1px solid rgba(56, 62, 69, .200);
+        @include border-radius(50%);
+
+        &.a, &:hover {
+          background-color: rgba(32, 187, 252, 1.00);
+        }
+      }
+    }
+  }
+  > div:nth-child(1) {
+    display: inline-block;
+    width: 100% * 100;
+    height: 100%;
+
+    > div {
+      position: absolute;
+      left: 0;
+      top: 0;
+      display: inline-block;
+      width: 100%;
+      height: 100%;
+      @include transition(left .3s);
+      
+
+      @for $i from 1 through 100 {
+        &:nth-child(#{$i}) {
+          left: calc(100% * #{$i - 1});
+        }
+      }
+    }
+  }
+}

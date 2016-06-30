@@ -28,13 +28,14 @@ $(function () {
     $c.attr ('class', 'p' + $c.find ('a.a').index ());
 
     $a.first ().click (function () {
-      if ($(this).data ('i') + 1 < $c.find ('a').length)
-        $(this).data ('i', $(this).data ('i') + 1);
-      $c.attr ('class', 'p' + $(this).data ('i'));
-    }.bind ($(this)));
-    $a.last ().click (function () {
       if ($(this).data ('i') > 0)
         $(this).data ('i', $(this).data ('i') - 1);
+      $c.attr ('class', 'p' + $(this).data ('i'));
+    }.bind ($(this)));
+
+    $a.last ().click (function () {
+      if ($(this).data ('i') + 1 < $c.find ('a').length)
+        $(this).data ('i', $(this).data ('i') + 1);
       $c.attr ('class', 'p' + $(this).data ('i'));
     }.bind ($(this)));
   });
@@ -61,4 +62,10 @@ $(function () {
     $(this).addClass ('show');
   });
   $('._i').imgLiquid ({verticalAlign: 'center'});
+  
+  var $banner = $('#banner'),$div = $('<div />'), i = 0, l = $banner.find ('img').map (function () { return $('<a />').appendTo ($div).click (function () { i = $(this).index (); $banner.attr ('class', 'n' + $(this).index ()); }); }).length;
+  $banner.append ($('<div />').append ($div));
+  setInterval (function () {
+    $banner.find ('a').eq (i = ++i % l).click ();
+  }, 6000);
 });
