@@ -189,7 +189,7 @@
               height: 100%;
             }
             .l {
-              padding-top: 25px;
+              padding-top: 10px;
               padding-left: 10px;
 
               img {
@@ -234,7 +234,7 @@
         }
 
         nav {
-          height: 63px;
+          height: 73px;
           background-color: rgba(64, 71, 78, 1.00);
           @include clearfix();
 
@@ -281,7 +281,7 @@
 
                 position: absolute;
                 left: 0;
-                top: 63px;
+                top: 73px;
 
                 > a  {
                   display: inline-block;
@@ -341,7 +341,7 @@
     #container {
       width: 100%;
       height: 100%;
-      padding-top: 210px;
+      padding-top: 180px;
 
       > div {
         margin: 0 auto;
@@ -531,7 +531,7 @@
       left: 0;
 
       width: 100%;
-      height: 210px;
+      height: 180px;
       background: url(../img/topbg.png) repeat-x;
 
       z-index: 999;
@@ -633,7 +633,7 @@
               height: 100%;
             }
             .l {
-              padding-top: 25px;
+              padding-top: 10px;
 
               img {
                 height: auto;
@@ -676,7 +676,7 @@
         }
 
         nav {
-          height: 63px;
+          height: 73px;
           background-color: rgba(64, 71, 78, 1.00);
           @include clearfix();
 
@@ -723,7 +723,7 @@
 
                 position: absolute;
                 left: 0;
-                top: 63px;
+                top: 73px;
 
                 > a  {
                   float: left;
@@ -776,7 +776,7 @@
     #container {
       width: 100%;
       height: 100%;
-      padding-top: 210px;
+      padding-top: 180px;
 
       > div {
         margin: 0 auto;
