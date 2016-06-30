@@ -265,7 +265,7 @@
     background-color: #20bbfc;
   }
   html header > div #middle {
-    height: calc(100% - 35px - 63px);
+    height: calc(100% - 35px - 47px);
     *zoom: 1;
   }
   html header > div #middle:after {
@@ -296,6 +296,7 @@
     padding-left: 10px;
   }
   html header > div #middle .l img {
+    margin-top: 10px;
     height: auto;
     max-width: 100%;
   }
@@ -333,7 +334,7 @@
     color: rgba(26, 152, 244, 0.5);
   }
   html header > div nav {
-    height: 73px;
+    height: 57px;
     background-color: #40474e;
     *zoom: 1;
   }
@@ -377,7 +378,7 @@
     width: 200%;
     position: absolute;
     left: 0;
-    top: 73px;
+    top: 57px;
   }
   html header > div nav > div:hover .list > a {
     display: inline-block;
@@ -659,7 +660,7 @@
     background-color: #20bbfc;
   }
   html header > div #middle {
-    height: calc(100% - 35px - 63px);
+    height: calc(100% - 35px - 47px);
     *zoom: 1;
   }
   html header > div #middle:after {
@@ -689,6 +690,7 @@
     padding-top: 10px;
   }
   html header > div #middle .l img {
+    margin-top: 10px;
     height: auto;
     max-width: 100%;
   }
@@ -723,7 +725,7 @@
     color: rgba(26, 152, 244, 0.5);
   }
   html header > div nav {
-    height: 73px;
+    height: 57px;
     background-color: #40474e;
     *zoom: 1;
   }
@@ -767,7 +769,7 @@
     width: 100%;
     position: absolute;
     left: 0;
-    top: 73px;
+    top: 57px;
   }
   html header > div nav > div:hover .list > a {
     float: left;
