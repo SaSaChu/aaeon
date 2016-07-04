@@ -818,43 +818,32 @@
     height: 30px;
     background-color: rgba(0, 128, 0, 0.2);
   }
-  .ta .tr .tc {
+  .ta .tr > div, .ta .tr .tc {
     display: table-cell;
     width: calc(100% / 2);
     height: 40px;
     border: 1px solid #dce4e8;
     text-align: center;
-    line-height: 38px;
     background-color: white;
+    word-break: break-all;
+    line-height: 22px;
+    padding: 5px;
   }
-  .ta .tr .tc + .tc {
+  .ta .tr > div + .tc, .ta .tr .tc + .tc {
     border-left: 0;
   }
-  .ta .tr .t01, .ta .tr .t02, .ta .tr .t03, .ta .tr .t04, .ta .tr .t05, .ta .tr .t06 {
-    display: table-cell;
-    border: 1px solid #dce4e8;
-    text-align: center;
-    line-height: 38px;
-    background-color: white;
-  }
-  .ta .tr .t01.t01, .ta .tr .t01 .t02, .ta .tr .t01 .t05, .ta .tr .t01 .t06, .ta .tr .t02.t01, .ta .tr .t02 .t02, .ta .tr .t02 .t05, .ta .tr .t02 .t06, .ta .tr .t03.t01, .ta .tr .t03 .t02, .ta .tr .t03 .t05, .ta .tr .t03 .t06, .ta .tr .t04.t01, .ta .tr .t04 .t02, .ta .tr .t04 .t05, .ta .tr .t04 .t06, .ta .tr .t05.t01, .ta .tr .t05 .t02, .ta .tr .t05 .t05, .ta .tr .t05 .t06, .ta .tr .t06.t01, .ta .tr .t06 .t02, .ta .tr .t06 .t05, .ta .tr .t06 .t06 {
+  .ta .tr > div.t01, .ta .tr > div.t02, .ta .tr > div.t05, .ta .tr > div.t06, .ta .tr .tc.t01, .ta .tr .tc.t02, .ta .tr .tc.t05, .ta .tr .tc.t06 {
     width: 10%;
   }
-  .ta .tr .t01.t03, .ta .tr .t01 .t04, .ta .tr .t02.t03, .ta .tr .t02 .t04, .ta .tr .t03.t03, .ta .tr .t03 .t04, .ta .tr .t04.t03, .ta .tr .t04 .t04, .ta .tr .t05.t03, .ta .tr .t05 .t04, .ta .tr .t06.t03, .ta .tr .t06 .t04 {
+  .ta .tr > div.t03, .ta .tr > div.t04, .ta .tr .tc.t03, .ta .tr .tc.t04 {
     width: 30%;
   }
-  .ta .tr .t01 + .t01, .ta .tr .t01 .t02, .ta .tr .t01 .t03, .ta .tr .t01 .t04, .ta .tr .t01 .t05, .ta .tr .t01 .t06, .ta .tr .t02 + .t01, .ta .tr .t02 .t02, .ta .tr .t02 .t03, .ta .tr .t02 .t04, .ta .tr .t02 .t05, .ta .tr .t02 .t06, .ta .tr .t03 + .t01, .ta .tr .t03 .t02, .ta .tr .t03 .t03, .ta .tr .t03 .t04, .ta .tr .t03 .t05, .ta .tr .t03 .t06, .ta .tr .t04 + .t01, .ta .tr .t04 .t02, .ta .tr .t04 .t03, .ta .tr .t04 .t04, .ta .tr .t04 .t05, .ta .tr .t04 .t06, .ta .tr .t05 + .t01, .ta .tr .t05 .t02, .ta .tr .t05 .t03, .ta .tr .t05 .t04, .ta .tr .t05 .t05, .ta .tr .t05 .t06, .ta .tr .t06 + .t01, .ta .tr .t06 .t02, .ta .tr .t06 .t03, .ta .tr .t06 .t04, .ta .tr .t06 .t05, .ta .tr .t06 .t06 {
-    border-left: 0;
-  }
-  .ta .tr:not(:first-child) .tc, .ta .tr:not(:first-child) .t01, .ta .tr:not(:first-child) .t02, .ta .tr:not(:first-child) .t03, .ta .tr:not(:first-child) .t04, .ta .tr:not(:first-child) .t05, .ta .tr:not(:first-child) .t06 {
-    border-top: 0;
-  }
-  .ta .tr:first-child .tc {
+  .ta .tr:first-child > div, .ta .tr:first-child .tc {
     position: relative;
     padding-top: 50px;
     height: 90px;
   }
-  .ta .tr:first-child .tc:before {
+  .ta .tr:first-child > div:before, .ta .tr:first-child .tc:before {
     content: attr(title);
     position: absolute;
     top: 0;
@@ -866,25 +855,53 @@
     text-align: center;
     border-bottom: 1px solid #dce4e8;
     background-color: #f4f5f6;
+    word-break: break-all;
+    padding: 5px;
   }
-  .ta .tr:first-child .t01, .ta .tr:first-child .t02, .ta .tr:first-child .t03, .ta .tr:first-child .t04, .ta .tr:first-child .t05, .ta .tr:first-child .t06 {
-    position: relative;
+  .ta .tr:first-child > div {
     padding-top: 80px;
     height: 120px;
   }
-  .ta .tr:first-child .t01:before, .ta .tr:first-child .t02:before, .ta .tr:first-child .t03:before, .ta .tr:first-child .t04:before, .ta .tr:first-child .t05:before, .ta .tr:first-child .t06:before {
-    content: attr(title);
-    position: absolute;
-    top: 0;
-    left: 0;
-    display: inline-block;
-    width: 100%;
+  .ta .tr:first-child > div:before {
+    padding-top: 25px;
     height: 80px;
-    padding-top: 20px;
     line-height: 20px;
-    text-align: center;
-    border-bottom: 1px solid #dce4e8;
-    background-color: #f4f5f6;
+    font-size: 13px;
+  }
+
+  .s03table {
+    margin-bottom: 20px;
+    border: 1px solid #86d4f1;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+  }
+  .s03table .tr > div {
+    border: 1px solid #86d4f1;
+  }
+  .s03table .tr > div, .s03table .tr > div:before {
+    background-color: white;
+  }
+  .s03table .tr > div:nth-child(odd), .s03table .tr > div:nth-child(odd):before {
+    background-color: #e9f9fe;
+  }
+  .s03table .tr > div.t01, .s03table .tr > div.t02, .s03table .tr > div.t03, .s03table .tr > div.t04, .s03table .tr > div.t08, .s03table .tr > div.t09, .s03table .tr > div.t10, .s03table .tr > div.t11, .s03table .tr > div.t12, .s03table .tr > div.t13 {
+    width: 7%;
+  }
+  .s03table .tr > div.t05, .s03table .tr > div.t06, .s03table .tr > div.t07 {
+    width: 10%;
+  }
+  .s03table .tr:first-child > div:before, .s03table .tr:first-child .tc:before {
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.7);
+    padding-top: 10px;
+    -moz-border-radius-topleft: 3px;
+    -webkit-border-top-left-radius: 3px;
+    border-top-left-radius: 3px;
+    -moz-border-radius-topright: 3px;
+    -webkit-border-top-right-radius: 3px;
+    border-top-right-radius: 3px;
+    border-bottom: 1px solid #86d4f1;
   }
 }
 @media screen and (min-width: 0) and (max-width: 960px) {
@@ -896,37 +913,41 @@
     display: inline-block;
     width: 100%;
   }
-  .ta .tr .tc {
+  .ta .tr > div, .ta .tr .tc {
     position: relative;
-    padding-left: 110px;
     display: inline-block;
     width: 100%;
-    height: 35px;
-    line-height: 33px;
     border: 1px solid #dce4e8;
-  }
-  .ta .tr .tc:last-child:before {
     border-bottom: 0;
+    padding: 5px;
+    padding-left: 110px;
   }
-  .ta .tr .tc + .tc {
+  .ta .tr > div:last-child, .ta .tr .tc:last-child {
+    border-bottom: 1px solid #dce4e8;
+  }
+  .ta .tr > div + .tc, .ta .tr .tc + .tc {
     border-top: 0;
   }
-  .ta .tr .tc:before {
+  .ta .tr > div:before, .ta .tr .tc:before {
     content: attr(title);
     position: absolute;
     left: 0;
     top: 0;
     display: inline-block;
     width: 100px;
-    height: 34px;
-    line-height: 33px;
+    height: 100%;
     text-align: right;
-    padding-right: 5px;
     border-right: 1px solid #dce4e8;
-    border-bottom: 1px solid #dce4e8;
     background-color: #f4f5f6;
+    padding: 5px;
   }
-  .ta .tr + .tr {
+  .ta .tr > div {
+    padding-left: 190px;
+  }
+  .ta .tr > div:before {
+    width: 180px;
+  }
+  .ta .tr + div, .ta .tr + .tr {
     margin-top: 10px;
   }
 }

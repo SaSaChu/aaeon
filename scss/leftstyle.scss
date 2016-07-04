@@ -898,96 +898,104 @@ $border_color: rgba(220, 228, 232, 1.00);
       background-color: rgba(0, 128, 0, 0.2);
 
       // p02 table
-      .tc {
+      > div, .tc {
         display: table-cell;
         width: calc(100% / 2);
         height: $cell_height;
         border: 1px solid rgba(220, 228, 232, 1.00);
         text-align: center;
-        line-height: $cell_height - 2px;
         background-color: white;
+        word-break: break-all;
+        line-height: 22px;
+        padding: 5px;
 
         // 後面是 .tc 的話，設定那個 tc
         + .tc {
-            border-left: 0;
-          }
+          border-left: 0;
         }
 
-      // s04 table
-      .t01, .t02, .t03, .t04, .t05, .t06  {
-        display: table-cell;
-        border: 1px solid rgba(220, 228, 232, 1.00);
-        text-align: center;
-        line-height: $cell_height - 2px;
-        background-color: white;
-
-        &.t01, .t02, .t05, .t06 {
+        &.t01, &.t02, &.t05, &.t06 {
           width: 10%;
         }
 
-        &.t03, .t04 {
+        &.t03, &.t04 {
           width: 30%;
         }
-
-        // 後面是 .tc 的話，設定那個 tc
-        + .t01, .t02, .t03, .t04, .t05, .t06  {
-            border-left: 0;
-          }
       }
 
-        &:not(:first-child) {
-          .tc, .t01, .t02, .t03, .t04, .t05, .t06  {
-            border-top: 0;
+
+      &:first-child {
+        >div, .tc {
+          position: relative;
+          padding-top: $title_height;
+          height: $title_height + $cell_height;
+
+          &:before {
+            content: attr(title);
+            position: absolute;
+            top: 0;
+            left: 0;
+            display: inline-block;
+            width: 100%;
+            height: $title_height;
+            line-height: $title_height - 2px;
+            text-align: center;
+            border-bottom: 1px solid rgba(220, 228, 232, 1.00);
+            background-color: rgba(244, 245, 246, 1.00);
+            word-break: break-all;
+            padding: 5px;
           }
         }
-
-        &:first-child {
-          .tc {
-            position: relative;
-            padding-top: $title_height;
-            height: $title_height + $cell_height;
-
-            &:before {
-              content: attr(title);
-              position: absolute;
-              top: 0;
-              left: 0;
-              display: inline-block;
-              width: 100%;
-              height: $title_height;
-              line-height: $title_height - 2px;
-              text-align: center;
-              border-bottom: 1px solid rgba(220, 228, 232, 1.00);
-              background-color: rgba(244, 245, 246, 1.00);
-            }
-          }
-
-          .t01, .t02, .t03, .t04, .t05, .t06 {
-            position: relative;
-            padding-top: $stitle_height;
-            height: $stitle_height + $cell_height;
-
-
-            &:before {
-              content: attr(title);
-              position: absolute;
-              top: 0;
-              left: 0;
-              display: inline-block;
-              width: 100%;
-              height: $stitle_height;
-              padding-top: 20px;
-              line-height: 20px;
-              text-align: center;
-              border-bottom: 1px solid rgba(220, 228, 232, 1.00);
-              background-color: rgba(244, 245, 246, 1.00);
-            }
+        >div{
+          padding-top: $stitle_height;
+          height: $stitle_height + $cell_height;
+          &:before {
+            padding-top: 25px;
+            height: $stitle_height;
+            line-height: 20px;
+            font-size: 13px;
           }
         }
+      }
     }
+  }
+  .s03table {
+    margin-bottom: 20px;
+    border: 1px solid rgba(134, 212, 241, 1.00);
+    @include border-radius(3px);
 
+    .tr {
+      > div {
+        border: 1px solid rgba(134, 212, 241, 1.00);
 
+        &, &:before {
+          background-color: rgba(255, 255, 255, 1.00);
+        }
+        &:nth-child(odd) {
+          &, &:before {
+            background-color: rgba(233, 249, 254, 1.00);
+          }
+        }
+        &.t01, &.t02, &.t03, &.t04, &.t08, &.t09, &.t10, &.t11, &.t12, &.t13 {
+          width: 7%;
+        }
 
+        &.t05, &.t06, &.t07,  {
+          width: 10%;
+        }
+      }
+      &:first-child {
+        >div, .tc {
+          &:before {
+            font-weight: bold;
+            color: rgba(0, 0, 0, .7);
+            padding-top: 10px;
+            @include border-top-radius(3px);
+            border-bottom: 1px solid rgba(134, 212, 241, 1.00);
+          }
+        }
+      }
+    }
   }
 }
 
@@ -997,6 +1005,7 @@ $border_color: rgba(220, 228, 232, 1.00);
 
 @media screen and (min-width: 0) and (max-width: $mediaTabletWidth) {
   $title_width: 100px;
+  $stitle_width: 180px;
   $height: 35px;
 
   .ta {
@@ -1007,20 +1016,17 @@ $border_color: rgba(220, 228, 232, 1.00);
       display: inline-block;
       width: 100%;
 
-      .tc {
+      > div, .tc {
         position: relative;
-        padding-left: $title_width + 10px;
         display: inline-block;
         width: 100%;
-        height: $height;
-        line-height: $height - 2px;
         border: 1px solid $border_color;
-        // border-bottom: 0;
+        border-bottom: 0;
+        padding: 5px;
+        padding-left: $title_width + 10px;
 
         &:last-child {
-          &:before {
-            border-bottom: 0;
-          }
+          border-bottom: 1px solid $border_color;
         }
 
         + .tc {
@@ -1034,17 +1040,21 @@ $border_color: rgba(220, 228, 232, 1.00);
           top: 0;
           display: inline-block;
           width: $title_width;
-          height: $height - 1px;
-          line-height: $height - 2px;
+          height: 100%;
           text-align: right;
-          padding-right: 5px;
           border-right: 1px solid $border_color;
-          border-bottom: 1px solid $border_color;
           background-color: rgba(244, 245, 246, 1.00);
+          padding: 5px;
+        }
+      }
+      > div {
+        padding-left: $stitle_width + 10px;
+        &:before {
+          width: $stitle_width;
         }
       }
 
-      + .tr {
+      + div, + .tr {
         margin-top: 10px;
       }
     }

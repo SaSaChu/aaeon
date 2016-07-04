@@ -1778,13 +1778,6 @@
     padding-left: 10px;
     padding-right: 10px;
   }
-  #container > div .s03table {
-    float: left;
-    width: 100%;
-    height: 500px;
-    margin-bottom: 30px;
-    border: 1px solid rgba(255, 0, 0, 0.3);
-  }
 
   #arrow_box.p1:after, #arrow_box.p1:before {
     top: 5px;
