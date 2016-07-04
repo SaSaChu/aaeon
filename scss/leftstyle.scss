@@ -272,7 +272,181 @@
       width: 100%;
       height:100%;
       padding: 10px;
+    }
 
+
+    // s04+s03
+    .jj {
+      width: 100%;
+      padding: 10px;
+
+      .jb {
+        display: block;
+        background-color: rgba(244, 245, 246, 1.00);
+        margin-bottom: 5px;
+
+        .jbs {
+          width: 100%;
+          margin: 0 auto;
+          padding: 30px 0 30px 0;
+
+          &.s03b {
+            padding: 10px 0;
+            height: 55px;
+          }
+
+          @include clearfix();
+
+          .ja {
+            float: left;
+            width: 25%;
+            height: 50px;
+            padding-right: 5px;
+
+            p {
+              text-align: right;
+              font-size: .9em;
+              color: rgba(97, 102, 106, 1.00);
+              font-weight: bolder;
+            }
+
+          }
+
+          .jb {
+            float: left;
+            width: 50%;
+            height: 50px;
+            padding-top: 8px;
+
+            &.jb01 {
+              padding: 0;
+              height: auto;
+            }
+
+            @include clearfix();
+
+            input {
+              float: left;
+              width: 100%;
+              height: 30px;
+              padding: 0;
+              margin: 0;
+              margin-top: 3px;
+              border: 0;
+            }
+
+            .si01 {
+              float: left;
+              width: 100%;
+              padding: 0;
+              margin: 0;
+              border: 0;
+            }
+
+            .si02 {
+              display: inline-block;
+              float: left;
+              width: 40%;
+              padding: 0;
+              margin: 0;
+              border: 0;
+              margin-right: 10px;
+            }
+
+            span {
+              float: left;
+              display: inline-block;
+              padding: 0 10px;
+              font-size: .9em;
+              color: rgba(97, 102, 106, 1.00);
+            }
+
+            p {
+              margin: 0;
+              float: left;
+              width: 100%;
+              font-size: .8em;
+              color: rgba(97, 102, 106, 1.00);
+              padding-top: 8px;
+            }
+
+          }
+
+          .jc {
+            float: left;
+            width: 25%;
+            height: 50px;
+            padding-left: 10px;
+            padding-top: 6px;
+
+            &.jc01 {
+              padding: 0;
+              height: auto;
+            }
+
+            button {
+              padding: 10px 35px;
+              font-size: 1em;
+              color: white;
+              font-weight: bolder;
+              background-color: rgba(147, 160, 166, 1.00);
+              @include border-radius(5px);
+              border: 0;
+
+              &.jc02 {
+                padding: 8px 35px;
+              }
+
+              &:hover {
+                background-color: rgba(93, 162, 198, 1.00);
+              }
+
+            }
+          }
+
+
+          p {
+            margin: 0;
+            padding: 0 20px;
+            font-size: .8em;
+            line-height: 1.4em;
+            color: rgba(130, 130, 130, 1.00);
+          }
+        }
+      }
+
+      .jt {
+        width: 100%;
+        padding-top: 20px;
+
+        .jtb {
+          width: 90%;
+          margin: 0 auto;
+          padding-bottom: 30px;
+
+          @include clearfix();
+
+          p {
+            float: left;
+            display: block;
+            width: 100%;
+            margin: 0;
+            font-size: 1em;
+            line-height: 1.6em;
+            color: rgba(2, 167, 249, 1.00);
+            font-weight: bolder;
+          }
+
+          .jpt {
+            float: left;
+            display: block;
+            width: 100%;
+            line-height: 1.6em;
+            font-size: 1em;
+            color: rgba(117, 121, 126, 1.00);
+          }
+        }
+      }
     }
   }
 }
@@ -525,18 +699,194 @@ $border_color: rgba(220, 228, 232, 1.00);
       padding: 10px;
 
     }
+
+    // s04+s03
+    .jj {
+      width: 100%;
+      padding: 10px;
+
+      .jb {
+        display: block;
+        background-color: rgba(244, 245, 246, 1.00);
+        margin-bottom: 5px;
+
+        .jbs {
+          width: 100%;
+          margin: 0 auto;
+          padding: 30px 0 30px 0;
+
+          &.s03b {
+            padding: 10px 0;
+            height: 55px;
+          }
+
+          @include clearfix();
+
+          .ja {
+            float: left;
+            width: 25%;
+            height: 50px;
+            padding-right: 5px;
+
+            p {
+              text-align: right;
+              font-size: .9em;
+              color: rgba(97, 102, 106, 1.00);
+              font-weight: bolder;
+            }
+
+          }
+
+          .jb {
+            float: left;
+            width: 50%;
+            height: 50px;
+            padding-top: 8px;
+
+            &.jb01 {
+              padding: 0;
+              height: auto;
+            }
+
+            @include clearfix();
+
+            input {
+              float: left;
+              width: 100%;
+              height: 30px;
+              padding: 0;
+              margin: 0;
+              margin-top: 3px;
+              border: 0;
+            }
+
+            .si01 {
+              float: left;
+              width: 100%;
+              padding: 0;
+              margin: 0;
+              border: 0;
+            }
+
+            .si02 {
+              display: inline-block;
+              float: left;
+              width: 40%;
+              padding: 0;
+              margin: 0;
+              border: 0;
+              margin-right: 10px;
+            }
+
+            span {
+              float: left;
+              display: inline-block;
+              padding: 0 10px;
+              font-size: .9em;
+              color: rgba(97, 102, 106, 1.00);
+            }
+
+            p {
+              margin: 0;
+              float: left;
+              width: 100%;
+              font-size: .8em;
+              color: rgba(97, 102, 106, 1.00);
+              padding-top: 8px;
+            }
+
+          }
+
+          .jc {
+            float: left;
+            width: 25%;
+            height: 50px;
+            padding-left: 10px;
+            padding-top: 6px;
+
+            &.jc01 {
+              padding: 0;
+              height: auto;
+            }
+
+            button {
+              padding: 10px 35px;
+              font-size: 1em;
+              color: white;
+              font-weight: bolder;
+              background-color: rgba(147, 160, 166, 1.00);
+              @include border-radius(5px);
+              border: 0;
+
+              &.jc02 {
+                padding: 8px 35px;
+              }
+
+              &:hover {
+                background-color: rgba(93, 162, 198, 1.00);
+              }
+
+            }
+          }
+
+
+          p {
+            margin: 0;
+            padding: 0 20px;
+            font-size: .8em;
+            line-height: 1.4em;
+            color: rgba(130, 130, 130, 1.00);
+          }
+        }
+      }
+
+      .jt {
+        width: 100%;
+        padding-top: 20px;
+
+        .jtb {
+          width: 90%;
+          margin: 0 auto;
+          padding-bottom: 30px;
+
+          @include clearfix();
+
+          p {
+            float: left;
+            display: block;
+            width: 100%;
+            margin: 0;
+            font-size: 1em;
+            line-height: 1.6em;
+            color: rgba(2, 167, 249, 1.00);
+            font-weight: bolder;
+          }
+
+          .jpt {
+            float: left;
+            display: block;
+            width: 100%;
+            line-height: 1.6em;
+            font-size: 1em;
+            color: rgba(117, 121, 126, 1.00);
+          }
+        }
+      }
+    }
+
   }
 }
 
 
 
 
+// table css樣式
+@media screen and (min-width: $mediaTabletWidth + 1) {
+  $title_height: 50px;
+  $cell_height: 40px;
+  $stitle_height: 80px;
 
-  @media screen and (min-width: $mediaTabletWidth + 1) {
-      $title_height: 50px;
-      $cell_height: 40px;
-
-      .ta {
+  .ta {
     display: table;
     width: 100%;
     height: 50px;
@@ -547,103 +897,160 @@ $border_color: rgba(220, 228, 232, 1.00);
       height: 30px;
       background-color: rgba(0, 128, 0, 0.2);
 
+      // p02 table
       .tc {
         display: table-cell;
         width: calc(100% / 2);
-            height: $cell_height;
-            border: 1px solid rgba(220, 228, 232, 1.00);
-            text-align: center;
-            line-height: $cell_height - 2px;
-            background-color: white;
-            + .tc {
-              border-left: 0;
-            }
-          }
-          &:not(:first-child) {
-            .tc {
-              border-top: 0;
-            }
-          }
-          &:first-child {
-            .tc {
-              position: relative;
-              padding-top: $title_height;
-              height: $title_height + $cell_height;
+        height: $cell_height;
+        border: 1px solid rgba(220, 228, 232, 1.00);
+        text-align: center;
+        line-height: $cell_height - 2px;
+        background-color: white;
 
-              &:before {
-                content: attr(title);
-                position: absolute;
-                top: 0;
-                left: 0;
-                display: inline-block;
-                width: 100%;
-                height: $title_height;
-                line-height: $title_height - 2px;
-                text-align: center;
-                border-bottom: 1px solid rgba(220, 228, 232, 1.00);
-                background-color: rgba(244, 245, 246, 1.00);
-              }
-              // + .tc {
-              //   &:before {
-              //     border-left: 0;
-              //   }
-              // }
-            }
+        // 後面是 .tc 的話，設定那個 tc
+        + .tc {
+            border-left: 0;
           }
         }
+
+      // s04 table
+      .t01, .t02, .t03, .t04, .t05, .t06  {
+        display: table-cell;
+        border: 1px solid rgba(220, 228, 232, 1.00);
+        text-align: center;
+        line-height: $cell_height - 2px;
+        background-color: white;
+
+        &.t01, .t02, .t05, .t06 {
+          width: 10%;
+        }
+
+        &.t03, .t04 {
+          width: 30%;
+        }
+
+        // 後面是 .tc 的話，設定那個 tc
+        + .t01, .t02, .t03, .t04, .t05, .t06  {
+            border-left: 0;
+          }
       }
-      }
 
-@media screen and (min-width: 0) and (max-width: $mediaTabletWidth) {
-      $title_width: 100px;
-      $height: 35px;
+        &:not(:first-child) {
+          .tc, .t01, .t02, .t03, .t04, .t05, .t06  {
+            border-top: 0;
+          }
+        }
 
-      .ta {
-        display: inline-block;
-        width: 100%;
-
-        .tr {
-          display: inline-block;
-          width: 100%;
-
+        &:first-child {
           .tc {
             position: relative;
-            padding-left: $title_width + 10px;
-            display: inline-block;
-            width: 100%;
-            height: $height;
-            line-height: $height - 2px;
-            border: 1px solid $border_color;
-            // border-bottom: 0;
-
-            &:last-child {
-              &:before {
-                border-bottom: 0;
-              }
-            }
-            + .tc {
-              border-top: 0;
-            }
+            padding-top: $title_height;
+            height: $title_height + $cell_height;
 
             &:before {
               content: attr(title);
               position: absolute;
-              left: 0;
               top: 0;
+              left: 0;
               display: inline-block;
-              width: $title_width;
-              height: $height - 1px;
-              line-height: $height - 2px;
-              text-align: right;
-              padding-right: 5px;
-              border-right: 1px solid $border_color;
-              border-bottom: 1px solid $border_color;
+              width: 100%;
+              height: $title_height;
+              line-height: $title_height - 2px;
+              text-align: center;
+              border-bottom: 1px solid rgba(220, 228, 232, 1.00);
               background-color: rgba(244, 245, 246, 1.00);
             }
           }
-          + .tr {
-            margin-top: 10px;
+
+          .t01, .t02, .t03, .t04, .t05, .t06 {
+            position: relative;
+            padding-top: $stitle_height;
+            height: $stitle_height + $cell_height;
+
+
+            &:before {
+              content: attr(title);
+              position: absolute;
+              top: 0;
+              left: 0;
+              display: inline-block;
+              width: 100%;
+              height: $stitle_height;
+              padding-top: 20px;
+              line-height: 20px;
+              text-align: center;
+              border-bottom: 1px solid rgba(220, 228, 232, 1.00);
+              background-color: rgba(244, 245, 246, 1.00);
+            }
           }
         }
-      }
+    }
+
+
+
+  }
 }
+
+
+
+
+
+@media screen and (min-width: 0) and (max-width: $mediaTabletWidth) {
+  $title_width: 100px;
+  $height: 35px;
+
+  .ta {
+    display: inline-block;
+    width: 100%;
+
+    .tr {
+      display: inline-block;
+      width: 100%;
+
+      .tc {
+        position: relative;
+        padding-left: $title_width + 10px;
+        display: inline-block;
+        width: 100%;
+        height: $height;
+        line-height: $height - 2px;
+        border: 1px solid $border_color;
+        // border-bottom: 0;
+
+        &:last-child {
+          &:before {
+            border-bottom: 0;
+          }
+        }
+
+        + .tc {
+          border-top: 0;
+        }
+
+        &:before {
+          content: attr(title);
+          position: absolute;
+          left: 0;
+          top: 0;
+          display: inline-block;
+          width: $title_width;
+          height: $height - 1px;
+          line-height: $height - 2px;
+          text-align: right;
+          padding-right: 5px;
+          border-right: 1px solid $border_color;
+          border-bottom: 1px solid $border_color;
+          background-color: rgba(244, 245, 246, 1.00);
+        }
+      }
+
+      + .tr {
+        margin-top: 10px;
+      }
+    }
+  }
+}
+
+
+
+

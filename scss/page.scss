@@ -118,7 +118,7 @@
           #arrow_box  {
             display: inline-block;
             width: 100%;
-            min-height: 600px;
+            // min-height: 600px;
             margin-bottom: 25px;
             position: relative;
 
@@ -520,7 +520,7 @@
           #arrow_box  {
             display: inline-block;
             width: 100%;
-            min-height: 600px;
+            // min-height: 600px;
             margin-bottom: 25px;
             position: relative;
 
@@ -840,7 +840,18 @@
           }
         }
 
+        .s03table {
+          float: left;
+          width: 100%;
+          // 高字適
+          height: 500px;
+          margin-bottom: 30px;
+
+          border: 1px solid rgba(255, 0, 0, .3);
+        }
+
       }
+
     }
 
 
