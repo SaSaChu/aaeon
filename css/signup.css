@@ -110,9 +110,6 @@
 }
 #container > div form .btns > div button {
   float: left;
-  padding: 10px 50px !important;
-}
-#container > div form .btns > div button:first-child {
   border: 0 solid transparent;
   color: rgba(255, 255, 255, 0.85);
   font-size: 15px;
@@ -137,13 +134,14 @@
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
   background-color: #67acd0;
+  padding: 10px 50px !important;
 }
-#container > div form .btns > div button:first-child.jelly-effect {
+#container > div form .btns > div button.jelly-effect {
   -moz-animation: oa-material-button-jelly-effect 0.2s ease-out;
   -webkit-animation: oa-material-button-jelly-effect 0.2s ease-out;
   animation: oa-material-button-jelly-effect 0.2s ease-out;
 }
-#container > div form .btns > div button:first-child[disabled] {
+#container > div form .btns > div button[disabled] {
   color: rgba(255, 255, 255, 0.75);
   cursor: not-allowed;
   text-shadow: none;
@@ -151,20 +149,20 @@
   -webkit-box-shadow: none;
   box-shadow: none;
 }
-#container > div form .btns > div button:first-child[disabled]:hover {
+#container > div form .btns > div button[disabled]:hover {
   color: rgba(255, 255, 255, 0.75);
   -moz-box-shadow: none;
   -webkit-box-shadow: none;
   box-shadow: none;
   text-shadow: none;
 }
-#container > div form .btns > div button:first-child:hover {
+#container > div form .btns > div button:hover {
   color: white;
   -moz-box-shadow: inset -1px -1px 2px rgba(0, 0, 0, 0.2), inset 1px 1px 2px rgba(255, 255, 255, 0.2), 0 3px 10px 2px rgba(0, 0, 0, 0.19);
   -webkit-box-shadow: inset -1px -1px 2px rgba(0, 0, 0, 0.2), inset 1px 1px 2px rgba(255, 255, 255, 0.2), 0 3px 10px 2px rgba(0, 0, 0, 0.19);
   box-shadow: inset -1px -1px 2px rgba(0, 0, 0, 0.2), inset 1px 1px 2px rgba(255, 255, 255, 0.2), 0 3px 10px 2px rgba(0, 0, 0, 0.19);
 }
-#container > div form .btns > div button:first-child:active {
+#container > div form .btns > div button:active {
   text-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
   -moz-box-shadow: inset 2px 2px 10px rgba(0, 0, 0, 0.225);
   -webkit-box-shadow: inset 2px 2px 10px rgba(0, 0, 0, 0.225);
@@ -174,13 +172,13 @@
   -webkit-transition: none;
   transition: none;
 }
-#container > div form .btns > div button:first-child:focus {
+#container > div form .btns > div button:focus {
   outline: 0;
 }
-#container > div form .btns > div button:first-child:hover {
+#container > div form .btns > div button:hover {
   background-color: #5da2c6;
 }
-#container > div form .btns > div button:first-child[disabled] {
+#container > div form .btns > div button[disabled] {
   background-color: rgba(173, 242, 255, 0.85);
   color: white;
 }
@@ -247,6 +245,9 @@
   }
 }
 #container > div form .btns > div button:last-child {
+  margin-left: 10px;
+}
+#container > div form .btns > div button:active {
   border: 0 solid transparent;
   color: rgba(255, 255, 255, 0.85);
   font-size: 15px;
@@ -271,14 +272,13 @@
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
   background-color: #94a0a6;
-  margin-left: 10px;
 }
-#container > div form .btns > div button:last-child.jelly-effect {
+#container > div form .btns > div button:active.jelly-effect {
   -moz-animation: oa-material-button-jelly-effect 0.2s ease-out;
   -webkit-animation: oa-material-button-jelly-effect 0.2s ease-out;
   animation: oa-material-button-jelly-effect 0.2s ease-out;
 }
-#container > div form .btns > div button:last-child[disabled] {
+#container > div form .btns > div button:active[disabled] {
   color: rgba(255, 255, 255, 0.75);
   cursor: not-allowed;
   text-shadow: none;
@@ -286,20 +286,20 @@
   -webkit-box-shadow: none;
   box-shadow: none;
 }
-#container > div form .btns > div button:last-child[disabled]:hover {
+#container > div form .btns > div button:active[disabled]:hover {
   color: rgba(255, 255, 255, 0.75);
   -moz-box-shadow: none;
   -webkit-box-shadow: none;
   box-shadow: none;
   text-shadow: none;
 }
-#container > div form .btns > div button:last-child:hover {
+#container > div form .btns > div button:active:hover {
   color: white;
   -moz-box-shadow: inset -1px -1px 2px rgba(0, 0, 0, 0.2), inset 1px 1px 2px rgba(255, 255, 255, 0.2), 0 3px 10px 2px rgba(0, 0, 0, 0.19);
   -webkit-box-shadow: inset -1px -1px 2px rgba(0, 0, 0, 0.2), inset 1px 1px 2px rgba(255, 255, 255, 0.2), 0 3px 10px 2px rgba(0, 0, 0, 0.19);
   box-shadow: inset -1px -1px 2px rgba(0, 0, 0, 0.2), inset 1px 1px 2px rgba(255, 255, 255, 0.2), 0 3px 10px 2px rgba(0, 0, 0, 0.19);
 }
-#container > div form .btns > div button:last-child:active {
+#container > div form .btns > div button:active:active {
   text-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
   -moz-box-shadow: inset 2px 2px 10px rgba(0, 0, 0, 0.225);
   -webkit-box-shadow: inset 2px 2px 10px rgba(0, 0, 0, 0.225);
@@ -309,13 +309,13 @@
   -webkit-transition: none;
   transition: none;
 }
-#container > div form .btns > div button:last-child:focus {
+#container > div form .btns > div button:active:focus {
   outline: 0;
 }
-#container > div form .btns > div button:last-child:hover {
+#container > div form .btns > div button:active:hover {
   background-color: #8a969c;
 }
-#container > div form .btns > div button:last-child[disabled] {
+#container > div form .btns > div button:active[disabled] {
   background-color: rgba(218, 230, 236, 0.85);
   color: white;
 }
@@ -380,6 +380,9 @@
     -webkit-transform: scale(1, 1);
     transform: scale(1, 1);
   }
+}
+#container > div form .btns > div button:active:last-child {
+  margin-left: 10px;
 }
 #container > div form > span {
   line-height: 23px;

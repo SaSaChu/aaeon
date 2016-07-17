@@ -131,21 +131,33 @@
           <span>If you are interested in becoming an authorized AAEON Channel Partner, an AAEON Channel Manager will contact you shortly. <b>*</b> = Required</span>
 
           <div class='area'>
-            <div class='title' title='User Information'></div>
+            <div class='title' title='Personal Information'></div>
             <div class='row n2'>
-              <div class='l'><span class='required'>Login ID :</span><input type='text' /></div>
-              <div class='r'><span class='required'>User Name :</span><input type='text' /></div>
-            </div>
-            <div class='row'>
-              <span class='required'>Password :</span><input type='text' /><div class='tip'>Please don't use space character within your User's ID. e.g: Please use 'johnaaa' instead of 'john aaa'</div>
+              <div class='l'><span class='required'>First Name :</span><input type='text' /></div>
+              <div class='r'><span class='required'>Last Name :</span><input type='text' /></div>
             </div>
             <div class='row n2'>
               <div class='l'><span class='required'>E-mail :</span><input type='text' /></div>
               <div class='r'><span class='required'>AAEON Sales E-mail :</span><input type='text' /></div>
             </div>
+            <div class='row'>
+              <span class='required'>Password :</span><input type='text' /><div class='tip'>Please don't use space character within your User's ID. e.g: Please use 'johnaaa' instead of 'john aaa'</div>
+            </div>
+            <div class='row'>
+              <span class='required'>Confirm Password :</span><input type='text' /><div class='tip'>This email address will become your login ID</div>
+            </div>
             <div class='row n2'>
-              <div class='l'><span>Job Function :</span><select><option>選項 1</option><option>選項 2</option></select></div>
-              <div class='r'><span>Job Function :</span><select><option>選項 1</option><option>選項 2</option></select></div>
+              <div class='l'><span>Job Function :</span><select>
+
+                <option>Business management</option>
+                <option>Marketing</option>
+                <option>Purchasing</option>
+                <option>Sales</option>
+                <option>Tech / Service Support</option>
+                <option>Others</option>
+
+              </select></div>
+              <div class='r'></div>
             </div>
           </div>
 
@@ -177,69 +189,95 @@
 
           <div class='area'>
             <div class='title' title='Business Information'></div>
+
+
             <div class='row nl'>
-              <span>01. Business Group for AAEON :</span><select><option>選項 1</option><option>選項 2</option></select>
+              <span>Business Type :</span><select>
+                <option>Distributor</option>
+                <option>Reseller</option>
+                <option>VAR (Valued Added Reseller)</option>
+                <option>System Integration Company</option>
+                <option>OEM/ODM</option>
+                <option>Software Developer</option>
+                <option>Standard Product/ Solution Provider</option>
+              </select>
             </div>
 
             <div class='row nc'>
-              <span>02. How do you buy AAEON product : <br/>(single choice)</span>
+              <span>Specialized Products :<br/>(check all that apply)</span>
               <div>
-                <label><input type='radio' name='product'><p>Directly form AAEON</p></label>
-                <label><input type='radio' name='product'><p>From a Distrlbutor / SI</p></label>
-                <label><input type='radio' name='product'><p>Never purahased AAEON product before</p></label>
+                <label><input type='checkbox'><p>Embedded Single Board Computers</p></label>
+                <label><input type='checkbox'><p>Computer-on-Module</p></label>
+                <label><input type='checkbox'><p>Industrial Motherboards</p></label>
+                <label><input type='checkbox'><p>PICMG Single Board Computers</p></label>
+                <label><input type='checkbox'><p>Peripherals of Boards</p></label>
+                <label><input type='checkbox'><p>Panel PC</p></label>
+                <label><input type='checkbox'><p>Industrial Touch Display</p></label>
+                <label><input type='checkbox'><p>Fanless Embedded Box PC</p></label>
+                <label><input type='checkbox'><p>In-Vehicle Computers</p></label>
+                <label><input type='checkbox'><p>Railway Computers</p></label>
+                <label><input type='checkbox'><p>Digital Signage Systems</p></label>
+                <label><input type='checkbox'><p>Turn-Key Chassis Solutions</p></label>
+                <label><input type='checkbox'><p>Industrial Chassis</p></label>
+                <label><input type='checkbox'><p>Desktop Network Appliance</p></label>
+                <label><input type='checkbox'><p>Rackmount Network Appliance</p></label>
+                <label><input type='checkbox'><p>Networking Motherboards</p></label>
+                <label><input type='checkbox'><p>Desktop NVR</p></label>
+                <label><input type='checkbox'><p>Rackmount NVR</p></label>
+                <label><input type='checkbox'><p>In-Vehicle NVR</p></label>
+                <label><input type='checkbox'><p>Gateway Boards</p></label>
+                <label><input type='checkbox'><p>Gateway Systems</p></label>
+                <label><input type='checkbox'><p>Rugged Tablet Computers</p></label>
+                <label><input type='checkbox'><p>Rugged Tablet Accessories</p></label>
               </div>
             </div>
 
-            <div class='row nl'>
-              <span>03. Business Type :</span><select><option>選項 1</option><option>選項 2</option></select>
-            </div>
-            <div class='row nl'>
-              <span>04. Number of Employees :</span><select><option>選項 1</option><option>選項 2</option></select>
-            </div>
-            <div class='row nl'>
-              <span>05. Annual Sales Volume :</span><select><option>選項 1</option><option>選項 2</option></select>
-            </div>
-
             <div class='row nc'>
-              <span>06. Specialized Products :<br/>(check all that apply)</span>
+              <span>Vertical Market Focus :<br/>(check all that apply)</span>
               <div>
-                <label><input type='checkbox'><p>Embedded Computing</p></label>
-                <label><input type='checkbox'><p>Industrial Automation - Industrial Communication</p></label>
-                <label><input type='checkbox'><p>Industrial Automation - Human Machine Interface</p></label>
-                <label><input type='checkbox'><p>Industrial Automation - Distributed I/O modules</p></label>
-                <label><input type='checkbox'><p>Industrial Automation - Industrial I/O Cards</p></label>
-                <label><input type='checkbox'><p>Automation Controller & Software</p></label>
-              </div>
-            </div>
-
-            <div class='row nc'>
-              <span>07. Vertical Market Focus :<br/>(check all that apply)</span>
-              <div>
-                <label><input type='checkbox'><p>Computing Telephony</p></label>
+                <label><input type='checkbox'><p>Agricultural/ Farming</p></label>
+                <label><input type='checkbox'><p>Aircraft/ Unmanned Aircraft</p></label>
+                <label><input type='checkbox'><p>Automotive</p></label>
+                <label><input type='checkbox'><p>Building Automation</p></label>
+                <label><input type='checkbox'><p>Data Processing/ ERP Integration/ IT Service</p></label>
+                <label><input type='checkbox'><p>Digital Signage</p></label>
+                <label><input type='checkbox'><p>Entertainment/ Gaming</p></label>
+                <label><input type='checkbox'><p>Environmental Monitoring</p></label>
+                <label><input type='checkbox'><p>Facilities Services</p></label>
+                <label><input type='checkbox'><p>Food & Beverage</p></label>
+                <label><input type='checkbox'><p>Government/ Military</p></label>
+                <label><input type='checkbox'><p>Industrial Equipment Manufacturing</p></label>
+                <label><input type='checkbox'><p>KIOSK/ Point of Sale Terminals</p></label>
+                <label><input type='checkbox'><p>Life Automation & Retail </p></label>
+                <label><input type='checkbox'><p>Logistics and Supply Chain Management</p></label>
+                <label><input type='checkbox'><p>Machine Communication</p></label>
+                <label><input type='checkbox'><p>Machine Vision</p></label>
+                <label><input type='checkbox'><p>Manufacturing Automation</p></label>
+                <label><input type='checkbox'><p>Metals/ Mining</p></label>
+                <label><input type='checkbox'><p>Networking/ Telecom</p></label>
                 <label><input type='checkbox'><p>Network Appliance</p></label>
-                <label><input type='checkbox'><p>Environment Monitoring System</p></label>
-                <label><input type='checkbox'><p>System On Module / DTOS</p></label>
-                <label><input type='checkbox'><p>Factory Automation</p></label>
-                <label><input type='checkbox'><p>Transportation</p></label>
-                <label><input type='checkbox'><p>Machine Automation</p></label>
-                <label><input type='checkbox'><p>Web Payphone</p></label>
-                <label><input type='checkbox'><p>Medical / Healthcare</p></label>
+                <label><input type='checkbox'><p>Packaging and Containers</p></label>
+                <label><input type='checkbox'><p>Plastics/ Textile/ Fibers</p></label>
+                <label><input type='checkbox'><p>Port & Harbor</p></label>
+                <label><input type='checkbox'><p>Printing/ 3D Printing</p></label>
+                <label><input type='checkbox'><p>Process Automation & Control</p></label>
+                <label><input type='checkbox'><p>Public Safety</p></label>
+                <label><input type='checkbox'><p>Remote Monitoring & Control</p></label>
+                <label><input type='checkbox'><p>Security and Video Surveillance</p></label>
+                <label><input type='checkbox'><p>Semiconductor</p></label>
+                <label><input type='checkbox'><p>Test/ Measurement/ Instrumentation/ QoS</p></label>
+                <label><input type='checkbox'><p>Video Solutions</p></label>
+                <label><input type='checkbox'><p>Smart Community</p></label>
+                <label><input type='checkbox'><p>Power & Energy </p></label>
+                <label><input type='checkbox'><p>Data Centers</p></label>
               </div>
             </div>
 
             <div class='row nc'>
-              <span>08. Would you like to know more about AAEON's Certified Peripheral & Component Service?</span>
+              <span>Contact Preference</span>
               <div>
-                <label><input type='radio' name='know'><p>Yes</p></label>
-                <label><input type='radio' name='know'><p>No</p></label>
-              </div>
-            </div>
-
-            <div class='row nc'>
-              <span>09. Contact Preference</span>
-              <div>
-                <label><input type='radio' name='contact'><p>Yes, please put me on all eMarketing or other advertising email lists.</p></label>
-                <label><input type='radio' name='contact'><p>No, please do not put me on any eMarketing or other advertising email lists.</p></label>
+                <label><input type='radio' name='contact' checked><p>Yes, please put me on all AAEON or other advertising email lists.</p></label>
+                <label><input type='radio' name='contact'><p>No, please do not put me on any eMarketing and advertising email lists.</p></label>
               </div>
             </div>
           </div>
