@@ -18,7 +18,7 @@ $minhight: 265px;
     .tag {
       display: block;
       width: 100%;
-      height: 40px;
+      height: 50px;
 
       font-size: .8em;
       font-weight: bold;
@@ -129,7 +129,7 @@ $minhight: 265px;
         }
         .row {
           + .row {
-            margin-top: 15px;
+            margin-top: 40px;
           }
           p {
             display: inline-block;
@@ -216,7 +216,7 @@ $minhight: 265px;
           }
           &.nc {
             @include clearfix();
-            
+
             span {
               float: left;
               width: 250px;
@@ -232,7 +232,7 @@ $minhight: 265px;
                 display: inline-block;
                 width: 50%;
                 @include clearfix();
-                
+
                 + label {
                   margin-top: 10px;
                 }
