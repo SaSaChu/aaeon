@@ -440,6 +440,9 @@
   padding: 0;
 }
 @media screen and (min-width: 0px) and (max-width: 960px) {
+  #container > div form .area .row.n2 > *:nth-child(2) {
+    margin-top: 15px;
+  }
   #container > div form .area .row.n2 > *:last-child {
     margin-top: 15px;
   }
@@ -463,6 +466,20 @@
   }
   #container > div form .area .row.n2 > *:last-child {
     float: right;
+  }
+}
+#container > div form .area .row.n2 .tip2 {
+  display: inline-block;
+  width: 100%;
+  margin-top: 5px;
+  padding-left: 150px;
+  color: #f892a7;
+  font-size: 13px;
+}
+@media screen and (min-width: 0px) and (max-width: 499px) {
+  #container > div form .area .row.n2 .tip2 {
+    padding-left: 5px;
+    width: 100%;
   }
 }
 #container > div form .area .row span {
@@ -526,7 +543,7 @@
   width: calc(100% - 150px);
   border: 1px solid rgba(39, 40, 34, 0.25);
   padding: 5px;
-  font-size: 16px;
+  font-size: 14px;
   height: 28px;
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
@@ -563,6 +580,11 @@
 #container > div form .area .row.nc span {
   float: left;
   width: 250px;
+}
+#container > div form .area .row.nc span.vv {
+  text-align: left;
+  padding-bottom: 15px;
+  width: 100%;
 }
 #container > div form .area .row.nc div {
   float: right;

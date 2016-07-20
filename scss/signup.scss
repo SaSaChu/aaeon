@@ -140,6 +140,10 @@ $minhight: 265px;
           &.n2 {
             @media screen and (min-width: 0px) and (max-width: $mediaTabletWidth) {
               > * {
+                &:nth-child(2) {
+                  margin-top: 15px;
+                }
+
                 &:last-child {
                   margin-top: 15px;
                 }
@@ -157,6 +161,19 @@ $minhight: 265px;
                 &:last-child {
                   float: right;
                 }
+              }
+            }
+
+            .tip2 {
+              display: inline-block;
+              width: 100%;
+              margin-top: 5px;
+              padding-left: 150px;
+              color: rgba(248, 146, 167, 1.00);
+              font-size: 13px;
+              @media screen and (min-width: 0px) and (max-width: #{500px - 1px}) {
+                padding-left: 5px;
+                width: 100%;
               }
             }
           }
@@ -193,7 +210,7 @@ $minhight: 265px;
             width: calc(100% - 150px);
             border: 1px solid rgba(39, 40, 34, .25);
             padding: 5px;
-            font-size: 16px;
+            font-size: 14px;
             height: 28px;
             @include border-radius (2px);
           }
@@ -207,6 +224,7 @@ $minhight: 265px;
               width: 100%;
             }
           }
+
           input[type='text'], select, p {
             @media screen and (min-width: 0px) and (max-width: #{500px - 1px}) {
               width: calc(100% - 5px) !important;
@@ -220,6 +238,12 @@ $minhight: 265px;
             span {
               float: left;
               width: 250px;
+
+              &.vv {
+                text-align: left;
+                padding-bottom: 15px;
+                width: 100%;
+              }
             }
             div {
               float: right;
