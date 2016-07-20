@@ -100,6 +100,38 @@
           float: left;
         }
       }
+      .verify {
+        display: inline-block;
+        width: 100%;
+        background-color: white;
+        @include clearfix();
+        padding: 3px 5px;
+        margin-top: 5px;
+        
+        span {
+          float: left;
+          display: inline-block;
+          font-size: 13px;
+          font-weight: bold;
+          text-align: right;
+          margin-top: 10px;
+          color: rgba(39, 40, 34, 1.00);
+          width: calc(100% - 120px - 80px);
+        }
+        img {
+          float: left;
+          display: inline-block;
+          width: 120px;
+        }
+        input {
+          @include input;
+          float: left;
+          display: inline-block;
+          width: 70px;
+          margin-left: 10px;
+          margin-top: 3px;
+        }
+      }
       .btns {
         margin-top: 10px;
         @include clearfix();
