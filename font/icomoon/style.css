@@ -1,66 +1,69 @@
 @font-face {
-    font-family: 'icomoon';
-    src:    url('fonts/icomoon.eot?3ik3jn');
-    src:    url('fonts/icomoon.eot?3ik3jn#iefix') format('embedded-opentype'),
-        url('fonts/icomoon.ttf?3ik3jn') format('truetype'),
-        url('fonts/icomoon.woff?3ik3jn') format('woff'),
-        url('fonts/icomoon.svg?3ik3jn#icomoon') format('svg');
-    font-weight: normal;
-    font-style: normal;
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?1wtru1');
+  src:  url('fonts/icomoon.eot?1wtru1#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?1wtru1') format('truetype'),
+    url('fonts/icomoon.woff?1wtru1') format('woff'),
+    url('fonts/icomoon.svg?1wtru1#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
 }
 
 [class^="icon-"], [class*=" icon-"] {
-    /* use !important to prevent issues with browser extensions that change fonts */
-    font-family: 'icomoon' !important;
-    speak: none;
-    font-style: normal;
-    font-weight: normal;
-    font-variant: normal;
-    text-transform: none;
-    line-height: 1;
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
 
-    /* Better Font Rendering =========== */
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-chevron-thin-down:before {
-    content: "\e900";
-}
-.icon-chevron-thin-left:before {
-    content: "\e901";
-}
-.icon-chevron-thin-right:before {
-    content: "\e902";
-}
-.icon-chevron-thin-up:before {
-    content: "\e903";
-}
-.icon-log-out:before {
-    content: "\e905";
-}
-.icon-login:before {
-    content: "\e906";
-}
-.icon-mail:before {
-    content: "\e904";
-}
-.icon-move-down:before {
-    content: "\f0a8";
-}
-.icon-search:before {
-    content: "\f02e";
-}
-.icon-triangle-down:before {
-    content: "\f05b";
+.icon-location:before {
+  content: "\e907";
 }
 .icon-phone:before {
-    content: "\e0cd";
-}
-.icon-list:before {
-    content: "\e896";
+  content: "\e0cd";
 }
 .icon-phone_android:before {
-    content: "\e324";
+  content: "\e324";
+}
+.icon-list:before {
+  content: "\e896";
+}
+.icon-chevron-thin-down:before {
+  content: "\e900";
+}
+.icon-chevron-thin-left:before {
+  content: "\e901";
+}
+.icon-chevron-thin-right:before {
+  content: "\e902";
+}
+.icon-chevron-thin-up:before {
+  content: "\e903";
+}
+.icon-mail:before {
+  content: "\e904";
+}
+.icon-log-out:before {
+  content: "\e905";
+}
+.icon-login:before {
+  content: "\e906";
+}
+.icon-search:before {
+  content: "\f02e";
+}
+.icon-triangle-down:before {
+  content: "\f05b";
+}
+.icon-move-down:before {
+  content: "\f0a8";
 }
 
