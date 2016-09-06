@@ -867,7 +867,7 @@
     background-color: white;
     word-break: break-all;
     line-height: 22px;
-    padding: 5px;
+    padding: 10px;
   }
   .ta .tr > div + .tc, .ta .tr .tc + .tc {
     border-left: 0;
@@ -880,7 +880,7 @@
   }
   .ta .tr:first-child > div, .ta .tr:first-child .tc {
     position: relative;
-    padding-top: 50px;
+    padding-top: 63px;
     height: 90px;
   }
   .ta .tr:first-child > div:before, .ta .tr:first-child .tc:before {
@@ -897,9 +897,11 @@
     background-color: #f4f5f6;
     word-break: break-all;
     padding: 5px;
+    font-size: 1em;
+    font-weight: bolder;
   }
   .ta .tr:first-child > div {
-    padding-top: 80px;
+    padding-top: 90px;
     height: 120px;
   }
   .ta .tr:first-child > div:before {
@@ -959,14 +961,11 @@
     width: 100%;
     border: 1px solid #86d4f1;
     border-bottom: 0;
-    padding: 5px;
-    padding-left: 110px;
+    padding: 10px;
+    padding-left: 130px;
   }
   .ta .tr > div:last-child, .ta .tr .tc:last-child {
     border-bottom: 1px solid #86d4f1;
-  }
-  .ta .tr > div + .tc, .ta .tr .tc + .tc {
-    border-top: 0;
   }
   .ta .tr > div:before, .ta .tr .tc:before {
     content: attr(title);
@@ -974,12 +973,14 @@
     left: 0;
     top: 0;
     display: inline-block;
-    width: 100px;
+    width: 120px;
     height: 100%;
     text-align: right;
     border-right: 1px solid #86d4f1;
     background-color: #e6f7fd;
-    padding: 5px;
+    padding: 10px;
+    font-size: 1em;
+    font-weight: bolder;
   }
   .ta .tr > div {
     padding-left: 190px;

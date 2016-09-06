@@ -956,7 +956,7 @@ $border_color: rgba(220, 228, 232, 1.00);
         background-color: white;
         word-break: break-all;
         line-height: 22px;
-        padding: 5px;
+        padding: 10px;
 
         // 後面是 .tc 的話，設定那個 tc
         + .tc {
@@ -976,7 +976,7 @@ $border_color: rgba(220, 228, 232, 1.00);
       &:first-child {
         >div, .tc {
           position: relative;
-          padding-top: $title_height;
+          padding-top: 63px;
           height: $title_height + $cell_height;
 
           &:before {
@@ -993,10 +993,12 @@ $border_color: rgba(220, 228, 232, 1.00);
             background-color: rgba(244, 245, 246, 1.00);
             word-break: break-all;
             padding: 5px;
+            font-size: 1em;
+            font-weight: bolder;
           }
         }
         >div{
-          padding-top: $stitle_height;
+          padding-top: $stitle_height + 10px;
           height: $stitle_height + $cell_height;
           &:before {
             padding-top: 25px;
@@ -1053,7 +1055,7 @@ $border_color: rgba(220, 228, 232, 1.00);
 
 
 @media screen and (min-width: 0) and (max-width: $mediaTabletWidth) {
-  $title_width: 100px;
+  $title_width: 120px;
   $stitle_width: 180px;
   $height: 35px;
 
@@ -1071,7 +1073,7 @@ $border_color: rgba(220, 228, 232, 1.00);
         width: 100%;
         border: 1px solid rgba(134, 212, 241, 1.00);
         border-bottom: 0;
-        padding: 5px;
+        padding: 10px;
         padding-left: $title_width + 10px;
 
         &:last-child {
@@ -1079,7 +1081,7 @@ $border_color: rgba(220, 228, 232, 1.00);
         }
 
         + .tc {
-          border-top: 0;
+          // border-top: 0;
         }
 
         &:before {
@@ -1093,7 +1095,9 @@ $border_color: rgba(220, 228, 232, 1.00);
           text-align: right;
           border-right: 1px solid rgba(134, 212, 241, 1.00);
           background-color: rgba(230, 247, 253, 1.00);
-          padding: 5px;
+          padding: 10px;
+          font-size: 1em;
+          font-weight: bolder;
         }
       }
       > div {
