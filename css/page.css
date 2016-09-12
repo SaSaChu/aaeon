@@ -799,7 +799,7 @@
   #container > div .rb #arrow_box .cb .sone {
     float: left;
     width: calc(100% / 2);
-    min-height: 265px;
+    height: 310px;
     padding: 10px;
   }
   #container > div .rb #arrow_box .cb .sone .imbox {
@@ -824,11 +824,12 @@
     margin: 0;
     padding: 3px 0;
     word-wrap: break-word;
-    font-size: 1em;
+    font-size: .9em;
     line-height: 1.4em;
     color: #9fa3a4;
   }
   #container > div .rb #arrow_box .cb .sone > span > p.c {
+    height: 66px;
     font-weight: bold;
     color: #22313c;
   }
@@ -1685,7 +1686,7 @@
     float: left;
     width: calc(100% / 4);
     min-height: 265px;
-    max-height: 300px;
+    height: 300px;
     padding: 10px;
   }
   #container > div .rb #arrow_box .cb .sone .imbox {
@@ -1713,6 +1714,7 @@
     color: #9fa3a4;
   }
   #container > div .rb #arrow_box .cb .sone > span > p.c {
+    height: 50px;
     font-weight: bold;
     color: #22313c;
   }

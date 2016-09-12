@@ -297,9 +297,10 @@
               .sone {
                 float: left;
                 width: calc(100% / 2);
-                min-height: $minhight;
+                height: 310px;
                 // max-height: $maxhight;
                 padding: 10px;
+
 
                 .imbox {
                   width: 100%;
@@ -330,11 +331,12 @@
                     padding: 3px 0;
 
                     word-wrap:break-word;
-                    font-size: 1em;
+                    font-size: .9em;
                     line-height: 1.4em;
                     color: rgba(159, 163, 164, 1.00);
 
                     &.c {
+                      height: 66px;
                       font-weight: bold;
                       color: rgba(34, 49, 60, 1.00);
                     }
@@ -724,7 +726,8 @@
                 float: left;
                 width: calc(100% / 4);
                 min-height: $minhight;
-                max-height: $maxhight;
+                // max-height: $maxhight;
+                height: 300px;
                 padding: 10px;
 
                 .imbox {
@@ -761,6 +764,7 @@
                     color: rgba(159, 163, 164, 1.00);
 
                     &.c {
+                      height: 50px;
                       font-weight: bold;
                       color: rgba(34, 49, 60, 1.00);
                     }
