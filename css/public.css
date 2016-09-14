@@ -192,6 +192,7 @@
   }
   html header > div #top .search {
     padding-top: 5px;
+    background-color: #515a64;
     *zoom: 1;
   }
   html header > div #top .search:after {
@@ -215,7 +216,8 @@
     width: 25px;
   }
   html header > div #top .search input {
-    background-color: #40474e;
+    padding-left: 10px;
+    background-color: transparent;
     border-width: 0;
     height: 80%;
     font-size: 16px;
@@ -588,6 +590,7 @@
   }
   html header > div #top .search {
     padding-top: 5px;
+    background-color: #515a64;
     *zoom: 1;
   }
   html header > div #top .search:after {
@@ -611,7 +614,8 @@
     width: 25px;
   }
   html header > div #top .search input {
-    background-color: #40474e;
+    padding-left: 10px;
+    background-color: transparent;
     border-width: 0;
     height: 80%;
     font-size: 16px;
