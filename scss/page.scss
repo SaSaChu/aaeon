@@ -305,7 +305,6 @@
                 .imbox {
                   width: 100%;
                   height: 150px;
-
                   line-height: 150px;
                   text-align : center;
 
@@ -315,7 +314,7 @@
                   img {
                     padding: 5px;
                     vertical-align : middle;
-                    height: auto;
+                    max-height: 150px;
                     max-width: 100%;
                   }
                 }
@@ -734,7 +733,7 @@
                   width: 100%;
                   height: 150px;
 
-                  // line-height: 150px;
+                  line-height: 150px;
                   text-align : center;
 
                   // background: rgba(241, 242, 243, 1.00);
@@ -743,7 +742,7 @@
                   img {
                     padding: 5px;
                     vertical-align : middle;
-                    // height: auto;
+                    max-height: 150px;
                     max-width: 100%;
                   }
                 }

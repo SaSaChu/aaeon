@@ -221,7 +221,7 @@
                 }
                 > a {
                   &:nth-child(1) {
-                    color: white;
+                    color: rgba(56, 62, 69, 1.00);
                     max-width: 70px;
                     @include overflow-docx3();
                   }
@@ -230,7 +230,7 @@
 
                   text-decoration: none;
                   &:hover {
-                    color: rgba(26, 152, 244, .500);
+                    color: rgba(26, 152, 244, 1.00);
                   }
                 }
               }
@@ -667,14 +667,14 @@
                 > a {
                   cursor: pointer;
                   &:nth-child(1) {
-                    color: white;
+                    color: rgba(56, 62, 69, 1.00);
                   }
 
                   color: rgba(26, 152, 244, 1.00);
 
                   text-decoration: none;
                   &:hover {
-                    color: rgba(26, 152, 244, .500);
+                    color: rgba(26, 152, 244, 1.00);
                   }
                 }
               }

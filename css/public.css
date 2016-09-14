@@ -329,14 +329,14 @@
     text-decoration: none;
   }
   html header > div #middle .r > div > a:nth-child(1) {
-    color: white;
+    color: #383e45;
     max-width: 70px;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
   }
   html header > div #middle .r > div > a:hover {
-    color: rgba(26, 152, 244, 0.5);
+    color: #1a98f4;
   }
   html header > div nav {
     height: 57px;
@@ -725,10 +725,10 @@
     text-decoration: none;
   }
   html header > div #middle .r > div > a:nth-child(1) {
-    color: white;
+    color: #383e45;
   }
   html header > div #middle .r > div > a:hover {
-    color: rgba(26, 152, 244, 0.5);
+    color: #1a98f4;
   }
   html header > div nav {
     height: 57px;

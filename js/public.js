@@ -62,10 +62,12 @@ $(function () {
     $(this).addClass ('show');
   });
   $('._i').imgLiquid ({verticalAlign: 'center'});
-  
+
   var $banner = $('#banner'),$div = $('<div />'), i = 0, l = $banner.find ('img').map (function () { return $('<a />').appendTo ($div).click (function () { i = $(this).index (); $banner.attr ('class', 'n' + $(this).index ()); }); }).length;
   $banner.append ($('<div />').append ($div));
   setInterval (function () {
     $banner.find ('a').eq (i = ++i % l).click ();
   }, 6000);
+
+   // $('.imbox').imgLiquid ({verticalAlign: 'center'});
 });
