@@ -274,7 +274,6 @@
     content: attr(title);
     display: inline-block;
     width: 100px;
-    border-right: 2px solid #c9d2d7;
     color: #4f5761;
     font-size: .9em;
     font-weight: bolder;
@@ -299,10 +298,11 @@
     display: inline-block;
     width: 60%;
     cursor: pointer;
-    padding: 8px 10px;
+    padding: 10px 10px;
     margin: 0;
     color: #4f5761;
     font-size: .9em;
+    border-left: 2px solid #c9d2d7;
   }
   .e_table_boxs .table .tr .td p.e_down_text:hover {
     color: #20bbfc;
@@ -311,8 +311,9 @@
   .e_table_boxs .table .tr .td p {
     display: inline-block;
     width: 50%;
-    padding: 8px 5px;
+    padding: 10px 10px;
     margin: 0;
+    border-left: 2px solid #c9d2d7;
     color: #4f5761;
     font-size: 1em;
   }
