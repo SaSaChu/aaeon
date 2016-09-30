@@ -1,0 +1,63 @@
+/**
+ * @author      ZEUS Design - http://www.zeusdesign.com.tw
+ * @copyright   Copyright (c) 2016 ZEUS Design
+ */
+
+@import "_oa";
+
+$changeWidth: 700px; //螢幕寬多少要改變
+
+@media screen and (min-width: 0) and (max-width: #{$changeWidth - 1px}) {
+  .table {
+    display: block;
+
+    .tr {
+      display: block;
+      margin: 10px;
+      border: 1px solid rgba(255, 0, 0, .3);
+
+      .td {
+        display: block;
+        border: 1px solid rgba(255, 0, 0, .3);
+        text-align: left;
+
+        &:before {
+          content: attr(title);
+          display: inline-block;
+          width: 100px;
+          background-color: rgba(0, 0, 255, 0.2);
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: $changeWidth) {
+  .table {
+    display: table;
+    width: 800px;
+
+    .tr {
+      display: table-row;
+      @include clearfix();
+      
+      .td {
+        display: table-cell;
+        border: 1px solid rgba(255, 0, 0, .3);
+      }
+
+      &:first-child { // 第一行的 tr
+        
+        .td {
+          position: relative;
+
+          &:before {
+            content: attr(title);
+            display: inline-block;
+            width: 100%;
+            background-color: rgba(0, 0, 255, 0.2);
+          }
+        }
+      }
+    }
+  }
+}

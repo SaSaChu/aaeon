@@ -1,0 +1,98 @@
+/**
+ * @author      ZEUS Design - http://www.zeusdesign.com.tw
+ * @copyright   Copyright (c) 2016 ZEUS Design
+ */
+/**
+ * @author      OA Wu <comdan66@gmail.com>
+ * @copyright   Copyright (c) 2016 OA Wu Design
+ */
+/**
+ * @author      OA Wu <comdan66@gmail.com>
+ * @copyright   Copyright (c) 2016 OA Wu Design
+ */
+/**
+ * @author      OA Wu <comdan66@gmail.com>
+ * @copyright   Copyright (c) 2016 OA Wu Design
+ */
+/**
+ * @author      OA Wu <comdan66@gmail.com>
+ * @copyright   Copyright (c) 2016 OA Wu Design
+ */
+/**
+ * @author      OA Wu <comdan66@gmail.com>
+ * @copyright   Copyright (c) 2016 OA Wu Design
+ */
+/**
+ * @author      OA Wu <comdan66@gmail.com>
+ * @copyright   Copyright (c) 2016 OA Wu Design
+ */
+/**
+ * @author      OA Wu <comdan66@gmail.com>
+ * @copyright   Copyright (c) 2016 OA Wu Design
+ */
+/**
+ * @author      OA Wu <comdan66@gmail.com>
+ * @copyright   Copyright (c) 2016 OA Wu Design
+ */
+/**
+ * @author      OA Wu <comdan66@gmail.com>
+ * @copyright   Copyright (c) 2016 OA Wu Design
+ */
+/**
+ * @author      OA Wu <comdan66@gmail.com>
+ * @copyright   Copyright (c) 2016 OA Wu Design
+ */
+/**
+ * @author      OA Wu <comdan66@gmail.com>
+ * @copyright   Copyright (c) 2016 OA Wu Design
+ */
+@media screen and (min-width: 0) and (max-width: 699px) {
+  .table {
+    display: block;
+  }
+  .table .tr {
+    display: block;
+    margin: 10px;
+    border: 1px solid rgba(255, 0, 0, 0.3);
+  }
+  .table .tr .td {
+    display: block;
+    border: 1px solid rgba(255, 0, 0, 0.3);
+    text-align: left;
+  }
+  .table .tr .td:before {
+    content: attr(title);
+    display: inline-block;
+    width: 100px;
+    background-color: rgba(0, 0, 255, 0.2);
+  }
+}
+@media screen and (min-width: 700px) {
+  .table {
+    display: table;
+    width: 800px;
+  }
+  .table .tr {
+    display: table-row;
+    *zoom: 1;
+  }
+  .table .tr:after {
+    display: table;
+    content: "";
+    line-height: 0;
+    clear: both;
+  }
+  .table .tr .td {
+    display: table-cell;
+    border: 1px solid rgba(255, 0, 0, 0.3);
+  }
+  .table .tr:first-child .td {
+    position: relative;
+  }
+  .table .tr:first-child .td:before {
+    content: attr(title);
+    display: inline-block;
+    width: 100%;
+    background-color: rgba(0, 0, 255, 0.2);
+  }
+}
