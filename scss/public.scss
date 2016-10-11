@@ -288,6 +288,8 @@
                 position: absolute;
                 left: 0;
                 top: 57px;
+                overflow: scroll;
+                -webkit-overflow-scrolling: touch;
 
                 > a  {
                   display: inline-block;
@@ -734,6 +736,8 @@
                 position: absolute;
                 left: 0;
                 top: 57px;
+                overflow: scroll;
+                -webkit-overflow-scrolling: touch;
 
                 > a  {
                   float: left;

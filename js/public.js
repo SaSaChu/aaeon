@@ -17,7 +17,12 @@ $(function () {
       $(this).toggleClass ('s').siblings ().removeClass ('s');
     });
   }
-
+  $(window).resize (function () {
+    // if ()
+    $('html header > div nav > div .list').css ({'max-height': $(window).height () - ($(window).width () < 960 ? 220 : 200)});
+    // $('html header > div nav > div .list').css ({'max-height': $(window).height () - 200});
+  }).resize ();
+  // 
 
   $('.year_tab').each (function () {
 
