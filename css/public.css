@@ -251,7 +251,7 @@
   html header > div #top .lang > div {
     display: none;
   }
-  html header > div #top .lang:hover > div, html header > div #top .lang:active > div, html header > div #top .lang:focus > div {
+  html header > div #top .lang:hover > div {
     position: absolute;
     top: 35px;
     left: 0;
@@ -260,7 +260,7 @@
     z-index: 3;
     background-color: #545c64;
   }
-  html header > div #top .lang:hover > div a, html header > div #top .lang:active > div a, html header > div #top .lang:focus > div a {
+  html header > div #top .lang:hover > div a {
     display: inline-block;
     width: 100%;
     padding: 10px;
@@ -268,7 +268,7 @@
     cursor: pointer;
     text-decoration: none;
   }
-  html header > div #top .lang:hover > div a:hover, html header > div #top .lang:active > div a:hover, html header > div #top .lang:focus > div a:hover {
+  html header > div #top .lang:hover > div a:hover {
     background-color: #20bbfc;
   }
   html header > div #middle {
@@ -376,11 +376,11 @@
   html header > div nav > div .list {
     display: none;
   }
-  html header > div nav > div:hover span {
+  html header > div nav > div:hover span, html header > div nav > div:active span, html header > div nav > div:focus span {
     color: #1a98f4;
     border-bottom: 10px solid #1fbbfc;
   }
-  html header > div nav > div:hover .list {
+  html header > div nav > div:hover .list, html header > div nav > div:active .list, html header > div nav > div:focus .list {
     display: inline-block;
     width: 200%;
     position: absolute;
@@ -389,7 +389,7 @@
     overflow: auto;
     -webkit-overflow-scrolling: touch;
   }
-  html header > div nav > div:hover .list > a {
+  html header > div nav > div:hover .list > a, html header > div nav > div:active .list > a, html header > div nav > div:focus .list > a {
     display: inline-block;
     width: 100%;
     padding: 15px;
@@ -400,7 +400,7 @@
     color: gray;
     text-decoration: none;
   }
-  html header > div nav > div:hover .list > a:hover {
+  html header > div nav > div:hover .list > a:hover, html header > div nav > div:active .list > a:hover, html header > div nav > div:focus .list > a:hover {
     color: #20bbfc;
   }
   html header > div nav > div:nth-child(2):hover .list, html header > div nav > div:nth-child(4):hover .list {
