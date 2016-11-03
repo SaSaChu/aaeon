@@ -158,7 +158,7 @@
               display: none;
             }
 
-            &:hover {
+            &:hover, &:active, &:focus {
               > div {
                 position: absolute;
                 top: 35px;
