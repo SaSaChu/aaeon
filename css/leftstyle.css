@@ -963,7 +963,7 @@
   }
   .ta .tr > div, .ta .tr .tc {
     position: relative;
-    display: inline-block;
+    display: inline-table;
     width: 100%;
     border: 1px solid #86d4f1;
     border-bottom: 0;
