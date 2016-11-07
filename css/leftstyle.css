@@ -208,7 +208,7 @@
   .cb .sfour {
     float: left;
     width: calc(100% / 1);
-    height: 100%;
+    height: 180px;
     padding: 10px;
   }
   .cb .sfour .icon-mail {
@@ -611,7 +611,7 @@
   .cb .sfour {
     float: left;
     width: calc(100% / 2);
-    height: 100%;
+    height: 180px;
     padding: 10px;
   }
   .cb .sfour .icon-mail {
