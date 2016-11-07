@@ -968,7 +968,7 @@
     border: 1px solid #86d4f1;
     border-bottom: 0;
     padding: 10px;
-    padding-left: 130px;
+    padding-left: 140px;
   }
   .ta .tr > div:last-child, .ta .tr .tc:last-child {
     border-bottom: 1px solid #86d4f1;
@@ -979,7 +979,7 @@
     left: 0;
     top: 0;
     display: inline-block;
-    width: 120px;
+    width: 130px;
     height: 100%;
     text-align: left;
     border-right: 1px solid #86d4f1;
