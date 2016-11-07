@@ -980,7 +980,7 @@
     top: 0;
     display: inline-block;
     width: 120px;
-    height: 100%;
+    height: auto;
     text-align: right;
     border-right: 1px solid #86d4f1;
     background-color: #e6f7fd;

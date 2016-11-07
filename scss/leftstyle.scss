@@ -1095,7 +1095,7 @@ $border_color: rgba(220, 228, 232, 1.00);
           top: 0;
           display: inline-block;
           width: $title_width;
-          height: 100%;
+          height: auto;
           text-align: right;
           border-right: 1px solid rgba(134, 212, 241, 1.00);
           background-color: rgba(230, 247, 253, 1.00);
