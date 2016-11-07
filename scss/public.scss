@@ -82,7 +82,7 @@
       @include font-smoothing(antialiased);
     }
 
-    #header {
+    header {
       position: fixed;
       top:0;
       left: 0;
@@ -377,7 +377,7 @@
       }
     }
 
-    #footer {
+    footer {
       position: absolute;
       bottom: 0px;
       right: 0px;
@@ -477,7 +477,7 @@
     &.layout2 {
       background: rgba(247, 247, 247, 1.00);
 
-      #header {
+      header {
         position: relative;
         background: url(../img/ctopbg.png) repeat-x;
       }
@@ -485,14 +485,14 @@
         height: auto;
         padding-top: 0;
       }
-      #footer {
+      footer {
         position: relative;
       }
     }
     &.layout3 {
       background: rgba(247, 247, 247, 1.00);
 
-      #header {
+      header {
         position: relative;
         background: url(../img/blue_ctopbg.png) repeat-x;
       }
@@ -500,7 +500,7 @@
         height: auto;
         padding-top: 0;
       }
-      #footer {
+      footer {
         position: relative;
       }
     }
@@ -532,7 +532,7 @@
       @include font-smoothing(antialiased);
     }
 
-    #header {
+    header {
       position: fixed;
       top:0;
       left: 0;
@@ -818,7 +818,7 @@
     }
 
 
-    #footer {
+    footer {
       position: absolute;
       bottom: 0px;
       right: 0px;
@@ -909,7 +909,7 @@
     &.layout2 {
       background: rgba(247, 247, 247, 1.00);
 
-      #header {
+      header {
         position: relative;
         background: url(../img/ctopbg.png) repeat-x;
       }
@@ -917,14 +917,14 @@
         height: auto;
         padding-top: 0;
       }
-      #footer {
+      footer {
         position: relative;
       }
     }
     &.layout3 {
       background: rgba(247, 247, 247, 1.00);
 
-      #header {
+      header {
         position: relative;
         background: url(../img/blue_ctopbg.png) repeat-x;
       }
@@ -932,7 +932,7 @@
         height: auto;
         padding-top: 0;
       }
-      #footer {
+      footer {
         position: relative;
       }
     }
