@@ -979,7 +979,7 @@
     position: absolute;
     left: 0;
     top: 0;
-    display: inline-block;
+    display: inline-table;
     width: 130px;
     height: 100%;
     text-align: left;
