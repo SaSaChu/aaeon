@@ -1068,12 +1068,12 @@ $border_color: rgba(220, 228, 232, 1.00);
     width: 100%;
 
     .tr {
-      display: inline-table;
+      display: inline-block;
       width: 100%;
 
       > div, .tc {
         position: relative;
-        display: inline-table;
+        display: inline-block;
         width: 100%;
         border: 1px solid rgba(134, 212, 241, 1.00);
         border-bottom: 0;
@@ -1095,7 +1095,7 @@ $border_color: rgba(220, 228, 232, 1.00);
           position: absolute;
           left: 0;
           top: 0;
-          display: inline-table;
+          display: inline-block;
           width: $title_width + 10px;
           height: 100%;
           text-align: left;
@@ -1103,8 +1103,8 @@ $border_color: rgba(220, 228, 232, 1.00);
           border-right: 1px solid rgba(134, 212, 241, 1.00);
           background-color: rgba(230, 247, 253, 1.00);
           padding-left: 10px;
-          padding-top: 10px;
-          padding-bottom: 10px;
+          // padding-top: 10px;
+          // padding-bottom: 10px;
           font-size: 1em;
           font-weight: bolder;
         }
