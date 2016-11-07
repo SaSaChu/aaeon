@@ -82,7 +82,7 @@
       @include font-smoothing(antialiased);
     }
 
-    #header {
+    header {
       position: fixed;
       top:0;
       left: 0;
@@ -239,7 +239,7 @@
             }
         }
 
-        #nav {
+        nav {
           height: 57px;
           background-color: rgba(64, 71, 78, 1.00);
           @include clearfix();
@@ -377,7 +377,7 @@
       }
     }
 
-    #footer {
+    footer {
       position: absolute;
       bottom: 0px;
       right: 0px;
@@ -477,7 +477,7 @@
     &.layout2 {
       background: rgba(247, 247, 247, 1.00);
 
-      #header {
+      header {
         position: relative;
         background: url(../img/ctopbg.png) repeat-x;
       }
@@ -485,14 +485,14 @@
         height: auto;
         padding-top: 0;
       }
-      #footer {
+      footer {
         position: relative;
       }
     }
     &.layout3 {
       background: rgba(247, 247, 247, 1.00);
 
-      #header {
+      header {
         position: relative;
         background: url(../img/blue_ctopbg.png) repeat-x;
       }
@@ -500,7 +500,7 @@
         height: auto;
         padding-top: 0;
       }
-      #footer {
+      footer {
         position: relative;
       }
     }
@@ -508,6 +508,7 @@
 }
 
 
+@media screen and (min-width: $mediaTabletWidth + 1px) {
 
   $bigwidth: 1000px;
   $footerheight: 50px;
@@ -532,7 +533,7 @@
       @include font-smoothing(antialiased);
     }
 
-    #header {
+    header {
       position: fixed;
       top:0;
       left: 0;
@@ -686,7 +687,7 @@
             }
         }
 
-        #nav {
+        nav {
           height: 57px;
           background-color: rgba(64, 71, 78, 1.00);
           @include clearfix();
@@ -818,7 +819,7 @@
     }
 
 
-    #footer {
+    footer {
       position: absolute;
       bottom: 0px;
       right: 0px;
@@ -909,7 +910,7 @@
     &.layout2 {
       background: rgba(247, 247, 247, 1.00);
 
-      #header {
+      header {
         position: relative;
         background: url(../img/ctopbg.png) repeat-x;
       }
@@ -917,14 +918,14 @@
         height: auto;
         padding-top: 0;
       }
-      #footer {
+      footer {
         position: relative;
       }
     }
     &.layout3 {
       background: rgba(247, 247, 247, 1.00);
 
-      #header {
+      header {
         position: relative;
         background: url(../img/blue_ctopbg.png) repeat-x;
       }
@@ -932,11 +933,12 @@
         height: auto;
         padding-top: 0;
       }
-      #footer {
+      footer {
         position: relative;
       }
     }
   }
+}
 
 #banner {
   position: fixed;
