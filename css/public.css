@@ -160,7 +160,7 @@
     -ms-font-smoothing: antialiased;
     -o-font-smoothing: antialiased;
   }
-  html header {
+  html #header {
     position: fixed;
     top: 0;
     left: 0;
@@ -169,53 +169,53 @@
     background: url(../img/topbg.png) repeat-x;
     z-index: 999;
   }
-  html header > div {
+  html #header > div {
     margin: 0 auto;
     width: 100%;
     height: 100%;
   }
-  html header > div #top {
+  html #header > div #top {
     height: 35px;
     background-color: #40474e;
     *zoom: 1;
   }
-  html header > div #top:after {
+  html #header > div #top:after {
     display: table;
     content: "";
     line-height: 0;
     clear: both;
   }
-  html header > div #top > div {
+  html #header > div #top > div {
     float: right;
     display: inline-block;
     height: 100%;
   }
-  html header > div #top .search {
+  html #header > div #top .search {
     padding-top: 5px;
     background-color: #515a64;
     *zoom: 1;
   }
-  html header > div #top .search:after {
+  html #header > div #top .search:after {
     display: table;
     content: "";
     line-height: 0;
     clear: both;
   }
-  html header > div #top .search input, html header > div #top .search label {
+  html #header > div #top .search input, html #header > div #top .search label {
     float: left;
     position: relative;
     display: inline-block;
   }
-  html header > div #top .search label {
+  html #header > div #top .search label {
     float: right;
   }
-  html header > div #top .search input {
+  html #header > div #top .search input {
     width: calc(100% - 25px);
   }
-  html header > div #top .search label {
+  html #header > div #top .search label {
     width: 25px;
   }
-  html header > div #top .search input {
+  html #header > div #top .search input {
     padding-left: 10px;
     background-color: transparent;
     border-width: 0;
@@ -223,24 +223,24 @@
     font-size: 16px;
     color: #20bbfc;
   }
-  html header > div #top .search input:focus {
+  html #header > div #top .search input:focus {
     outline: 0;
   }
-  html header > div #top .search label {
+  html #header > div #top .search label {
     margin-top: 4px;
     text-align: center;
     border-left: 1px solid rgba(128, 128, 128, 0.7);
     cursor: pointer;
   }
-  html header > div #top .search label:before {
+  html #header > div #top .search label:before {
     display: inline-block;
   }
-  html header > div #top .lang {
+  html #header > div #top .lang {
     position: relative;
     width: 100px;
     text-align: center;
   }
-  html header > div #top .lang span {
+  html #header > div #top .lang span {
     color: white;
     display: inline-block;
     width: 100%;
@@ -248,10 +248,10 @@
     padding-top: 7px;
     color: #20bbfc;
   }
-  html header > div #top .lang > div {
+  html #header > div #top .lang > div {
     display: none;
   }
-  html header > div #top .lang:hover > div, html header > div #top .lang.a > div {
+  html #header > div #top .lang:hover > div, html #header > div #top .lang.a > div {
     position: absolute;
     top: 35px;
     left: 0;
@@ -260,7 +260,7 @@
     z-index: 3;
     background-color: #545c64;
   }
-  html header > div #top .lang:hover > div a, html header > div #top .lang.a > div a {
+  html #header > div #top .lang:hover > div a, html #header > div #top .lang.a > div a {
     display: inline-block;
     width: 100%;
     padding: 10px;
@@ -268,90 +268,90 @@
     cursor: pointer;
     text-decoration: none;
   }
-  html header > div #top .lang:hover > div a:hover, html header > div #top .lang.a > div a:hover {
+  html #header > div #top .lang:hover > div a:hover, html #header > div #top .lang.a > div a:hover {
     background-color: #20bbfc;
   }
-  html header > div #middle {
+  html #header > div #middle {
     height: calc(100% - 35px - 47px);
     *zoom: 1;
   }
-  html header > div #middle:after {
+  html #header > div #middle:after {
     display: table;
     content: "";
     line-height: 0;
     clear: both;
   }
-  html header > div #middle .l, html header > div #middle .r {
+  html #header > div #middle .l, html #header > div #middle .r {
     float: left;
     position: relative;
     display: inline-block;
   }
-  html header > div #middle .r {
+  html #header > div #middle .r {
     float: right;
   }
-  html header > div #middle .l {
+  html #header > div #middle .l {
     width: 40%;
   }
-  html header > div #middle .r {
+  html #header > div #middle .r {
     width: calc(100% - 40%);
   }
-  html header > div #middle .r, html header > div #middle .l {
+  html #header > div #middle .r, html #header > div #middle .l {
     height: 100%;
   }
-  html header > div #middle .l {
+  html #header > div #middle .l {
     padding-top: 10px;
     padding-left: 10px;
   }
-  html header > div #middle .l img {
+  html #header > div #middle .l img {
     margin-top: 10px;
     height: auto;
     max-width: 100%;
   }
-  html header > div #middle .r > div {
+  html #header > div #middle .r > div {
     float: right;
     height: 100%;
     padding-top: 35px;
     padding-right: 5px;
     *zoom: 1;
   }
-  html header > div #middle .r > div:after {
+  html #header > div #middle .r > div:after {
     display: table;
     content: "";
     line-height: 0;
     clear: both;
   }
-  html header > div #middle .r > div > * {
+  html #header > div #middle .r > div > * {
     display: inline-block;
     float: right;
     font-size: 19px;
     margin: 5px;
   }
-  html header > div #middle .r > div > a {
+  html #header > div #middle .r > div > a {
     color: #1a98f4;
     text-decoration: none;
   }
-  html header > div #middle .r > div > a:nth-child(1) {
+  html #header > div #middle .r > div > a:nth-child(1) {
     color: #383e45;
     max-width: 70px;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
   }
-  html header > div #middle .r > div > a:hover {
+  html #header > div #middle .r > div > a:hover {
     color: #1a98f4;
   }
-  html header > div nav {
+  html #header > div nav {
     height: 57px;
     background-color: #40474e;
     *zoom: 1;
   }
-  html header > div nav:after {
+  html #header > div nav:after {
     display: table;
     content: "";
     line-height: 0;
     clear: both;
   }
-  html header > div nav > div {
+  html #header > div nav > div {
     float: left;
     position: relative;
     display: inline-block;
@@ -359,7 +359,7 @@
     height: 100%;
     text-align: center;
   }
-  html header > div nav > div span {
+  html #header > div nav > div span {
     display: inline-block;
     width: 100%;
     height: 100%;
@@ -369,18 +369,18 @@
     line-height: 53px;
     border-bottom: 10px solid #1a98f4;
   }
-  html header > div nav > div span.bma {
+  html #header > div nav > div span.bma {
     color: #20bbfc;
     border-bottom: 10px solid #20bbfc;
   }
-  html header > div nav > div .list {
+  html #header > div nav > div .list {
     display: none;
   }
-  html header > div nav > div:hover span, html header > div nav > div.a span {
+  html #header > div nav > div:hover span, html #header > div nav > div.a span {
     color: #1a98f4;
     border-bottom: 10px solid #1fbbfc;
   }
-  html header > div nav > div:hover .list, html header > div nav > div.a .list {
+  html #header > div nav > div:hover .list, html #header > div nav > div.a .list {
     display: inline-block;
     width: 200%;
     position: absolute;
@@ -389,7 +389,7 @@
     overflow: auto;
     -webkit-overflow-scrolling: touch;
   }
-  html header > div nav > div:hover .list > a, html header > div nav > div.a .list > a {
+  html #header > div nav > div:hover .list > a, html #header > div nav > div.a .list > a {
     display: inline-block;
     width: 100%;
     padding: 15px;
@@ -400,17 +400,17 @@
     color: gray;
     text-decoration: none;
   }
-  html header > div nav > div:hover .list > a:hover, html header > div nav > div.a .list > a:hover {
+  html #header > div nav > div:hover .list > a:hover, html #header > div nav > div.a .list > a:hover {
     color: #20bbfc;
   }
-  html header > div nav > div:nth-child(2):hover .list, html header > div nav > div:nth-child(4):hover .list {
+  html #header > div nav > div:nth-child(2):hover .list, html #header > div nav > div:nth-child(4):hover .list {
     left: auto;
     right: 0;
   }
-  html header > div nav > div + div span {
+  html #header > div nav > div + div span {
     position: relative;
   }
-  html header > div nav > div + div span:before {
+  html #header > div nav > div + div span:before {
     content: '';
     position: absolute;
     left: 0;
@@ -444,7 +444,7 @@
     font-size: 1.5em;
     color: #fff;
   }
-  html footer {
+  html #footer {
     position: absolute;
     bottom: 0px;
     right: 0px;
@@ -452,37 +452,37 @@
     background: #383e45;
     z-index: 2;
   }
-  html footer > div {
+  html #footer > div {
     margin: 0 auto;
     width: 100%;
     color: #fff;
   }
-  html footer > div #fb {
+  html #footer > div #fb {
     display: inline-block;
     width: 100%;
     padding-left: 10px;
   }
-  html footer > div #fb > * {
+  html #footer > div #fb > * {
     font-size: 13px;
   }
-  html footer > div #fb #cobetype {
+  html #footer > div #fb #cobetype {
     float: left;
     margin-top: 10px;
   }
-  html footer > div #fb #cobemenu {
+  html #footer > div #fb #cobemenu {
     float: left;
     margin-top: 10px;
     margin-bottom: 10px;
   }
-  html footer > div #fb #cobemenu > a {
+  html #footer > div #fb #cobemenu > a {
     color: #fff;
     text-decoration: none;
   }
-  html footer > div #fb #cobemenu > a:hover {
+  html #footer > div #fb #cobemenu > a:hover {
     color: #1b98f5;
     text-decoration: underline;
   }
-  html footer > div #bb > a {
+  html #footer > div #bb > a {
     display: block;
     width: 100%;
     height: 100%;
@@ -500,7 +500,7 @@
     background-image: -webkit-linear-gradient(#1789c6 0%, #1789c6 50%, #23a4e7 100%);
     background-image: linear-gradient(#1789c6 0%, #1789c6 50%, #23a4e7 100%);
   }
-  html footer > div #bb > a:hover {
+  html #footer > div #bb > a:hover {
     background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzIzYTRlNyIvPjxzdG9wIG9mZnNldD0iNTAlIiBzdG9wLWNvbG9yPSIjMjNhNGU3Ii8+PHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjMTc4OWM2Ii8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNncmFkKSIgLz48L3N2Zz4g');
     background-size: 100%;
     background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #23a4e7), color-stop(50%, #23a4e7), color-stop(100%, #1789c6));
@@ -512,7 +512,7 @@
   body.layout2 {
     background: #f7f7f7;
   }
-  body.layout2 header {
+  body.layout2 #header {
     position: relative;
     background: url(../img/ctopbg.png) repeat-x;
   }
@@ -520,13 +520,13 @@
     height: auto;
     padding-top: 0;
   }
-  body.layout2 footer {
+  body.layout2 #footer {
     position: relative;
   }
   body.layout3 {
     background: #f7f7f7;
   }
-  body.layout3 header {
+  body.layout3 #header {
     position: relative;
     background: url(../img/blue_ctopbg.png) repeat-x;
   }
@@ -534,7 +534,7 @@
     height: auto;
     padding-top: 0;
   }
-  body.layout3 footer {
+  body.layout3 #footer {
     position: relative;
   }
 }
@@ -559,7 +559,7 @@ html body {
   -ms-font-smoothing: antialiased;
   -o-font-smoothing: antialiased;
 }
-html header {
+html #header {
   position: fixed;
   top: 0;
   left: 0;
@@ -568,53 +568,53 @@ html header {
   background: url(../img/topbg.png) repeat-x;
   z-index: 999;
 }
-html header > div {
+html #header > div {
   margin: 0 auto;
   width: 1000px;
   height: 100%;
 }
-html header > div #top {
+html #header > div #top {
   height: 35px;
   background-color: #40474e;
   *zoom: 1;
 }
-html header > div #top:after {
+html #header > div #top:after {
   display: table;
   content: "";
   line-height: 0;
   clear: both;
 }
-html header > div #top > div {
+html #header > div #top > div {
   float: right;
   display: inline-block;
   height: 100%;
 }
-html header > div #top .search {
+html #header > div #top .search {
   padding-top: 5px;
   background-color: #515a64;
   *zoom: 1;
 }
-html header > div #top .search:after {
+html #header > div #top .search:after {
   display: table;
   content: "";
   line-height: 0;
   clear: both;
 }
-html header > div #top .search input, html header > div #top .search label {
+html #header > div #top .search input, html #header > div #top .search label {
   float: left;
   position: relative;
   display: inline-block;
 }
-html header > div #top .search label {
+html #header > div #top .search label {
   float: right;
 }
-html header > div #top .search input {
+html #header > div #top .search input {
   width: calc(100% - 25px);
 }
-html header > div #top .search label {
+html #header > div #top .search label {
   width: 25px;
 }
-html header > div #top .search input {
+html #header > div #top .search input {
   padding-left: 10px;
   background-color: transparent;
   border-width: 0;
@@ -622,24 +622,24 @@ html header > div #top .search input {
   font-size: 16px;
   color: #20bbfc;
 }
-html header > div #top .search input:focus {
+html #header > div #top .search input:focus {
   outline: 0;
 }
-html header > div #top .search label {
+html #header > div #top .search label {
   margin-top: 4px;
   text-align: center;
   border-left: 1px solid rgba(128, 128, 128, 0.7);
   cursor: pointer;
 }
-html header > div #top .search label:before {
+html #header > div #top .search label:before {
   display: inline-block;
 }
-html header > div #top .lang {
+html #header > div #top .lang {
   position: relative;
   width: 100px;
   text-align: center;
 }
-html header > div #top .lang span {
+html #header > div #top .lang span {
   color: white;
   display: inline-block;
   width: 100%;
@@ -647,10 +647,10 @@ html header > div #top .lang span {
   padding-top: 7px;
   color: #20bbfc;
 }
-html header > div #top .lang > div {
+html #header > div #top .lang > div {
   display: none;
 }
-html header > div #top .lang:hover > div {
+html #header > div #top .lang:hover > div {
   position: absolute;
   top: 35px;
   left: 0;
@@ -659,7 +659,7 @@ html header > div #top .lang:hover > div {
   z-index: 3;
   background-color: #545c64;
 }
-html header > div #top .lang:hover > div a {
+html #header > div #top .lang:hover > div a {
   display: inline-block;
   width: 100%;
   padding: 10px;
@@ -667,86 +667,86 @@ html header > div #top .lang:hover > div a {
   cursor: pointer;
   text-decoration: none;
 }
-html header > div #top .lang:hover > div a:hover {
+html #header > div #top .lang:hover > div a:hover {
   background-color: #20bbfc;
 }
-html header > div #middle {
+html #header > div #middle {
   height: calc(100% - 35px - 47px);
   *zoom: 1;
 }
-html header > div #middle:after {
+html #header > div #middle:after {
   display: table;
   content: "";
   line-height: 0;
   clear: both;
 }
-html header > div #middle .l, html header > div #middle .r {
+html #header > div #middle .l, html #header > div #middle .r {
   float: left;
   position: relative;
   display: inline-block;
 }
-html header > div #middle .r {
+html #header > div #middle .r {
   float: right;
 }
-html header > div #middle .l {
+html #header > div #middle .l {
   width: 217px;
 }
-html header > div #middle .r {
+html #header > div #middle .r {
   width: calc(100% - 217px);
 }
-html header > div #middle .r, html header > div #middle .l {
+html #header > div #middle .r, html #header > div #middle .l {
   height: 100%;
 }
-html header > div #middle .l {
+html #header > div #middle .l {
   padding-top: 10px;
 }
-html header > div #middle .l img {
+html #header > div #middle .l img {
   margin-top: 10px;
   height: auto;
   max-width: 100%;
 }
-html header > div #middle .r > div {
+html #header > div #middle .r > div {
   float: right;
   width: 50%;
   height: 100%;
   padding-top: 35px;
   *zoom: 1;
 }
-html header > div #middle .r > div:after {
+html #header > div #middle .r > div:after {
   display: table;
   content: "";
   line-height: 0;
   clear: both;
 }
-html header > div #middle .r > div > * {
+html #header > div #middle .r > div > * {
   display: inline-block;
   float: right;
   font-size: 20px;
   margin: 5px;
 }
-html header > div #middle .r > div > a {
+html #header > div #middle .r > div > a {
   cursor: pointer;
   color: #1a98f4;
   text-decoration: none;
 }
-html header > div #middle .r > div > a:nth-child(1) {
+html #header > div #middle .r > div > a:nth-child(1) {
   color: #383e45;
 }
-html header > div #middle .r > div > a:hover {
+html #header > div #middle .r > div > a:hover {
   color: #1a98f4;
 }
-html header > div nav {
+html #header > div nav {
   height: 57px;
   background-color: #40474e;
   *zoom: 1;
 }
-html header > div nav:after {
+html #header > div nav:after {
   display: table;
   content: "";
   line-height: 0;
   clear: both;
 }
-html header > div nav > div {
+html #header > div nav > div {
   float: left;
   position: relative;
   display: inline-block;
@@ -754,7 +754,7 @@ html header > div nav > div {
   height: 100%;
   text-align: center;
 }
-html header > div nav > div span {
+html #header > div nav > div span {
   display: inline-block;
   width: 100%;
   height: 100%;
@@ -764,18 +764,18 @@ html header > div nav > div span {
   line-height: 53px;
   border-bottom: 10px solid #1a98f4;
 }
-html header > div nav > div span.bma {
+html #header > div nav > div span.bma {
   color: #20bbfc;
   border-bottom: 10px solid #20bbfc;
 }
-html header > div nav > div .list {
+html #header > div nav > div .list {
   display: none;
 }
-html header > div nav > div:hover span {
+html #header > div nav > div:hover span {
   color: #1a98f4;
   border-bottom: 10px solid #1fbbfc;
 }
-html header > div nav > div:hover .list {
+html #header > div nav > div:hover .list {
   display: inline-block;
   width: 100%;
   position: absolute;
@@ -784,7 +784,7 @@ html header > div nav > div:hover .list {
   overflow: auto;
   -webkit-overflow-scrolling: touch;
 }
-html header > div nav > div:hover .list > a {
+html #header > div nav > div:hover .list > a {
   float: left;
   display: inline-block;
   width: 100%;
@@ -796,13 +796,13 @@ html header > div nav > div:hover .list > a {
   color: gray;
   text-decoration: none;
 }
-html header > div nav > div:hover .list > a:hover {
+html #header > div nav > div:hover .list > a:hover {
   color: #20bbfc;
 }
-html header > div nav > div + div span {
+html #header > div nav > div + div span {
   position: relative;
 }
-html header > div nav > div + div span:before {
+html #header > div nav > div + div span:before {
   content: '';
   position: absolute;
   left: 0;
@@ -836,7 +836,7 @@ html #container > div #strings span {
   font-size: 3em;
   color: #fff;
 }
-html footer {
+html #footer {
   position: absolute;
   bottom: 0px;
   right: 0px;
@@ -845,7 +845,7 @@ html footer {
   background: #383e45;
   z-index: 2;
 }
-html footer > div {
+html #footer > div {
   margin: 0 auto;
   width: 1000px;
   line-height: 50px;
@@ -853,70 +853,70 @@ html footer > div {
   color: #fff;
   *zoom: 1;
 }
-html footer > div:after {
+html #footer > div:after {
   display: table;
   content: "";
   line-height: 0;
   clear: both;
 }
-html footer > div #fb, html footer > div #bb {
+html #footer > div #fb, html #footer > div #bb {
   float: left;
   position: relative;
   display: inline-block;
 }
-html footer > div #bb {
+html #footer > div #bb {
   float: right;
 }
-html footer > div #fb {
+html #footer > div #fb {
   width: 80%;
 }
-html footer > div #bb {
+html #footer > div #bb {
   width: calc(100% - 80%);
 }
-html footer > div #fb {
+html #footer > div #fb {
   height: 50px;
   float: left;
   *zoom: 1;
 }
-html footer > div #fb:after {
+html #footer > div #fb:after {
   display: table;
   content: "";
   line-height: 0;
   clear: both;
 }
-html footer > div #fb #cobetype, html footer > div #fb #cobemenu {
+html #footer > div #fb #cobetype, html #footer > div #fb #cobemenu {
   float: left;
   position: relative;
   display: inline-block;
 }
-html footer > div #fb #cobemenu {
+html #footer > div #fb #cobemenu {
   float: right;
 }
-html footer > div #fb #cobetype {
+html #footer > div #fb #cobetype {
   width: 62%;
 }
-html footer > div #fb #cobemenu {
+html #footer > div #fb #cobemenu {
   width: calc(100% - 62%);
 }
-html footer > div #fb #cobetype {
+html #footer > div #fb #cobetype {
   float: left;
 }
-html footer > div #fb #cobemenu {
+html #footer > div #fb #cobemenu {
   float: left;
 }
-html footer > div #fb #cobemenu > a {
+html #footer > div #fb #cobemenu > a {
   color: #fff;
   text-decoration: none;
 }
-html footer > div #fb #cobemenu > a:hover {
+html #footer > div #fb #cobemenu > a:hover {
   color: #1b98f5;
   text-decoration: underline;
 }
-html footer > div #bb {
+html #footer > div #bb {
   height: 50px;
   float: left;
 }
-html footer > div #bb > a {
+html #footer > div #bb > a {
   display: block;
   width: 100%;
   height: 100%;
@@ -932,7 +932,7 @@ html footer > div #bb > a {
   background-image: -webkit-linear-gradient(#1789c6 0%, #1789c6 50%, #23a4e7 100%);
   background-image: linear-gradient(#1789c6 0%, #1789c6 50%, #23a4e7 100%);
 }
-html footer > div #bb > a:hover {
+html #footer > div #bb > a:hover {
   background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzIzYTRlNyIvPjxzdG9wIG9mZnNldD0iNTAlIiBzdG9wLWNvbG9yPSIjMjNhNGU3Ii8+PHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjMTc4OWM2Ii8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNncmFkKSIgLz48L3N2Zz4g');
   background-size: 100%;
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #23a4e7), color-stop(50%, #23a4e7), color-stop(100%, #1789c6));
@@ -944,7 +944,7 @@ html footer > div #bb > a:hover {
 body.layout2 {
   background: #f7f7f7;
 }
-body.layout2 header {
+body.layout2 #header {
   position: relative;
   background: url(../img/ctopbg.png) repeat-x;
 }
@@ -952,13 +952,13 @@ body.layout2 #container {
   height: auto;
   padding-top: 0;
 }
-body.layout2 footer {
+body.layout2 #footer {
   position: relative;
 }
 body.layout3 {
   background: #f7f7f7;
 }
-body.layout3 header {
+body.layout3 #header {
   position: relative;
   background: url(../img/blue_ctopbg.png) repeat-x;
 }
@@ -966,7 +966,7 @@ body.layout3 #container {
   height: auto;
   padding-top: 0;
 }
-body.layout3 footer {
+body.layout3 #footer {
   position: relative;
 }
 
