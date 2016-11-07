@@ -975,6 +975,7 @@
     border-bottom: 1px solid #86d4f1;
   }
   .ta .tr > div:before, .ta .tr .tc:before {
+    padding: 0;
     content: attr(title);
     position: absolute;
     left: 0;
@@ -986,6 +987,7 @@
     border-right: 1px solid #86d4f1;
     background-color: #e6f7fd;
     padding-left: 10px;
+    padding-top: 10px;
     font-size: 1em;
     font-weight: bolder;
   }
