@@ -1081,7 +1081,7 @@ $border_color: rgba(220, 228, 232, 1.00);
         padding-top: 10px;
         padding-bottom: 10px;
         // padding: 10px;
-        padding-left: $title_width;
+        padding-left: $title_width + 10px;
 
         &:last-child {
           border-bottom: 1px solid rgba(134, 212, 241, 1.00);
@@ -1107,7 +1107,7 @@ $border_color: rgba(220, 228, 232, 1.00);
           padding-left: 10px;
           padding-top: 10px;
           // padding-bottom: 10px;
-          font-size: 13px;
+          font-size: 1em;
           font-weight: bolder;
         }
       }
