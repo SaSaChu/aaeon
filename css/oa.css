@@ -84,7 +84,7 @@ html body {
   -ms-font-smoothing: antialiased;
   -o-font-smoothing: antialiased;
 }
-html body header {
+html body #main_header {
   position: fixed;
   top: 0;
   left: 0;
@@ -94,57 +94,57 @@ html body header {
   background: url(../img/topbg.png) repeat-x;
   z-index: 999;
 }
-html body header > div {
+html body #main_header > div {
   width: 1000px;
   height: 100%;
   margin: 0 auto;
 }
-html body header > div #top {
+html body #main_header > div #top {
   height: 35px;
   background-color: #40474e;
 }
-html body header > div #middle {
+html body #main_header > div #middle {
   height: calc(100% - 35px - 55px);
   *zoom: 1;
 }
-html body header > div #middle:after {
+html body #main_header > div #middle:after {
   display: table;
   content: "";
   line-height: 0;
   clear: both;
 }
-html body header > div #middle .l, html body header > div #middle .r {
+html body #main_header > div #middle .l, html body #main_header > div #middle .r {
   float: left;
   position: relative;
   display: inline-block;
 }
-html body header > div #middle .r {
+html body #main_header > div #middle .r {
   float: right;
 }
-html body header > div #middle .l {
+html body #main_header > div #middle .l {
   width: 217px;
 }
-html body header > div #middle .r {
+html body #main_header > div #middle .r {
   width: calc(100% - 217px);
 }
-html body header > div #middle .r, html body header > div #middle .l {
+html body #main_header > div #middle .r, html body #main_header > div #middle .l {
   height: 100%;
 }
-html body header > div #middle .l {
+html body #main_header > div #middle .l {
   padding-top: 20px;
 }
-html body header > div #bottom {
+html body #main_header > div #bottom {
   height: 55px;
   background-color: #4f5760;
   *zoom: 1;
 }
-html body header > div #bottom:after {
+html body #main_header > div #bottom:after {
   display: table;
   content: "";
   line-height: 0;
   clear: both;
 }
-html body header > div #bottom > div {
+html body #main_header > div #bottom > div {
   float: left;
   position: relative;
   display: inline-block;
@@ -153,10 +153,10 @@ html body header > div #bottom > div {
   border-bottom: 10px solid #1a98f4;
   text-align: center;
 }
-html body header > div #bottom > div .list {
+html body #main_header > div #bottom > div .list {
   display: none;
 }
-html body header > div #bottom > div:hover .list {
+html body #main_header > div #bottom > div:hover .list {
   display: inline-block;
   width: 100%;
   position: absolute;
@@ -164,15 +164,15 @@ html body header > div #bottom > div:hover .list {
   top: 55px;
   background-color: white;
 }
-html body header > div #bottom > div:hover .list a {
+html body #main_header > div #bottom > div:hover .list a {
   display: inline-block;
   width: 100%;
   padding: 10px;
 }
-html body header > div #bottom > div:hover .list a + a {
+html body #main_header > div #bottom > div:hover .list a + a {
   border-top: 1px solid #cdcdcd;
 }
-html body header > div #bottom > div + div:before {
+html body #main_header > div #bottom > div + div:before {
   content: '';
   position: absolute;
   left: 0;
