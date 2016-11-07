@@ -444,7 +444,7 @@
     font-size: 1.5em;
     color: #fff;
   }
-  html footer {
+  html #footer {
     position: absolute;
     bottom: 0px;
     right: 0px;
@@ -452,37 +452,37 @@
     background: #383e45;
     z-index: 2;
   }
-  html footer > div {
+  html #footer > div {
     margin: 0 auto;
     width: 100%;
     color: #fff;
   }
-  html footer > div #fb {
+  html #footer > div #fb {
     display: inline-block;
     width: 100%;
     padding-left: 10px;
   }
-  html footer > div #fb > * {
+  html #footer > div #fb > * {
     font-size: 13px;
   }
-  html footer > div #fb #cobetype {
+  html #footer > div #fb #cobetype {
     float: left;
     margin-top: 10px;
   }
-  html footer > div #fb #cobemenu {
+  html #footer > div #fb #cobemenu {
     float: left;
     margin-top: 10px;
     margin-bottom: 10px;
   }
-  html footer > div #fb #cobemenu > a {
+  html #footer > div #fb #cobemenu > a {
     color: #fff;
     text-decoration: none;
   }
-  html footer > div #fb #cobemenu > a:hover {
+  html #footer > div #fb #cobemenu > a:hover {
     color: #1b98f5;
     text-decoration: underline;
   }
-  html footer > div #bb > a {
+  html #footer > div #bb > a {
     display: block;
     width: 100%;
     height: 100%;
@@ -500,7 +500,7 @@
     background-image: -webkit-linear-gradient(#1789c6 0%, #1789c6 50%, #23a4e7 100%);
     background-image: linear-gradient(#1789c6 0%, #1789c6 50%, #23a4e7 100%);
   }
-  html footer > div #bb > a:hover {
+  html #footer > div #bb > a:hover {
     background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzIzYTRlNyIvPjxzdG9wIG9mZnNldD0iNTAlIiBzdG9wLWNvbG9yPSIjMjNhNGU3Ii8+PHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjMTc4OWM2Ii8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNncmFkKSIgLz48L3N2Zz4g');
     background-size: 100%;
     background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #23a4e7), color-stop(50%, #23a4e7), color-stop(100%, #1789c6));
@@ -520,7 +520,7 @@
     height: auto;
     padding-top: 0;
   }
-  body.layout2 footer {
+  body.layout2 #footer {
     position: relative;
   }
   body.layout3 {
@@ -534,7 +534,7 @@
     height: auto;
     padding-top: 0;
   }
-  body.layout3 footer {
+  body.layout3 #footer {
     position: relative;
   }
 }
@@ -837,7 +837,7 @@
     font-size: 3em;
     color: #fff;
   }
-  html footer {
+  html #footer {
     position: absolute;
     bottom: 0px;
     right: 0px;
@@ -846,7 +846,7 @@
     background: #383e45;
     z-index: 2;
   }
-  html footer > div {
+  html #footer > div {
     margin: 0 auto;
     width: 1000px;
     line-height: 50px;
@@ -854,70 +854,70 @@
     color: #fff;
     *zoom: 1;
   }
-  html footer > div:after {
+  html #footer > div:after {
     display: table;
     content: "";
     line-height: 0;
     clear: both;
   }
-  html footer > div #fb, html footer > div #bb {
+  html #footer > div #fb, html #footer > div #bb {
     float: left;
     position: relative;
     display: inline-block;
   }
-  html footer > div #bb {
+  html #footer > div #bb {
     float: right;
   }
-  html footer > div #fb {
+  html #footer > div #fb {
     width: 80%;
   }
-  html footer > div #bb {
+  html #footer > div #bb {
     width: calc(100% - 80%);
   }
-  html footer > div #fb {
+  html #footer > div #fb {
     height: 50px;
     float: left;
     *zoom: 1;
   }
-  html footer > div #fb:after {
+  html #footer > div #fb:after {
     display: table;
     content: "";
     line-height: 0;
     clear: both;
   }
-  html footer > div #fb #cobetype, html footer > div #fb #cobemenu {
+  html #footer > div #fb #cobetype, html #footer > div #fb #cobemenu {
     float: left;
     position: relative;
     display: inline-block;
   }
-  html footer > div #fb #cobemenu {
+  html #footer > div #fb #cobemenu {
     float: right;
   }
-  html footer > div #fb #cobetype {
+  html #footer > div #fb #cobetype {
     width: 62%;
   }
-  html footer > div #fb #cobemenu {
+  html #footer > div #fb #cobemenu {
     width: calc(100% - 62%);
   }
-  html footer > div #fb #cobetype {
+  html #footer > div #fb #cobetype {
     float: left;
   }
-  html footer > div #fb #cobemenu {
+  html #footer > div #fb #cobemenu {
     float: left;
   }
-  html footer > div #fb #cobemenu > a {
+  html #footer > div #fb #cobemenu > a {
     color: #fff;
     text-decoration: none;
   }
-  html footer > div #fb #cobemenu > a:hover {
+  html #footer > div #fb #cobemenu > a:hover {
     color: #1b98f5;
     text-decoration: underline;
   }
-  html footer > div #bb {
+  html #footer > div #bb {
     height: 50px;
     float: left;
   }
-  html footer > div #bb > a {
+  html #footer > div #bb > a {
     display: block;
     width: 100%;
     height: 100%;
@@ -933,7 +933,7 @@
     background-image: -webkit-linear-gradient(#1789c6 0%, #1789c6 50%, #23a4e7 100%);
     background-image: linear-gradient(#1789c6 0%, #1789c6 50%, #23a4e7 100%);
   }
-  html footer > div #bb > a:hover {
+  html #footer > div #bb > a:hover {
     background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzIzYTRlNyIvPjxzdG9wIG9mZnNldD0iNTAlIiBzdG9wLWNvbG9yPSIjMjNhNGU3Ii8+PHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjMTc4OWM2Ii8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNncmFkKSIgLz48L3N2Zz4g');
     background-size: 100%;
     background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #23a4e7), color-stop(50%, #23a4e7), color-stop(100%, #1789c6));
@@ -953,7 +953,7 @@
     height: auto;
     padding-top: 0;
   }
-  body.layout2 footer {
+  body.layout2 #footer {
     position: relative;
   }
   body.layout3 {
@@ -967,7 +967,7 @@
     height: auto;
     padding-top: 0;
   }
-  body.layout3 footer {
+  body.layout3 #footer {
     position: relative;
   }
 }
