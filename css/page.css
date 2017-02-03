@@ -1393,11 +1393,12 @@
     left: -7600px;
   }
   #container > div .rb #arrow_box .tb > div > div > a {
+    font-size: .8em;
     display: inline-block;
     float: left;
     width: 76px;
     text-align: center;
-    padding: 0 20px;
+    padding: 0 10px;
     height: 100%;
     cursor: pointer;
   }
@@ -1684,10 +1685,10 @@
   }
   #container > div .rb #arrow_box .cb .sone {
     float: left;
-    width: calc(100% / 4);
+    width: calc(100% / 5);
     min-height: 265px;
-    height: 300px;
-    padding: 10px;
+    height: 285px;
+    padding: 5px;
   }
   #container > div .rb #arrow_box .cb .sone .imbox {
     width: 100%;
@@ -1711,20 +1712,21 @@
     margin: 0;
     padding: 3px 0;
     word-wrap: break-word;
-    font-size: 1em;
+    font-size: .8em;
     line-height: 1.4em;
     color: #9fa3a4;
   }
   #container > div .rb #arrow_box .cb .sone > span > p.c {
-    height: 50px;
+    font-size: .8em;
+    height: 55px;
     font-weight: bold;
     color: #22313c;
   }
   #container > div .rb #arrow_box .cb .sone a {
     display: inline-block;
-    width: 100%;
-    padding: 10px;
-    margin-top: 10px;
+    width: 25%;
+    padding: 8px;
+    margin-top: 5px;
     font-size: 1em;
     font-weight: bold;
     color: #fff;
@@ -1740,7 +1742,6 @@
   }
   #container > div .rb #arrow_box .cb .sone a:before {
     display: inline-block;
-    margin-right: 10px;
   }
   #container > div .rb .nb {
     width: 100%;
