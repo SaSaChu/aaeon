@@ -62,7 +62,7 @@
     color: #61666a;
     font-weight: bolder;
   }
-  .jj .e_topgray .e_t01 .e_sebox, .jj .e_topgray .e_t01 .e_sebox02 {
+  .jj .e_topgray .e_t01 .e_sebox:not(.ori), .jj .e_topgray .e_t01 .e_sebox02:not(.ori) {
     height: 30px;
     font-size: .9em;
     color: #61666a;
@@ -118,9 +118,7 @@
     color: #4f5761;
   }
   .e_cent_boxs .e_cent_checkboxs > div label input[type='checkbox'] {
-    position: absolute;
-    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
-    opacity: 0;
+    margin-top: 3px;
   }
   .e_cent_boxs .e_cent_checkboxs > div label input[type='checkbox']:checked + span:after {
     background-color: #1fbbfc;
@@ -135,6 +133,7 @@
     height: 20px;
     background-color: white;
     margin-right: 5px;
+    display: none;
   }
   .e_cent_boxs .e_cent_checkboxs > div label span:before {
     content: '';
@@ -185,9 +184,7 @@
     color: #4f5761;
   }
   .e_allboxs .e_left label input[type='checkbox'] {
-    position: absolute;
-    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
-    opacity: 0;
+    margin-top: 3px;
   }
   .e_allboxs .e_left label input[type='checkbox']:checked + span:after {
     background-color: #1fbbfc;
@@ -201,6 +198,7 @@
     width: 20px;
     height: 20px;
     background-color: white;
+    display: none;
   }
   .e_allboxs .e_left label span:before {
     content: '';
@@ -236,7 +234,7 @@
     width: 100%;
     padding: 10px 5px;
   }
-  .e_allboxs .e_right button {
+  .e_allboxs .e_right button:not(.ori) {
     width: 100%;
     padding: 10px 35px;
     font-size: 1em;
@@ -248,7 +246,7 @@
     border-radius: 5px;
     border: 0;
   }
-  .e_allboxs .e_right button:hover {
+  .e_allboxs .e_right button:not(.ori):hover {
     background-color: #5da2c6;
   }
 

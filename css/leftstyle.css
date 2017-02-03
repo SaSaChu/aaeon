@@ -306,6 +306,8 @@
   }
   .cb .jj .jb .jbs .ja select {
     width: calc(100% - 5px * 2);
+  }
+  .cb .jj .jb .jbs .ja select:not(.ori) {
     margin: 10px 0;
     height: 30px;
     border: 1px solid rgba(39, 40, 34, 0.25);
@@ -336,6 +338,8 @@
   .cb .jj .jb .jbs .jbb input {
     float: left;
     width: 100%;
+  }
+  .cb .jj .jb .jbs .jbb input:not(.ori) {
     height: 30px;
     padding: 0;
     margin: 0;
@@ -345,6 +349,8 @@
   .cb .jj .jb .jbs .jbb .si01 {
     float: left;
     width: 100%;
+  }
+  .cb .jj .jb .jbs .jbb .si01:not(.ori) {
     padding: 0;
     margin: 0;
     border: 0;
@@ -391,7 +397,7 @@
     padding: 0;
     height: auto;
   }
-  .cb .jj .jb .jbs .jc button {
+  .cb .jj .jb .jbs .jc button:not(.ori) {
     width: 100%;
     padding: 10px 0;
     font-size: 1em;
@@ -403,10 +409,10 @@
     border-radius: 5px;
     border: 0;
   }
-  .cb .jj .jb .jbs .jc button.jc02 {
+  .cb .jj .jb .jbs .jc button:not(.ori).jc02 {
     padding: 8px 35px;
   }
-  .cb .jj .jb .jbs .jc button:hover {
+  .cb .jj .jb .jbs .jc button:not(.ori):hover {
     background-color: #5da2c6;
   }
   .cb .jj .jb .jbs p {
@@ -709,6 +715,8 @@
   }
   .cb .jj .jb .jbs .ja select {
     width: calc(100% - 5px * 2);
+  }
+  .cb .jj .jb .jbs .ja select:not(.ori) {
     margin: 0 5px;
     height: 30px;
     border: 1px solid rgba(39, 40, 34, 0.25);
@@ -738,6 +746,8 @@
   .cb .jj .jb .jbs .jbb input {
     float: left;
     width: 100%;
+  }
+  .cb .jj .jb .jbs .jbb input:not(.ori) {
     height: 30px;
     padding: 0 5px;
     margin: 0;
@@ -746,6 +756,8 @@
   .cb .jj .jb .jbs .jbb .si01 {
     float: left;
     width: 100%;
+  }
+  .cb .jj .jb .jbs .jbb .si01:not(.ori) {
     padding: 0 5px;
     margin: 0;
   }
@@ -791,7 +803,7 @@
     padding: 0;
     height: auto;
   }
-  .cb .jj .jb .jbs .jc button {
+  .cb .jj .jb .jbs .jc button:not(.ori) {
     padding: 10px 35px;
     font-size: 1em;
     color: white;
@@ -802,10 +814,10 @@
     border-radius: 5px;
     border: 0;
   }
-  .cb .jj .jb .jbs .jc button.jc02 {
+  .cb .jj .jb .jbs .jc button:not(.ori).jc02 {
     padding: 8px 35px;
   }
-  .cb .jj .jb .jbs .jc button:hover {
+  .cb .jj .jb .jbs .jc button:not(.ori):hover {
     background-color: #5da2c6;
   }
   .cb .jj .jb .jbs p {

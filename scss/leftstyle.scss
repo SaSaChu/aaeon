@@ -322,12 +322,15 @@
 
             select {
               width: calc(100% - 5px * 2);
-              margin: 10px 0;
-              height: 30px;
-              border: 1px solid rgba(39, 40, 34, .25);
-              padding: 5px;
-              font-size: 16px;
-              @include border-radius (2px);
+              
+              &:not(.ori) {
+                margin: 10px 0;
+                height: 30px;
+                border: 1px solid rgba(39, 40, 34, .25);
+                padding: 5px;
+                font-size: 16px;
+                @include border-radius (2px);
+              }
             }
 
           }
@@ -349,19 +352,23 @@
             input {
               float: left;
               width: 100%;
-              height: 30px;
-              padding: 0;
-              margin: 0;
-              margin-top: 3px;
-              border: 0;
+              &:not(.ori) {
+                height: 30px;
+                padding: 0;
+                margin: 0;
+                margin-top: 3px;
+                border: 0;
+              }
             }
 
             .si01 {
               float: left;
               width: 100%;
-              padding: 0;
-              margin: 0;
-              border: 0;
+              &:not(.ori) {
+                padding: 0;
+                margin: 0;
+                border: 0;
+              }
             }
 
             .si02 {
@@ -414,23 +421,24 @@
             }
 
             button {
-              width: 100%;
-              padding: 10px 0;
-              font-size: 1em;
-              color: white;
-              font-weight: bolder;
-              background-color: rgba(147, 160, 166, 1.00);
-              @include border-radius(5px);
-              border: 0;
+              &:not(.ori) {
+                width: 100%;
+                padding: 10px 0;
+                font-size: 1em;
+                color: white;
+                font-weight: bolder;
+                background-color: rgba(147, 160, 166, 1.00);
+                @include border-radius(5px);
+                border: 0;
 
-              &.jc02 {
-                padding: 8px 35px;
+                &.jc02 {
+                  padding: 8px 35px;
+                }
+
+                &:hover {
+                  background-color: rgba(93, 162, 198, 1.00);
+                }
               }
-
-              &:hover {
-                background-color: rgba(93, 162, 198, 1.00);
-              }
-
             }
           }
 
@@ -785,12 +793,14 @@ $border_color: rgba(220, 228, 232, 1.00);
 
             select {
               width: calc(100% - 5px * 2);
-              margin: 0 5px;
-              height: 30px;
-              border: 1px solid rgba(39, 40, 34, .25);
-              padding: 5px;
-              font-size: 16px;
-              @include border-radius (2px);
+              &:not(.ori) {
+                margin: 0 5px;
+                height: 30px;
+                border: 1px solid rgba(39, 40, 34, .25);
+                padding: 5px;
+                font-size: 16px;
+                @include border-radius (2px);
+              }
             }
           }
 
@@ -810,19 +820,25 @@ $border_color: rgba(220, 228, 232, 1.00);
             input {
               float: left;
               width: 100%;
-              height: 30px;
-              padding: 0 5px;
-              margin: 0;
-              margin-top: 3px;
-              // border: 1px solid rgba(244, 245, 246, 1.00);
+
+              &:not(.ori) {
+                height: 30px;
+                padding: 0 5px;
+                margin: 0;
+                margin-top: 3px;
+                // border: 1px solid rgba(244, 245, 246, 1.00);
+              }
             }
 
             .si01 {
               float: left;
               width: 100%;
-              padding: 0 5px;
-              margin: 0;
-              // border: 1px solid rgba(244, 245, 246, 1.00);
+
+              &:not(.ori) {
+                padding: 0 5px;
+                margin: 0;
+                // border: 1px solid rgba(244, 245, 246, 1.00);
+              }
             }
 
             .si02 {
@@ -876,20 +892,22 @@ $border_color: rgba(220, 228, 232, 1.00);
             }
 
             button {
-              padding: 10px 35px;
-              font-size: 1em;
-              color: white;
-              font-weight: bolder;
-              background-color: rgba(147, 160, 166, 1.00);
-              @include border-radius(5px);
-              border: 0;
+              &:not(.ori) {
+                padding: 10px 35px;
+                font-size: 1em;
+                color: white;
+                font-weight: bolder;
+                background-color: rgba(147, 160, 166, 1.00);
+                @include border-radius(5px);
+                border: 0;
 
-              &.jc02 {
-                padding: 8px 35px;
-              }
+                &.jc02 {
+                  padding: 8px 35px;
+                }
 
-              &:hover {
-                background-color: rgba(93, 162, 198, 1.00);
+                &:hover {
+                  background-color: rgba(93, 162, 198, 1.00);
+                }
               }
 
             }

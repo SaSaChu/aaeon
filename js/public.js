@@ -92,5 +92,13 @@ $(function () {
     $banner.find ('a').eq (i = ++i % l).click ();
   }, 6000);
 
+  $('#banner div[data-href]').click (function () {
+    window.location.assign ($(this).data ('href'));
+  });
+
+  $('#search + label').click (function () {
+    window.location.assign("/search.aspx?Str="+$('#search').val() + '&Topage=1');
+    return false;
+  });
    // $('.imbox').imgLiquid ({verticalAlign: 'center'});
 });
