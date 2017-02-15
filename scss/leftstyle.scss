@@ -39,7 +39,7 @@
         > span {
           display: inline-block;
           padding: 10px;
-          font: 1em;
+          font-size: .9em;
           font-weight: bold;
           width: 100%;
         }
@@ -100,7 +100,7 @@
               color: rgba(159, 163, 164, 1.00);
 
               &.c {
-                height: 66px;
+                height: 85px;
                 font-weight: bold;
                 color: rgba(34, 49, 60, 1.00);
               }
@@ -115,7 +115,7 @@
             display: inline-block;
             width: 100%;
             padding: 10px;
-            margin-top: 10px;
+            // margin-top: 10px;
 
             font-size: 1em;
             font-weight: bold;
@@ -504,7 +504,7 @@ $border_color: rgba(220, 228, 232, 1.00);
         > span {
           display: inline-block;
           padding: 20px 0 0 10px;
-          font: 1em;
+          font-size: .9em;
           font-weight: bold;
         }
 
@@ -519,7 +519,7 @@ $border_color: rgba(220, 228, 232, 1.00);
           width: calc(100% / 3);
           min-height: $minhight;
           height: 300px;
-          padding: 10px;
+          padding: 0 10px 10px 10px;
 
           .imbox {
             width: 100%;
@@ -545,46 +545,46 @@ $border_color: rgba(220, 228, 232, 1.00);
             padding: 5px 0;
 
             > p {
-              margin: 0;
-              padding: 3px 0;
-
-              word-wrap:break-word;
-              font-size: 1em;
-              line-height: 1.4em;
-              color: rgba(159, 163, 164, 1.00);
+                margin: 0;
+                padding: 3px 0;
+                word-wrap: break-word;
+                font-size: .8em;
+                line-height: 1.4em;
+                color: #9fa3a4;
 
               &.c {
-                height: 50px;
+                font-size: .8em;
+                height: 55px;
                 font-weight: bold;
-                color: rgba(34, 49, 60, 1.00);
+                color: #22313c
               }
             }
           }
 
           a {
-            display: inline-block;
-            width: 100%;
-            padding: 10px;
-            margin-top: 10px;
-
-            font-size: 1em;
-            font-weight: bold;
-            color: #fff;
-            background:rgba(147, 160, 166, 1.00);
-            text-align: center;
-            text-decoration: none;
-
-            @include border-radius(3px);
-
-            &:hover {
-              background:rgba(103, 172, 208, 1.00);
-            }
-
-            &:before {
               display: inline-block;
-              margin-right: 10px;
+              width: 20%;
+              padding: 8px;
+              margin-top: 5px;
+
+              font-size: 1em;
+              font-weight: bold;
+              color: #fff;
+              background:rgba(147, 160, 166, 1.00);
+              text-align: center;
+              text-decoration: none;
+
+              @include border-radius(3px);
+
+              &:hover {
+                background:rgba(103, 172, 208, 1.00);
+              }
+
+              &:before {
+                display: inline-block;
+                // margin-right: 10px;
+              }
             }
-          }
         }
       }
     }

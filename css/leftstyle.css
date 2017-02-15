@@ -68,7 +68,7 @@
   .cb .stwo .lbr > span {
     display: inline-block;
     padding: 10px;
-    font: 1em;
+    font-size: .9em;
     font-weight: bold;
     width: 100%;
   }
@@ -118,7 +118,7 @@
     color: #9fa3a4;
   }
   .cb .stwo .rbn > div > span > p.c {
-    height: 66px;
+    height: 85px;
     font-weight: bold;
     color: #22313c;
   }
@@ -129,7 +129,6 @@
     display: inline-block;
     width: 100%;
     padding: 10px;
-    margin-top: 10px;
     font-size: 1em;
     font-weight: bold;
     color: #fff;
@@ -482,7 +481,7 @@
   .cb .stwo .lbr > span {
     display: inline-block;
     padding: 20px 0 0 10px;
-    font: 1em;
+    font-size: .9em;
     font-weight: bold;
   }
   .cb .stwo .rbn {
@@ -494,7 +493,7 @@
     width: calc(100% / 3);
     min-height: 265px;
     height: 300px;
-    padding: 10px;
+    padding: 0 10px 10px 10px;
   }
   .cb .stwo .rbn > div .imbox {
     width: 100%;
@@ -518,20 +517,21 @@
     margin: 0;
     padding: 3px 0;
     word-wrap: break-word;
-    font-size: 1em;
+    font-size: .8em;
     line-height: 1.4em;
     color: #9fa3a4;
   }
   .cb .stwo .rbn > div > span > p.c {
-    height: 50px;
+    font-size: .8em;
+    height: 55px;
     font-weight: bold;
     color: #22313c;
   }
   .cb .stwo .rbn > div a {
     display: inline-block;
-    width: 100%;
-    padding: 10px;
-    margin-top: 10px;
+    width: 20%;
+    padding: 8px;
+    margin-top: 5px;
     font-size: 1em;
     font-weight: bold;
     color: #fff;
@@ -547,7 +547,6 @@
   }
   .cb .stwo .rbn > div a:before {
     display: inline-block;
-    margin-right: 10px;
   }
   .cb .sthree {
     width: calc(100% / 3);
