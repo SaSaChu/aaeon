@@ -45,12 +45,11 @@
 @media screen and (min-width: 961px) {
   .jj .e_topgray {
     width: 100%;
-    padding: 0 10px;
   }
   .jj .e_topgray .e_t01 {
     display: block;
     width: 100%;
-    padding: 8px 5px;
+    padding: 2px 0;
   }
   .jj .e_topgray .e_t01 p {
     display: inline-block;
@@ -84,10 +83,10 @@
   .e_cent_boxs .e_cent_title {
     width: 100%;
     margin: 0;
-    padding: 10px 5px;
+    padding: 5px 5px;
     border-bottom: 1px solid #dfdfdf;
     color: #22baf7;
-    font-size: 14px;
+    font-size: 13px;
     font-weight: bolder;
     text-align: left;
   }
@@ -105,7 +104,7 @@
   .e_cent_boxs .e_cent_checkboxs > div {
     display: inline-block;
     width: calc(100% / 5);
-    padding: 10px 5px;
+    padding: 5px;
     float: left;
   }
   .e_cent_boxs .e_cent_checkboxs > div label {
@@ -188,7 +187,7 @@
     width: calc(100% - 70%);
   }
   .e_allboxs .e_left {
-    padding: 10px 5px;
+    padding: 0 5px;
   }
   .e_allboxs .e_left label {
     display: inline-block;

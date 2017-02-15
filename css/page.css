@@ -870,8 +870,8 @@
   }
   #container > div .rb .nb .cnb > a {
     display: inline-block;
-    padding-top: 3px;
-    margin-left: 5px;
+    padding-top: 4px;
+    margin-left: 8px;
     width: 25px;
     height: 25px;
     float: left;
@@ -880,7 +880,7 @@
     -moz-border-radius: 50px;
     border-radius: 50px;
     background: #cad7de;
-    font-size: 1em;
+    font-size: .9em;
     color: white;
     text-align: center;
     text-decoration: none;
@@ -890,8 +890,9 @@
   }
   #container > div .rb .nb .cnb > a.nb {
     width: auto;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-top: 3px;
+    padding-left: 12px;
+    padding-right: 12px;
   }
 }
 @media screen and (min-width: 961px) {
@@ -1636,6 +1637,7 @@
     border-bottom: 3px solid #10b9fc;
     color: #10b9fc;
     padding: 0 10px;
+    font-size: .8em;
   }
   #container > div .rb #arrow_box .sb div {
     position: absolute;
@@ -1760,7 +1762,7 @@
   }
   #container > div .rb .nb .cnb > a {
     display: inline-block;
-    padding-top: 5px;
+    padding-top: 7px;
     margin-left: 10px;
     width: 30px;
     height: 30px;
@@ -1768,7 +1770,7 @@
     -moz-border-radius: 50px;
     border-radius: 50px;
     background: #cad7de;
-    font-size: 1em;
+    font-size: .8em;
     color: white;
     text-align: center;
     text-decoration: none;
@@ -1778,8 +1780,9 @@
   }
   #container > div .rb .nb .cnb > a.nb {
     width: auto;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-top: 6px;
+    padding-left: 13px;
+    padding-right: 13px;
   }
 
   #arrow_box.p1:after, #arrow_box.p1:before {

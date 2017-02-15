@@ -4,52 +4,53 @@
 
 .jj {
 
-  .e_topgray {
-    width: 100%;
-    padding: 0 10px;
-    // background-color: rgba(244, 245, 246, 1.00);
 
-    .e_t01 {
-      display: block;
+    .e_topgray {
       width: 100%;
-      padding: 8px 5px;
+      // padding: 0 10px;
+      // background-color: rgba(244, 245, 246, 1.00);
+
+      .e_t01 {
+        display: block;
+        width: 100%;
+        padding: 2px 0;
 
 
-      p {
-      display: inline-block;
-      margin: 0;
-      padding: 8px 0;
-      text-align: left;
-      font-size: .9em;
-      color: rgba(97, 102, 106, 1.00);
-      font-weight: bolder;
-      }
+        p {
+        display: inline-block;
+        margin: 0;
+        padding: 8px 0;
+        text-align: left;
+        font-size: .9em;
+        color: rgba(97, 102, 106, 1.00);
+        font-weight: bolder;
+        }
 
-      .e_sebox, .e_sebox02 {
-        &:not(.ori) {
-          height: 30px;
-          font-size: .9em;
-          color: rgba(97, 102, 106, 1.00);
-          border: 1px solid rgba(39, 40, 34, 0.25);
-          padding: 5px;
-          font-weight: bolder;
-          background-color: white;
+        .e_sebox, .e_sebox02 {
+          &:not(.ori) {
+            height: 30px;
+            font-size: .9em;
+            color: rgba(97, 102, 106, 1.00);
+            border: 1px solid rgba(39, 40, 34, 0.25);
+            padding: 5px;
+            font-weight: bolder;
+            background-color: white;
+          }
+        }
+
+        .e_sebox {
+          width: 77%;
+        }
+
+        .e_sebox02 {
+            width: 65%;
+          &:not(.ori) {
+          }
         }
       }
 
-      .e_sebox {
-        width: 77%;
-      }
-
-      .e_sebox02 {
-          width: 65%;
-        &:not(.ori) {
-        }
-      }
     }
-
-  }
-
+  
 }
 
 
@@ -60,11 +61,11 @@
   .e_cent_title {
     width: 100%;
     margin: 0;
-    padding: 10px 5px;
+    padding: 5px 5px;
 
     border-bottom: 1px solid rgba(223, 223, 223, 1.00);
     color: rgba(34, 186, 247, 1.00);
-    font-size: 14px;
+    font-size: 13px;
     font-weight: bolder;
     text-align: left;
   }
@@ -78,7 +79,7 @@
     > div {
       display: inline-block;
       width: calc(100% / 5);
-      padding: 10px 5px;
+      padding: 5px;
       float: left;
 
 
@@ -164,7 +165,7 @@
   @include split-left(70%, '.e_left', '.e_right');
 
   .e_left {
-    padding: 10px 5px;
+    padding: 0 5px;
     label {
         display: inline-block;
         margin: 10px 0;
