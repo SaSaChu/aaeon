@@ -883,6 +883,7 @@
     word-break: break-all;
     line-height: 22px;
     padding: 10px;
+    font-size: 13px;
   }
   .ta .tr > div + .tc, .ta .tr .tc + .tc {
     border-left: 0;
@@ -982,6 +983,7 @@
     padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 130px;
+    font-size: 13px;
   }
   .ta .tr > div:last-child, .ta .tr .tc:last-child {
     border-bottom: 1px solid #86d4f1;
