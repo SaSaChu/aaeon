@@ -328,7 +328,7 @@
                 height: 30px;
                 border: 1px solid rgba(39, 40, 34, .25);
                 padding: 5px;
-                font-size: 16px;
+                font-size: 13px;
                 @include border-radius (2px);
               }
             }
@@ -458,7 +458,7 @@
         padding-top: 20px;
 
         .jtb {
-          width: 90%;
+          width: 100%;
           margin: 0 auto;
           padding-bottom: 30px;
 
@@ -469,7 +469,7 @@
             display: block;
             width: 100%;
             margin: 0;
-            font-size: 1em;
+            font-size: .9em;
             line-height: 1.6em;
             color: rgba(2, 167, 249, 1.00);
             font-weight: bolder;
@@ -480,7 +480,7 @@
             display: block;
             width: 100%;
             line-height: 1.6em;
-            font-size: 1em;
+            font-size: .9em;
             color: rgba(117, 121, 126, 1.00);
           }
         }
@@ -556,7 +556,7 @@ $border_color: rgba(220, 228, 232, 1.00);
                 margin: 0;
                 padding: 3px 0;
                 word-wrap: break-word;
-                font-size: .8em;
+                font-size: .9em;
                 line-height: 1.4em;
                 color: #9fa3a4;
 
@@ -575,7 +575,7 @@ $border_color: rgba(220, 228, 232, 1.00);
               padding: 8px;
               margin-top: 5px;
 
-              font-size: 1em;
+              font-size: .9em;
               font-weight: bold;
               color: #fff;
               background:rgba(147, 160, 166, 1.00);
@@ -650,7 +650,7 @@ $border_color: rgba(220, 228, 232, 1.00);
           width: 18%;
           padding: 8px;
           margin-top: 5px;
-          font-size: 1em;
+          font-size: .9em;
           font-weight: bold;
           color: #fff;
           background: #93a0a6;
@@ -718,7 +718,7 @@ $border_color: rgba(220, 228, 232, 1.00);
         margin: 5px 0 0 5px;
         padding: 5px 20px;
 
-        font-size: 1em;
+        font-size: .9em;
         // font-weight: bold;
         color: rgba(137, 143, 149, 1.00);
         background:rgba(239, 240, 241, 1.00);
@@ -798,7 +798,7 @@ $border_color: rgba(220, 228, 232, 1.00);
                 height: 30px;
                 border: 1px solid rgba(39, 40, 34, .25);
                 padding: 5px;
-                font-size: 16px;
+                font-size: 13px;
                 @include border-radius (2px);
               }
             }
@@ -929,7 +929,7 @@ $border_color: rgba(220, 228, 232, 1.00);
         padding-top: 20px;
 
         .jtb {
-          width: 90%;
+          width: 100%;
           margin: 0 auto;
           padding-bottom: 30px;
 
@@ -940,7 +940,7 @@ $border_color: rgba(220, 228, 232, 1.00);
             display: block;
             width: 100%;
             margin: 0;
-            font-size: 1em;
+            font-size: .9em;
             line-height: 1.6em;
             color: rgba(2, 167, 249, 1.00);
             font-weight: bolder;
@@ -951,7 +951,7 @@ $border_color: rgba(220, 228, 232, 1.00);
             display: block;
             width: 100%;
             line-height: 1.6em;
-            font-size: 1em;
+            font-size: .9em;
             color: rgba(117, 121, 126, 1.00);
           }
         }
@@ -1010,6 +1010,7 @@ $border_color: rgba(220, 228, 232, 1.00);
 
       &:first-child {
         >div, .tc {
+          font-size: 13px;
           position: relative;
           padding-top: 63px;
           height: $title_height + $cell_height;
@@ -1028,7 +1029,7 @@ $border_color: rgba(220, 228, 232, 1.00);
             background-color: rgba(244, 245, 246, 1.00);
             word-break: break-all;
             padding: 5px;
-            font-size: 1em;
+            font-size: .9em;
             font-weight: bolder;
           }
         }
@@ -1036,7 +1037,7 @@ $border_color: rgba(220, 228, 232, 1.00);
           padding-top: $stitle_height + 10px;
           height: $stitle_height + $cell_height;
           &:before {
-            padding-top: 25px;
+            padding-top: 13px;
             height: $stitle_height;
             line-height: 20px;
             font-size: 13px;
@@ -1073,6 +1074,7 @@ $border_color: rgba(220, 228, 232, 1.00);
       &:first-child {
         >div, .tc {
           &:before {
+            font-size: 13px;
             font-weight: bold;
             color: rgba(0, 0, 0, .7);
             padding-top: 10px;
@@ -1114,6 +1116,8 @@ $border_color: rgba(220, 228, 232, 1.00);
         // padding: 10px;
         padding-left: $title_width + 10px;
 
+
+
         &:last-child {
           border-bottom: 1px solid rgba(134, 212, 241, 1.00);
         }
@@ -1138,7 +1142,7 @@ $border_color: rgba(220, 228, 232, 1.00);
           padding-left: 10px;
           padding-top: 10px;
           // padding-bottom: 10px;
-          font-size: 1em;
+          font-size: .9em;
           font-weight: bolder;
         }
       }
