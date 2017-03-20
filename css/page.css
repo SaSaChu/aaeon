@@ -1689,7 +1689,7 @@
     float: left;
     width: calc(100% / 5);
     min-height: 265px;
-    height: 285px;
+    height: 265px;
     padding: 5px;
   }
   #container > div .rb #arrow_box .cb .sone .imbox {
