@@ -235,9 +235,8 @@
   width: 100%;
   margin-top: 10px;
   font-weight: bold;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
+  font-size: .9em;
+  height: 55px;
 }
 #container > div .rb .center .area .r .box .info {
   margin-top: 5px;
@@ -249,8 +248,8 @@
 #container > div .rb .center .area .r .box .download {
   background-color: #67add1;
   display: inline-block;
-  width: 100%;
-  padding: 7px 10px;
+  width: 20%;
+  padding: 8px;
   margin-top: 5px;
   color: #feffff;
   text-align: center;
@@ -261,9 +260,6 @@
 }
 #container > div .rb .center .area .r .box .download:hover {
   background-color: #93a0a6;
-}
-#container > div .rb .center .area .r .box .download:before {
-  margin-right: 10px;
 }
 #container > div .nb {
   width: 100%;
