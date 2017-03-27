@@ -149,11 +149,13 @@ $minhight: 265px;
                 }
               }
             }
+
             @media screen and (min-width: #{$mediaTabletWidth + 1px}) {
               @include clearfix();
               > * {
-                width: calc(50% - 5px);
+                width: 50%;
                 display: inline-block;
+
 
                 &:first-child {
                   float: left;
@@ -181,7 +183,7 @@ $minhight: 265px;
           span {
             display: inline-block;
             text-align: right;
-            width: 150px;
+            width: 153px;
             font-size: 14px;
             padding-right: 10px;
 
@@ -204,10 +206,10 @@ $minhight: 265px;
 
           input[type='text'] {
             @include input;
-            width: calc(100% - 150px);
+            width: calc(100% - 175px);
           }
           select {
-            width: calc(100% - 150px);
+            width: calc(100% - 155px);
             border: 1px solid rgba(39, 40, 34, .25);
             padding: 5px;
             font-size: 14px;
